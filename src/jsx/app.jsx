@@ -37,6 +37,7 @@ const App = () => {
       <ThemeProvider theme={CoTheme}>
         <ModuleHeader />
         <main>
+          {console.log(RouterLink.product._0)}
           <Router>
             <Routes>
               <Route path={RouterLink.home._0} element={<ModuleProduct />} />
