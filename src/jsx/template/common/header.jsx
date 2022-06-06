@@ -11,7 +11,7 @@ const template = () => {
         <Container>
           <Grid container spacing={4} direction="row">
             <Grid item>
-              <Link href="/">Home</Link>
+              <Link href={RouterLink.home._0}>Home</Link>
             </Grid>
             <Grid item>
               <Link href={RouterLink.product._0}>Products</Link>

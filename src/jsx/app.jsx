@@ -39,7 +39,7 @@ const App = () => {
         <main>
           <Router>
             <Routes>
-              {/* <Route path="/" element={<ModuleHome />} /> */}
+              <Route path={RouterLink.home._0} element={<ModuleProduct />} />
               
               <Route path={RouterLink.product._0} element={<ModuleProduct />} />
               {/* <Route path={RouterLink.product._1} element={<ModuleProduct_1 />} /> */}
