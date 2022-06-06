@@ -1,0 +1,26 @@
+.co-image {
+  border-radius: .5em;
+  max-height: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.co-link-more {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.co-ftr__text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #042d43;
+}
+
+.co-ftr__link {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #4f6c7b;
+}
