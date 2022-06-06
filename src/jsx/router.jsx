@@ -1,4 +1,4 @@
-const $PUBLIC_URL= '';
+const $PUBLIC_URL= '/cliniopsmui';
 
 const RouterLink = ({
   home: {
