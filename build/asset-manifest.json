@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cliniopsmui/static/css/main.29d05c27.css",
-    "main.js": "/cliniopsmui/static/js/main.bdf09d00.js",
+    "main.js": "/cliniopsmui/static/js/main.b81e4350.js",
     "static/media/Akinyele.png": "/cliniopsmui/static/media/Akinyele.fbf5acff31f46eb50ed6.png",
     "static/media/Patricia.png": "/cliniopsmui/static/media/Patricia.697c16cfd0df203e6eff.png",
     "static/media/Partha.png": "/cliniopsmui/static/media/Partha.70587353ed7af29ad87f.png",
@@ -35,16 +35,16 @@
     "static/media/vision.png": "/cliniopsmui/static/media/vision.31797fe9fd552216f958.png",
     "static/media/mission.png": "/cliniopsmui/static/media/mission.f2fae14cdf06ddc780f8.png",
     "static/media/values.png": "/cliniopsmui/static/media/values.b32769a832c715dce0e9.png",
-    "static/media/logo-cliniops.svg": "/cliniopsmui/static/media/logo-cliniops.3f7aed176ec29eacd2cb8e642776350a.svg",
-    "static/media/logo-twitter.svg": "/cliniopsmui/static/media/logo-twitter.eab4fbb1c3f2d7c698244a32842ebc82.svg",
-    "static/media/logo-linkedin.svg": "/cliniopsmui/static/media/logo-linkedin.7e74fcc77da332493ec6e3fea1b634d9.svg",
+    "static/media/logo-cliniops.svg": "/cliniopsmui/static/media/logo-cliniops.6aa2801846ea940e0b8ee54e31e5465f.svg",
+    "static/media/logo-twitter.svg": "/cliniopsmui/static/media/logo-twitter.716fbe8262789da170ea64611c739cc2.svg",
+    "static/media/logo-linkedin.svg": "/cliniopsmui/static/media/logo-linkedin.7187c0df348eb20b24ae413e1304a825.svg",
     "index.html": "/cliniopsmui/index.html",
-    "static/media/logo-facebook.svg": "/cliniopsmui/static/media/logo-facebook.cd947312255a91bd897aae95f34855ab.svg",
+    "static/media/logo-facebook.svg": "/cliniopsmui/static/media/logo-facebook.091b20583e9fb3add5a8c5f53bf8773f.svg",
     "main.29d05c27.css.map": "/cliniopsmui/static/css/main.29d05c27.css.map",
-    "main.bdf09d00.js.map": "/cliniopsmui/static/js/main.bdf09d00.js.map"
+    "main.b81e4350.js.map": "/cliniopsmui/static/js/main.b81e4350.js.map"
   },
   "entrypoints": [
     "static/css/main.29d05c27.css",
-    "static/js/main.bdf09d00.js"
+    "static/js/main.b81e4350.js"
   ]
 }
