@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CliniOpsMUI/static/css/main.29d05c27.css",
-    "main.js": "/CliniOpsMUI/static/js/main.a6d570ae.js",
+    "main.js": "/CliniOpsMUI/static/js/main.3829f5e1.js",
     "static/media/Akinyele.png": "/CliniOpsMUI/static/media/Akinyele.fbf5acff31f46eb50ed6.png",
     "static/media/Patricia.png": "/CliniOpsMUI/static/media/Patricia.697c16cfd0df203e6eff.png",
     "static/media/Partha.png": "/CliniOpsMUI/static/media/Partha.70587353ed7af29ad87f.png",
@@ -41,10 +41,10 @@
     "index.html": "/CliniOpsMUI/index.html",
     "static/media/logo-facebook.svg": "/CliniOpsMUI/static/media/logo-facebook.cd947312255a91bd897aae95f34855ab.svg",
     "main.29d05c27.css.map": "/CliniOpsMUI/static/css/main.29d05c27.css.map",
-    "main.a6d570ae.js.map": "/CliniOpsMUI/static/js/main.a6d570ae.js.map"
+    "main.3829f5e1.js.map": "/CliniOpsMUI/static/js/main.3829f5e1.js.map"
   },
   "entrypoints": [
     "static/css/main.29d05c27.css",
-    "static/js/main.a6d570ae.js"
+    "static/js/main.3829f5e1.js"
   ]
 }
