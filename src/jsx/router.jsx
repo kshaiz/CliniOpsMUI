@@ -1,4 +1,4 @@
-const $PUBLIC_URL= '/CliniOpsMUI';
+const $PUBLIC_URL= '';
 
 const RouterLink = ({
   product: {
