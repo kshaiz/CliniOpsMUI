@@ -18,16 +18,10 @@ const template = () => {
       <Box sx={{ py: 10, backgroundColor: purple[50] }}>
         <Container>
           <_0 />
-          </Container>
+        </Container>
       </Box>
       <Container>
         <Grid container spacing={10} direction='column' sx={{ py: 10 }}>
-          <Grid item>
-            <_0 />
-          </Grid>
-          <Grid item>
-            <Divider />
-          </Grid>
           <Grid item id='cliniops-connect'>
             <_1 />
           </Grid>

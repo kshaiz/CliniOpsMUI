@@ -6,13 +6,7 @@ import RouterList from '../../../router';
 const template = () => {
   return (
     <>
-      <Typography variant="h1" component="h1">
-        Come work with Us!!
-      </Typography>
-      <Typography variant="h5" component="h2">
-        CliniOps is looking for dreamers, believers and builders.
-      </Typography>
-      <Typography sx={{ mt: 4 }}>
+      <Typography>
         We are growing rapidly and it's important for us to hire people who can make an impact. We are looking for individuals who embrace challenges as opportunities and thrive in dynamic environments. So whether you're looking for an internship, entry-level, professional position, or a seasoned pro, you will have an opportunity to make a difference.
       </Typography>
       <Typography sx={{ mt: 1 }}>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Grid, Box, Typography } from '@mui/material';
+import { Container, Box, Grid, Typography } from '@mui/material';
+import { teal } from '@mui/material/colors';
 
 import ImgMission from '../../../img/about/mission/mission.jpg';
 import ImgVisionStatement from '../../../img/about/mission/vision.png';
@@ -9,8 +10,15 @@ import ImgCoreValue from '../../../img/about/mission/values.png';
 const template = () => {
   return (
     <>
+      <Box sx={{ py: 5, backgroundColor: teal[50] }}>
+        <Container>
+          <Typography variant="h1" component="h1">
+            Our Mission
+          </Typography>
+        </Container>
+      </Box>
       <Container>
-        <Grid container spacing={10} direction='column' sx={{ py: 10 }}>
+        <Grid container spacing={10} direction='column' sx={{ py: 5 }}>
           <Grid item>
             <Grid container spacing={6}>
               <Grid item xs={6}>
@@ -23,9 +31,6 @@ const template = () => {
                 />
               </Grid>
               <Grid item xs={6}>
-                <Typography variant="h1" component="h1">
-                  Our Mission
-                </Typography>
                 <Box sx={{ mt: 4 }}>
                   <Grid container direction='row' alignItems='center'>
                     <Grid item sx={{ height: '40px', width: '40px', mr: 2 }}>

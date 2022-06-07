@@ -5,9 +5,9 @@
   margin: 0 auto;
 }
 
-.co-link-more {
-  text-transform: uppercase;
-  font-weight: 700;
+.co-divider {
+  width: 65%;
+  margin: 0 auto !important;
 }
 
 .co-ftr__text {

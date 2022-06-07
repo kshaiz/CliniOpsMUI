@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Grid, Divider } from '@mui/material';
+import { Container, Box, Grid, Divider } from '@mui/material';
+import { yellow } from '@mui/material/colors';
 
 // Page Imports
 import _0 from './_3/_0';
@@ -10,25 +11,24 @@ import _3 from './_3/_3';
 const template = () => {
   return (
     <>
+      <Box sx={{ py: 10, backgroundColor: yellow[50] }}>
+        <Container>
+          <_0 />
+        </Container>
+      </Box>
       <Container>
         <Grid container spacing={10} direction='column' sx={{ py: 10 }}>
-          <Grid item>
-            <_0 />
-          </Grid>
-          <Grid item>
-            <Divider />
-          </Grid>
           <Grid item>
             <_1 />
           </Grid>
           <Grid item>
-            <Divider />
+            <Divider className="co-divider" />
           </Grid>
           <Grid item>
             <_2 />
           </Grid>
           <Grid item>
-            <Divider />
+            <Divider className="co-divider" />
           </Grid>
           <Grid item>
             <_3 />

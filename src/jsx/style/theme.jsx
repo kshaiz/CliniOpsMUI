@@ -1,3 +1,4 @@
+import { red } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 
 // import Breakpoint from './breakpoint';
@@ -8,40 +9,46 @@ const Theme = createTheme({
       fontSize: "44px",
       lineHeight: "52px",
       letterSpacing: "-0.01em",
-      fontWeight: 700
+      fontWeight: 400,
+      color: '#042d43', // Logo Primary
     },
     h2: {
       fontSize: "35px",
       lineHeight: "42px",
-      fontWeight: 400
+      fontWeight: 400,
+      color: '#042d43', // Logo Primary
     },
     h3: {
       fontSize: "28px",
       lineHeight: "34px",
-      fontWeight: 700
+      fontWeight: 400,
+      color: '#042d43', // Logo Primary
     },
     h4: {
       fontSize: "25px",
       lineHeight: "32px",
       letterSpacing: '-0.01em',
-      fontWeight: 700
+      fontWeight: 400,
+      color: 'red',
     },
     h5: {
       fontSize: "18px",
       lineHeight: "auto",
       letterSpacing: '0.03em',
-      fontWeight: 500
+      fontWeight: 500,
+      color: 'pink',
     },
     h6: {
       fontSize: "16px",
       lineHeight: "auto",
-      fontWeight: 500
+      fontWeight: 500,
+      color: 'blue',
     },
     subtitle1: {
-      fontSize: "18px",
-      lineHeight: "29px",
+      fontSize: "20px",
+      lineHeight: "32px",
       letterSpacing: "0.0056em",
-      fontWeight: 400
+      fontWeight: 300
     },
     subtitle2: {
       fontSize: "13px",

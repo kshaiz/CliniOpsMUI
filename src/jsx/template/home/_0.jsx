@@ -1,19 +1,16 @@
 import React from 'react';
 import { Container, Box, Grid, Divider } from '@mui/material';
-import { pink } from '@mui/material/colors';
+import { purple } from '@mui/material/colors';
+
+
 
 // Page Imports
-import _0 from './_1/_0';
-import _1 from './_1/_1';
-import _2 from './_1/_2';
-import _3 from './_1/_3';
-import _4 from './_1/_4';
-import _5 from './_1/_5';
+import _0 from './_0/_0';
 
 const template = () => {
   return (
     <>
-      <Box sx={{ py: 10, backgroundColor: pink[50] }}>
+      <Box sx={{ py: 10, backgroundColor: purple[50] }}>
         <Container>
           <_0 />
         </Container>
@@ -21,28 +18,34 @@ const template = () => {
       <Container>
         <Grid container spacing={10} direction='column' sx={{ py: 10 }}>
           <Grid item>
+            <_0 />
+          </Grid>
+          <Grid item>
+            <Divider />
+          </Grid>
+          <Grid item id='cliniops-connect'>
             <_1 />
           </Grid>
           <Grid item>
-            <Divider className="co-divider" />
+            <Divider />
           </Grid>
-          <Grid item>
+          <Grid item id='cliniops-edge'>
             <_2 />
           </Grid>
           <Grid item>
-            <Divider className="co-divider" />
+            <Divider />
           </Grid>
-          <Grid item>
+          <Grid item id='cliniops-conduct'>
             <_3 />
           </Grid>
           <Grid item>
-            <Divider className="co-divider" />
+            <Divider />
           </Grid>
           <Grid item>
             <_4 />
           </Grid>
           <Grid item>
-            <Divider className="co-divider" />
+            <Divider />
           </Grid>
           <Grid item>
             <_5 />

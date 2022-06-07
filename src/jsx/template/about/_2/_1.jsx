@@ -4,9 +4,6 @@ import { Grid, Typography } from '@mui/material';
 import ImgAvik from '../../../../img/about/leadership-team/management/Avik-Pal.png';
 import ImgYerramalli from '../../../../img/about/leadership-team/management/Yerramalli.png';
 import ImgPartha from '../../../../img/about/leadership-team/management/Partha.png';
-import ImgAkinyele from '../../../../img/about/leadership-team/management/Akinyele.png';
-import ImgPatricia from '../../../../img/about/leadership-team/management/Patricia.png';
-import ImgArjun from '../../../../img/about/leadership-team/management/Arjun.png';
 
 import CustomProfile from '../../../component/profile';
 
@@ -19,9 +16,6 @@ const template = () => {
 
   return (
     <>
-      <Typography variant="h1" component="h1" sx={{ textAlign: 'center' }}>
-        Management
-      </Typography>
       <Grid container direction='column' spacing={6} sx={{ mt: 1 }}>
         <Grid item>
           <CustomProfile
