@@ -4,9 +4,9 @@ const RouterList = ({
   },
   product: {
     _0: '/products/',
-    _1: '/products/#cliniops-connect',
-    _2: '/products/#cliniops-edge',
-    _3: '/products/#cliniops-conduct',
+    _1: '/products/cliniops-connect',
+    _2: '/products/cliniops-edge',
+    _3: '/products/cliniops-conduct',
   },
   service: {
     _0: '/services/',

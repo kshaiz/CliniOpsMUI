@@ -1,33 +1,28 @@
 import React from 'react';
-import { HashLink as RouterLink } from 'react-router-hash-link';
-import { Grid, Box, Typography, Button } from '@mui/material';
+import { Typography, Grid } from '@mui/material';
 
-import RouterList from '../../../router';
-
-import ImgCliniOpsConduct from '../../../../img/product/_0/study-portal.jpeg';
+import ImgCliniOpsConduct from '../../../../img/product/_3/co-conduct.svg';
 
 const template = () => {
   return (
     <>
       <Grid container spacing={6}>
-        <Grid item xs={6}>
+        <Grid item xs={2}>
           <img
             src={`${ImgCliniOpsConduct}`}
             className='co-image'
             alt='CliniOps Conduct'
             title='CliniOps Conduct'
+            style={{ width: '100%' }}
           />
         </Grid>
-        <Grid item xs={6}>
-          <Typography variant="h2" component="h2">
+        <Grid item xs={10}>
+          <Typography variant="h1" component="h1">
             CliniOps Conduct
           </Typography>
-          <Typography sx={{ mt: 1 }}>
+          <Typography variant="subtitle1" sx={{ mt: 1 }}>
             Unified platform to streamline Clinical data management, Clinical operations, and accelerated Regulatory submission processes. It enables central and remote monitoring (rSDV). Sponsors and CROs can view the data along with powerful dashboards, reports, and study KPIs, to support decentralized, virtual, or hybrid trials.
           </Typography>
-          <Box sx={{ mt: 2 }}>
-            <Button variant="text" to={RouterList.product._3} component={RouterLink} sx={{ ml: -1 }}>Read More</Button>
-          </Box>
         </Grid>
       </Grid>
     </>

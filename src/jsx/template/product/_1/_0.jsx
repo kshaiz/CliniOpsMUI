@@ -1,33 +1,29 @@
 import React from 'react';
-import { HashLink as RouterLink } from 'react-router-hash-link';
-import { Grid, Box, Typography, Button } from '@mui/material';
+import { Typography, Grid } from '@mui/material';
 
-import RouterList from '../../../router';
+import ImgCliniOpsConnect from '../../../../img/product/_1/co-connect.svg';
 
-import ImgCliniOpsConnect from '../../../../img/product/_0/patient-app.jpeg';
 
 const template = () => {
   return (
     <>
       <Grid container spacing={6}>
-        <Grid item xs={6}>
+        <Grid item xs={2}>
           <img
             src={`${ImgCliniOpsConnect}`}
             className='co-image'
             alt='CliniOps Connect'
             title='CliniOps Connect'
+            style={{ width: '100%' }}
           />
         </Grid>
-        <Grid item xs={6}>
-          <Typography variant="h2" component="h2">
+        <Grid item xs={10}>
+          <Typography variant="h1" component="h1">
             CliniOps Connect
           </Typography>
-          <Typography sx={{ mt: 1 }}>
+          <Typography variant="subtitle1" sx={{ mt: 1 }}>
             Puts patients at the center of the clinical trials, and enables seamless participation via telemedicine, from the comfort of their homes or at their regular care facility. It increases patient engagement, retention, and protocol adherence, with regular reminders, notifications, alerts, educational materials et al.
           </Typography>
-          <Box sx={{ mt: 2 }}>
-            <Button variant="text" to={RouterList.product._1} component={RouterLink} sx={{ ml: -1 }}>Read More</Button>
-          </Box>
         </Grid>
       </Grid>
     </>

@@ -5,12 +5,15 @@ import { purple } from '@mui/material/colors';
 
 
 // Page Imports
-import _0 from './_0/_0';
-import _1 from './_0/_1';
-import _2 from './_0/_2';
-import _3 from './_0/_3';
-import _4 from './_0/_4';
-import _5 from './_0/_5';
+import _0 from './_3/_0';
+import _1 from './_3/_1';
+import _2 from './_3/_2';
+import _3 from './_3/_3';
+import _4 from './_3/_4';
+import _5 from './_3/_5';
+import _6 from './_3/_6';
+import _7 from './_3/_7';
+import _8 from './_3/_8';
 
 const template = () => {
   return (
@@ -22,19 +25,19 @@ const template = () => {
       </Box>
       <Container>
         <Grid container spacing={10} direction='column' sx={{ py: 10 }}>
-          <Grid item id='cliniops-connect'>
+          <Grid item>
             <_1 />
           </Grid>
           <Grid item>
             <Divider className="co-divider" />
           </Grid>
-          <Grid item id='cliniops-edge'>
+          <Grid item>
             <_2 />
           </Grid>
           <Grid item>
             <Divider className="co-divider" />
           </Grid>
-          <Grid item id='cliniops-conduct'>
+          <Grid item>
             <_3 />
           </Grid>
           <Grid item>
@@ -48,6 +51,24 @@ const template = () => {
           </Grid>
           <Grid item>
             <_5 />
+          </Grid>
+          <Grid item>
+            <Divider className="co-divider" />
+          </Grid>
+          <Grid item>
+            <_6 />
+          </Grid>
+          <Grid item>
+            <Divider className="co-divider" />
+          </Grid>
+          <Grid item>
+            <_7 />
+          </Grid>
+          <Grid item>
+            <Divider className="co-divider" />
+          </Grid>
+          <Grid item>
+            <_8 />
           </Grid>
         </Grid>
       </Container>

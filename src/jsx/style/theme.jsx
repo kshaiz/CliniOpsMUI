@@ -29,20 +29,20 @@ const Theme = createTheme({
       lineHeight: "32px",
       letterSpacing: '-0.01em',
       fontWeight: 400,
-      color: 'red',
+      color: '#042d43', // Logo Primary
     },
     h5: {
       fontSize: "18px",
       lineHeight: "auto",
       letterSpacing: '0.03em',
       fontWeight: 500,
-      color: 'pink',
+      color: '#042d43', // Logo Primary
     },
     h6: {
       fontSize: "16px",
       lineHeight: "auto",
       fontWeight: 500,
-      color: 'blue',
+      color: '#042d43', // Logo Primary
     },
     subtitle1: {
       fontSize: "20px",

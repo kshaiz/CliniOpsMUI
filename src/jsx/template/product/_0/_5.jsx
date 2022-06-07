@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Grid, Box, Typography, Button } from '@mui/material';
+import { HashLink as RouterLink } from 'react-router-hash-link';
+import { Grid, Box, Typography, Button } from '@mui/material';
 
 import RouterList from '../../../router';
 
@@ -14,7 +15,7 @@ const template = () => {
       <Typography variant="h2" component="h2" sx={{ textAlign: 'center' }}>
         Industry Recognitions
       </Typography>
-      <Box sx={{ mt: 4 }}>
+      <Box sx={{ mt: 8 }}>
         <Grid container spacing={6} direction='row' justifyContent="space-between" alignItems="center">
           <Grid item xs={3} sx={{ textAlign: 'center' }}>
             <img
@@ -78,7 +79,7 @@ const template = () => {
             </Typography>
           </Grid>
           <Grid item>
-            <Button variant="contained" href={RouterList.contact._1}>Request Quote</Button>
+            <Button variant="contained" to={RouterList.contact._1} component={RouterLink} sx={{ ml: -1 }}>Request Quote</Button>
           </Grid>
         </Grid>
       </Box>
