@@ -2,8 +2,6 @@ import React from 'react';
 import { Container, Box, Grid, Divider } from '@mui/material';
 import { purple } from '@mui/material/colors';
 
-
-
 // Page Imports
 import _0 from './_0/_0';
 import _1 from './_0/_1';
@@ -22,28 +20,28 @@ const template = () => {
       </Box>
       <Container>
         <Grid container spacing={10} direction='column' sx={{ py: 10 }}>
-          <Grid item id='cliniops-connect'>
+          <Grid item>
             <_1 />
           </Grid>
-          <Grid item>
+          <Grid item >
             <Divider className="co-divider" />
           </Grid>
-          <Grid item id='cliniops-edge'>
+          <Grid item>
             <_2 />
           </Grid>
-          <Grid item>
+          <Grid item >
             <Divider className="co-divider" />
           </Grid>
-          <Grid item id='cliniops-conduct'>
+          <Grid item>
             <_3 />
           </Grid>
-          <Grid item>
+          <Grid item >
             <Divider className="co-divider" />
           </Grid>
           <Grid item>
             <_4 />
           </Grid>
-          <Grid item>
+          <Grid item >
             <Divider className="co-divider" />
           </Grid>
           <Grid item>
