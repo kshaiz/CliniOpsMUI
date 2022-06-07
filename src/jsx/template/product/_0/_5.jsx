@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Grid, Box, Typography, Button } from '@mui/material';
 
-import RouterLink from '../../../router';
+import RouterList from '../../../router';
 
 import ImgLogoCdisc from '../../../../img/product/_0/cdisc.png';
 import ImgLogoScdm from '../../../../img/product/_0/scom.png';
@@ -78,7 +78,7 @@ const template = () => {
             </Typography>
           </Grid>
           <Grid item>
-            <Button variant="contained" href={RouterLink.contact._1}>Request Quote</Button>
+            <Button variant="contained" href={RouterList.contact._1}>Request Quote</Button>
           </Grid>
         </Grid>
       </Box>

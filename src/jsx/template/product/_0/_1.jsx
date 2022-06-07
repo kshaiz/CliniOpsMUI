@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Grid, Box, Typography, Link } from '@mui/material';
 
-// import RouterLink from '../../../router';
+// import RouterList from '../../../router';
 
 import ImgCliniOpsConnect from '../../../../img/product/_0/patient-app.jpeg';
 
@@ -25,7 +25,7 @@ const template = () => {
             Puts patients at the center of the clinical trials, and enables seamless participation via telemedicine, from the comfort of their homes or at their regular care facility. It increases patient engagement, retention, and protocol adherence, with regular reminders, notifications, alerts, educational materials et al.
           </Typography>
           {/* <Box sx={{ mt: 2 }}>
-            <Link className='co-link-more' underline="hover" href={RouterLink.product._1}>Read More</Link>
+            <Link className='co-link-more' underline="hover" href={RouterList.product._1}>Read More</Link>
           </Box> */}
         </Grid>
       </Grid>

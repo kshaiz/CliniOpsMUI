@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cliniopsmui/static/css/main.29d05c27.css",
-    "main.js": "/cliniopsmui/static/js/main.b6479a09.js",
+    "main.js": "/cliniopsmui/static/js/main.32a5cebc.js",
     "static/media/Akinyele.png": "/cliniopsmui/static/media/Akinyele.fbf5acff31f46eb50ed6.png",
     "static/media/Patricia.png": "/cliniopsmui/static/media/Patricia.697c16cfd0df203e6eff.png",
     "static/media/Partha.png": "/cliniopsmui/static/media/Partha.70587353ed7af29ad87f.png",
@@ -41,10 +41,10 @@
     "index.html": "/cliniopsmui/index.html",
     "static/media/logo-facebook.svg": "/cliniopsmui/static/media/logo-facebook.091b20583e9fb3add5a8c5f53bf8773f.svg",
     "main.29d05c27.css.map": "/cliniopsmui/static/css/main.29d05c27.css.map",
-    "main.b6479a09.js.map": "/cliniopsmui/static/js/main.b6479a09.js.map"
+    "main.32a5cebc.js.map": "/cliniopsmui/static/js/main.32a5cebc.js.map"
   },
   "entrypoints": [
     "static/css/main.29d05c27.css",
-    "static/js/main.b6479a09.js"
+    "static/js/main.32a5cebc.js"
   ]
 }

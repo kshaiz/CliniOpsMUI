@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Grid, Box, Typography, Link } from '@mui/material';
 
-// import RouterLink from '../../../router';
+// import RouterList from '../../../router';
 
 import ImgCliniOpsEdge from '../../../../img/product/_0/site-app.jpeg';
 
@@ -17,7 +17,7 @@ const template = () => {
             Purpose-built for high quality &amp; real-time electronic data collection at source (eSource). The application runs on standard mobile devices in a complete offline mode, with all checks and balances, ensuring very clean and high-quality data, collected digitally at the point of care.
           </Typography>
           {/* <Box sx={{ mt: 2 }}>
-            <Link className='co-link-more' underline="hover" href={RouterLink.product._1}>Read More</Link>
+            <Link className='co-link-more' underline="hover" href={RouterList.product._1}>Read More</Link>
           </Box> */}
         </Grid>
         <Grid item xs={6}>

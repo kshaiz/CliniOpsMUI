@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Link, Grid, Card, CardHeader, CardActions, Button } from '@mui/material';
 
-import RouterLink from '../../../router';
+import RouterList from '../../../router';
 
 const template = () => {
   return (
@@ -26,7 +26,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button href={RouterLink.about._3_1}>View Details</Button>
+              <Button href={RouterList.about._3_1}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>

@@ -1,8 +1,10 @@
 import React from 'react';
-import { Container, Grid, Box, Divider, Typography, Link } from '@mui/material';
+import { HashLink as RouterLink } from 'react-router-hash-link';
+
+import { Container, Grid, Box, Button } from '@mui/material';
 import { grey } from '@mui/material/colors';
 
-import RouterLink from '../../router';
+import RouterList from '../../router';
 
 const template = () => {
   return (
@@ -11,22 +13,22 @@ const template = () => {
         <Container>
           <Grid container spacing={4} direction="row">
             <Grid item>
-              <Link href={RouterLink.home._0}>Home</Link>
+              <Button variant="text" to={RouterList.home._0} component={RouterLink} >Home</Button>
             </Grid>
             <Grid item>
-              <Link href={RouterLink.product._0}>Products</Link>
+              <Button variant="text" to={RouterList.product._0} component={RouterLink}>Products</Button>
             </Grid>
             <Grid item>
-              <Link href={RouterLink.service._0}>Services</Link>
+              <Button variant="text" to={RouterList.service._0} component={RouterLink}>Services</Button>
             </Grid>
             <Grid item>
-              <Link href={RouterLink.about._1}>Mission</Link>
+              <Button variant="text" to={RouterList.about._1} component={RouterLink}>Mission</Button>
             </Grid>
             <Grid item>
-              <Link href={RouterLink.about._2}>Leadership Team</Link>
+              <Button variant="text" to={RouterList.about._2} component={RouterLink}>Leadership Team</Button>
             </Grid>
             <Grid item>
-              <Link href={RouterLink.about._3}>Career</Link>
+              <Button variant="text" to={RouterList.about._3} component={RouterLink}>Career</Button>
             </Grid>
           </Grid>
         </Container>

@@ -1,11 +1,11 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { CssBaseline, Box } from '@mui/material';
+import { CssBaseline } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import CoTheme from './style/theme';
 
-import RouterLink from './router';
+import RouterList from './router';
 
 // Import Footer
 
@@ -35,40 +35,39 @@ const App = () => {
     <>
       <CssBaseline />
       <ThemeProvider theme={CoTheme}>
-        <ModuleHeader />
-        <main>
-          {console.log(RouterLink.product._0)}
-          <Router>
+        <Router>
+          <ModuleHeader />
+          <main>
             <Routes>
-              <Route path={RouterLink.home._0} element={<ModuleProduct />} />
+              <Route path={RouterList.home._0} element={<ModuleProduct />} />
               
-              <Route path={RouterLink.product._0} element={<ModuleProduct />} />
-              {/* <Route path={RouterLink.product._1} element={<ModuleProduct_1 />} /> */}
-              {/* <Route path={RouterLink.product._2} element={<ModuleProduct_2 />} /> */}
-              {/* <Route path={RouterLink.product._3} element={<ModuleProduct_3 />} /> */}
-              {/* <Route path={RouterLink.contact._1} element={<ModuleContact_4 />} /> */}
+              <Route path={RouterList.product._0} element={<ModuleProduct />} />
+              {/* <Route path={RouterList.product._1} element={<ModuleProduct_1 />} /> */}
+              {/* <Route path={RouterList.product._2} element={<ModuleProduct_2 />} /> */}
+              {/* <Route path={RouterList.product._3} element={<ModuleProduct_3 />} /> */}
+              {/* <Route path={RouterList.contact._1} element={<ModuleContact_4 />} /> */}
               
-              <Route path={RouterLink.service._0} element={<ModuleService />} />
-              <Route path={RouterLink.service._1} element={<ModuleService_1 />} />
-              <Route path={RouterLink.service._2} element={<ModuleService_2 />} />
-              <Route path={RouterLink.service._3} element={<ModuleService_3 />} />
+              <Route path={RouterList.service._0} element={<ModuleService />} />
+              <Route path={RouterList.service._1} element={<ModuleService_1 />} />
+              <Route path={RouterList.service._2} element={<ModuleService_2 />} />
+              <Route path={RouterList.service._3} element={<ModuleService_3 />} />
               
-              <Route path={RouterLink.about._1} element={<ModuleAbout_1 />} />
-              <Route path={RouterLink.about._2} element={<ModuleAbout_2 />} />
-              <Route path={RouterLink.about._3} element={<ModuleAbout_3 />} />
-              {/* <Route path={RouterLink.about._3_1} element={<ModuleAbout_3_1 />} /> */}
+              <Route path={RouterList.about._1} element={<ModuleAbout_1 />} />
+              <Route path={RouterList.about._2} element={<ModuleAbout_2 />} />
+              <Route path={RouterList.about._3} element={<ModuleAbout_3 />} />
+              {/* <Route path={RouterList.about._3_1} element={<ModuleAbout_3_1 />} /> */}
 
-              {/* <Route path={RouterLink.media._1} element={<ModuleMedia_1 />} /> */}
-              {/* <Route path={RouterLink.media._2} element={<ModuleMedia_2 />} /> */}
-              {/* <Route path={RouterLink.media._1} element={<ModuleMedia_2_1 />} /> */}
+              {/* <Route path={RouterList.media._1} element={<ModuleMedia_1 />} /> */}
+              {/* <Route path={RouterList.media._2} element={<ModuleMedia_2 />} /> */}
+              {/* <Route path={RouterList.media._1} element={<ModuleMedia_2_1 />} /> */}
               
-              {/* <Route path={RouterLink.contact._0} element={<ModuleContact />} /> */}
+              {/* <Route path={RouterList.contact._0} element={<ModuleContact />} /> */}
 
-              {/* <Route path={RouterLink.contact._2} element={<ModuleRequestDemo />} /> */}
+              {/* <Route path={RouterList.contact._2} element={<ModuleRequestDemo />} /> */}
             </Routes>
-          </Router>
-        </main>
-        <ModuleFooter />
+          </main>
+          <ModuleFooter />
+        </Router>
       </ThemeProvider>
     </>
   );
