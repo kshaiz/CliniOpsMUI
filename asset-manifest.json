@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cliniopsmui/static/css/main.3d440bed.css",
-    "main.js": "/cliniopsmui/static/js/main.c2677439.js",
+    "main.js": "/cliniopsmui/static/js/main.e77f2ef5.js",
     "static/media/Akinyele.png": "/cliniopsmui/static/media/Akinyele.fbf5acff31f46eb50ed6.png",
     "static/media/Patricia.png": "/cliniopsmui/static/media/Patricia.697c16cfd0df203e6eff.png",
     "static/media/Partha.png": "/cliniopsmui/static/media/Partha.70587353ed7af29ad87f.png",
@@ -24,6 +24,7 @@
     "static/media/data-mgmt.jpeg": "/cliniopsmui/static/media/data-mgmt.2558a5d6e02e2355ad36.jpeg",
     "static/media/study-setup.jpeg": "/cliniopsmui/static/media/study-setup.bfa314b7e76e1fdb4bf7.jpeg",
     "static/media/scom.png": "/cliniopsmui/static/media/scom.3c42af41b29d7cd65e82.png",
+    "static/media/businessAwards.png": "/cliniopsmui/static/media/businessAwards.282e2a0b5e21863fa514.png",
     "static/media/site-app.jpeg": "/cliniopsmui/static/media/site-app.7d9ad5ae6e6157499934.jpeg",
     "static/media/uat.jpeg": "/cliniopsmui/static/media/uat.15c89c975530d1171b5b.jpeg",
     "static/media/meddra.png": "/cliniopsmui/static/media/meddra.a0e9fcca3be6b52ea2ed.png",
@@ -34,6 +35,7 @@
     "static/media/cdisc.png": "/cliniopsmui/static/media/cdisc.512cbc07e5c97dfbe4a2.png",
     "static/media/statisticalAnalysisPlan.jpeg": "/cliniopsmui/static/media/statisticalAnalysisPlan.8b533b2c6f6d08e4e8ea.jpeg",
     "static/media/protocol.jpeg": "/cliniopsmui/static/media/protocol.b91671098b823239b330.jpeg",
+    "static/media/medhealthoutlook.png": "/cliniopsmui/static/media/medhealthoutlook.1fee1367a2f66bcf02e5.png",
     "static/media/newsletters.png": "/cliniopsmui/static/media/newsletters.37dd95dc43f0e221a63e.png",
     "static/media/econsentcro.png": "/cliniopsmui/static/media/econsentcro.3a084abdcffa59eaa9e3.png",
     "static/media/dataManagementPlan.jpeg": "/cliniopsmui/static/media/dataManagementPlan.56fb0fa603829db58ea5.jpeg",
@@ -47,13 +49,24 @@
     "static/media/eirt.png": "/cliniopsmui/static/media/eirt.40b0c0c659a2140508df.png",
     "static/media/ehr-integration.png": "/cliniopsmui/static/media/ehr-integration.fa916a883dcb454431a1.png",
     "static/media/ecoa.png": "/cliniopsmui/static/media/ecoa.cdaa34b50944ea2b50a1.png",
+    "static/media/Media-2021-jan.jpg": "/cliniopsmui/static/media/Media-2021-jan.9e781c74f538891296c7.jpg",
+    "static/media/360iresearch.png": "/cliniopsmui/static/media/360iresearch.b391e823e28c1db1b751.png",
     "static/media/data-science-for-life-science.png": "/cliniopsmui/static/media/data-science-for-life-science.244934558f3e3199bea7.png",
     "static/media/esource.png": "/cliniopsmui/static/media/esource.e137472dd54a4e803e88.png",
     "static/media/eirtcro.png": "/cliniopsmui/static/media/eirtcro.139c1d1f2caca0afb8dc.png",
+    "static/media/Media-2020-21.jpg": "/cliniopsmui/static/media/Media-2020-21.ed80d8104518e6d97471.jpg",
     "static/media/epro.png": "/cliniopsmui/static/media/epro.1a0ee00a422516710f24.png",
+    "static/media/Media-2021-lesotho.jpg": "/cliniopsmui/static/media/Media-2021-lesotho.249d9698d14936089ea8.jpg",
+    "static/media/Media-2021-apr.jpg": "/cliniopsmui/static/media/Media-2021-apr.88a88b27026b55ce35ab.jpg",
     "static/media/vision.png": "/cliniopsmui/static/media/vision.31797fe9fd552216f958.png",
+    "static/media/amazon.png": "/cliniopsmui/static/media/amazon.73409600339de712319d.png",
     "static/media/mission.png": "/cliniopsmui/static/media/mission.f2fae14cdf06ddc780f8.png",
+    "static/media/Media-2021-01.jpg": "/cliniopsmui/static/media/Media-2021-01.d141205dbbfea1986cb7.jpg",
     "static/media/values.png": "/cliniopsmui/static/media/values.b32769a832c715dce0e9.png",
+    "static/media/Media-2020-21.png": "/cliniopsmui/static/media/Media-2020-21.4636db094accb5d4088d.png",
+    "static/media/Media-2021-plos.jpg": "/cliniopsmui/static/media/Media-2021-plos.ea29f8bfa90214be9391.jpg",
+    "static/media/united.jpeg": "/cliniopsmui/static/media/united.580f7a8530b15c21bf4d.jpeg",
+    "static/media/Media-2018-08.png": "/cliniopsmui/static/media/Media-2018-08.4b96bc798150550dcc02.png",
     "static/media/logo-cliniops.svg": "/cliniopsmui/static/media/logo-cliniops.6aa2801846ea940e0b8ee54e31e5465f.svg",
     "static/media/co-connect.svg": "/cliniopsmui/static/media/co-connect.5985d6d3d3e15054d1e94274373dab82.svg",
     "static/media/co-edge.svg": "/cliniopsmui/static/media/co-edge.04f230c5867a8eac3c9a41f2f6592490.svg",
@@ -63,10 +76,10 @@
     "index.html": "/cliniopsmui/index.html",
     "static/media/logo-facebook.svg": "/cliniopsmui/static/media/logo-facebook.091b20583e9fb3add5a8c5f53bf8773f.svg",
     "main.3d440bed.css.map": "/cliniopsmui/static/css/main.3d440bed.css.map",
-    "main.c2677439.js.map": "/cliniopsmui/static/js/main.c2677439.js.map"
+    "main.e77f2ef5.js.map": "/cliniopsmui/static/js/main.e77f2ef5.js.map"
   },
   "entrypoints": [
     "static/css/main.3d440bed.css",
-    "static/js/main.c2677439.js"
+    "static/js/main.e77f2ef5.js"
   ]
 }
