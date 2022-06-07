@@ -1,19 +1,22 @@
 import React from 'react';
-import { Container, Grid, Box, Divider } from '@mui/material';
-import { orange } from '@mui/material/colors';
+import { Container, Box, Grid, Divider } from '@mui/material';
+import { purple } from '@mui/material/colors';
+
+
 
 // Page Imports
-import _0 from './_2/_0';
-import _1 from './_2/_1';
-import _2 from './_2/_2';
-import _3 from './_2/_3';
-import _4 from './_2/_4';
-import _5 from './_2/_5';
+import _0 from './_0_2/_0';
+import _1 from './_0_2/_1';
+import _2 from './_0_2/_2';
+import _3 from './_0_2/_3';
+import _4 from './_0_2/_4';
+import _5 from './_0_2/_5';
+import _6 from './_0_2/_6';
 
 const template = () => {
   return (
     <>
-      <Box sx={{ py: 10, backgroundColor: orange[50] }}>
+      <Box sx={{ py: 10, backgroundColor: purple[50] }}>
         <Container>
           <_0 />
         </Container>
@@ -24,28 +27,34 @@ const template = () => {
             <_1 />
           </Grid>
           <Grid item>
-            <Divider />
+            <Divider className="co-divider" />
           </Grid>
           <Grid item>
             <_2 />
           </Grid>
           <Grid item>
-            <Divider />
+            <Divider className="co-divider" />
           </Grid>
           <Grid item>
             <_3 />
           </Grid>
           <Grid item>
-            <Divider />
+            <Divider className="co-divider" />
           </Grid>
           <Grid item>
             <_4 />
           </Grid>
           <Grid item>
-            <Divider />
+            <Divider className="co-divider" />
           </Grid>
           <Grid item>
             <_5 />
+          </Grid>
+          <Grid item>
+            <Divider className="co-divider" />
+          </Grid>
+          <Grid item>
+            <_6 />
           </Grid>
         </Grid>
       </Container>

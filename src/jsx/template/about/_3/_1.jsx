@@ -14,7 +14,7 @@ const template = () => {
       </Typography>
       <Grid container spacing={6} sx={{ mt:4 }}>
         <Grid item xs={4}>
-          <Card>
+          <Card variant="outlined">
             <CardHeader
               title="Project Manager"
               subheader="Fremont, CA or Kolkata, India"
@@ -25,7 +25,7 @@ const template = () => {
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card>
+          <Card variant="outlined">
             <CardHeader
               title="Biostatistician"
               subheader="Fremont, CA or Kolkata, India"
@@ -36,7 +36,7 @@ const template = () => {
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card>
+          <Card variant="outlined">
             <CardHeader
               title="Sales Executive"
               subheader="Fremont, CA or Kolkata, India"
@@ -47,7 +47,7 @@ const template = () => {
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card>
+          <Card variant="outlined">
             <CardHeader
               title="Software Engineer, Full Stack"
               subheader="Fremont, CA or Kolkata, India"
@@ -58,7 +58,7 @@ const template = () => {
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card>
+          <Card variant="outlined">
             <CardHeader
               title="Software Engineer, Mobile Development"
               subheader="Fremont, CA or Kolkata, India"
@@ -69,7 +69,7 @@ const template = () => {
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card>
+          <Card variant="outlined">
             <CardHeader
               title="Clinical Data Management"
               subheader="Fremont, CA or Kolkata, India"
@@ -80,7 +80,7 @@ const template = () => {
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card>
+          <Card variant="outlined">
             <CardHeader
               title="Manager, Quality Control"
               subheader="Fremont, CA or Kolkata, India"
@@ -91,7 +91,7 @@ const template = () => {
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card>
+          <Card variant="outlined">
             <CardHeader
               title="Senior Software Engineer"
               subheader="Fremont, CA or Kolkata, India"

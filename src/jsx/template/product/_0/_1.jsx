@@ -26,7 +26,7 @@ const template = () => {
             Puts patients at the center of the clinical trials, and enables seamless participation via telemedicine, from the comfort of their homes or at their regular care facility. It increases patient engagement, retention, and protocol adherence, with regular reminders, notifications, alerts, educational materials et al.
           </Typography>
           <Box sx={{ mt: 2 }}>
-            <Button variant="text" to={RouterList.product._1} component={RouterLink} sx={{ ml: -1 }}>Read More</Button>
+            <Button variant="text" to={RouterList.product._0_1} component={RouterLink} sx={{ ml: -1 }}>Read More</Button>
           </Box>
         </Grid>
       </Grid>

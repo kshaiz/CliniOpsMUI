@@ -20,15 +20,15 @@ import RouterList from './router';
 import ModuleHeader from './template/common/header';
 import ModuleFooter from './template/common/footer';
 
-import ModuleProduct from './template/product/_0';
-import ModuleProduct_1 from './template/product/_1';
-import ModuleProduct_2 from './template/product/_2';
-import ModuleProduct_3 from './template/product/_3';
+import ModuleProduct_0 from './template/product/_0';
+import ModuleProduct_0_1 from './template/product/_0_1';
+import ModuleProduct_0_2 from './template/product/_0_2';
+import ModuleProduct_0_3 from './template/product/_0_3';
 
-import ModuleService from './template/service/_0';
-import ModuleService_1 from './template/service/_1';
-import ModuleService_2 from './template/service/_2';
-import ModuleService_3 from './template/service/_3';
+import ModuleService_0 from './template/service/_0';
+import ModuleService_0_1 from './template/service/_0_1';
+import ModuleService_0_2 from './template/service/_0_2';
+import ModuleService_0_3 from './template/service/_0_3';
 
 import ModuleAbout_1 from './template/about/_1';
 import ModuleAbout_2 from './template/about/_2';
@@ -46,17 +46,17 @@ const App = () => {
             <ModuleHeader />
             <main>
               <Routes>
-                <Route path={RouterList.home._0} element={<ModuleProduct />} />
+                <Route path={RouterList.home._0} element={<ModuleProduct_0 />} />
                 
-                <Route path={RouterList.product._0} element={<ModuleProduct />} />
-                <Route path={RouterList.product._1} element={<ModuleProduct_1 />} />
-                <Route path={RouterList.product._2} element={<ModuleProduct_2 />} />
-                <Route path={RouterList.product._3} element={<ModuleProduct_3 />} />
+                <Route path={RouterList.product._0} element={<ModuleProduct_0 />} />
+                <Route path={RouterList.product._0_1} element={<ModuleProduct_0_1 />} />
+                <Route path={RouterList.product._0_2} element={<ModuleProduct_0_2 />} />
+                <Route path={RouterList.product._0_3} element={<ModuleProduct_0_3 />} />
                 
-                <Route path={RouterList.service._0} element={<ModuleService />} />
-                <Route path={RouterList.service._1} element={<ModuleService_1 />} />
-                <Route path={RouterList.service._2} element={<ModuleService_2 />} />
-                <Route path={RouterList.service._3} element={<ModuleService_3 />} />
+                <Route path={RouterList.service._0} element={<ModuleService_0 />} />
+                <Route path={RouterList.service._0_1} element={<ModuleService_0_1 />} />
+                <Route path={RouterList.service._0_2} element={<ModuleService_0_2 />} />
+                <Route path={RouterList.service._0_3} element={<ModuleService_0_3 />} />
                 
                 <Route path={RouterList.about._1} element={<ModuleAbout_1 />} />
                 <Route path={RouterList.about._2} element={<ModuleAbout_2 />} />

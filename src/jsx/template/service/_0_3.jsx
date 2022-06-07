@@ -1,19 +1,17 @@
 import React from 'react';
 import { Container, Box, Grid, Divider } from '@mui/material';
-import { pink } from '@mui/material/colors';
+import { yellow } from '@mui/material/colors';
 
 // Page Imports
-import _0 from './_1/_0';
-import _1 from './_1/_1';
-import _2 from './_1/_2';
-import _3 from './_1/_3';
-import _4 from './_1/_4';
-import _5 from './_1/_5';
+import _0 from './_0_3/_0';
+import _1 from './_0_3/_1';
+import _2 from './_0_3/_2';
+import _3 from './_0_3/_3';
 
 const template = () => {
   return (
     <>
-      <Box sx={{ py: 10, backgroundColor: pink[50] }}>
+      <Box sx={{ py: 10, backgroundColor: yellow[50] }}>
         <Container>
           <_0 />
         </Container>
@@ -34,18 +32,6 @@ const template = () => {
           </Grid>
           <Grid item>
             <_3 />
-          </Grid>
-          <Grid item>
-            <Divider className="co-divider" />
-          </Grid>
-          <Grid item>
-            <_4 />
-          </Grid>
-          <Grid item>
-            <Divider className="co-divider" />
-          </Grid>
-          <Grid item>
-            <_5 />
           </Grid>
         </Grid>
       </Container>

@@ -77,13 +77,13 @@ const template = () => {
                       <Box className='co-ftr__text'>Products</Box>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.product._1}>CliniOps Connect</a>
+                      <a className='co-ftr__link' href={RouterList.product._0_1}>CliniOps Connect</a>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.product._2}>CliniOps Edge</a>
+                      <a className='co-ftr__link' href={RouterList.product._0_2}>CliniOps Edge</a>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.product._3}>CliniOps Conduct</a>
+                      <a className='co-ftr__link' href={RouterList.product._0_3}>CliniOps Conduct</a>
                     </Grid>
                   </Grid>
                 </Grid>
@@ -93,13 +93,13 @@ const template = () => {
                       <Box className='co-ftr__text'>Services</Box>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.service._1}>Study Setup</a>
+                      <a className='co-ftr__link' href={RouterList.service._0_1}>Study Setup</a>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.service._2}>Clinical Data Management</a>
+                      <a className='co-ftr__link' href={RouterList.service._0_2}>Clinical Data Management</a>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.service._3}>Biostatistics &amp; Programming</a>
+                      <a className='co-ftr__link' href={RouterList.service._0_3}>Biostatistics &amp; Programming</a>
                     </Grid>
                   </Grid>
                 </Grid>

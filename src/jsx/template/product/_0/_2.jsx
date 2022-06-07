@@ -18,7 +18,7 @@ const template = () => {
             Purpose-built for high quality &amp; real-time electronic data collection at source (eSource). The application runs on standard mobile devices in a complete offline mode, with all checks and balances, ensuring very clean and high-quality data, collected digitally at the point of care.
           </Typography>
           <Box sx={{ mt: 2 }}>
-            <Button variant="text" to={RouterList.product._2} component={RouterLink} sx={{ ml: -1 }}>Read More</Button>
+            <Button variant="text" to={RouterList.product._0_2} component={RouterLink} sx={{ ml: -1 }}>Read More</Button>
           </Box>
         </Grid>
         <Grid item xs={6}>

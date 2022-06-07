@@ -4,15 +4,15 @@ const RouterList = ({
   },
   product: {
     _0: '/products/',
-    _1: '/products/cliniops-connect',
-    _2: '/products/cliniops-edge',
-    _3: '/products/cliniops-conduct',
+    _0_1: '/products/cliniops-connect/',
+    _0_2: '/products/cliniops-edge/',
+    _0_3: '/products/cliniops-conduct/',
   },
   service: {
     _0: '/services/',
-    _1: '/services/study-setup/',
-    _2: '/services/clinical-data-management/',
-    _3: '/services/biostatistics-programming/',
+    _0_1: '/services/study-setup/',
+    _0_2: '/services/clinical-data-management/',
+    _0_3: '/services/biostatistics-programming/',
   },
   about: {
     // _0: ${$PUBLIC_URL}'/about/',
@@ -29,8 +29,8 @@ const RouterList = ({
   },
   contact: {
     _0: '/contact/',
-    _1: '/contact/request-quote',
-    _2: '/contact/request-demo/'
+    _0_1: '/contact/request-quote',
+    _0_2: '/contact/request-demo/'
     // mailto:info@cliniops.com
   }
 });
