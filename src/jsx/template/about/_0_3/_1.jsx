@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink as RouterLink } from 'react-router-hash-link';
 import { Typography, Link, Grid, Card, CardHeader, CardActions, Button } from '@mui/material';
 
 import RouterList from '../../../router';
@@ -20,7 +21,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button href={RouterList.about._0_3_1}>View Details</Button>
+              <Button to={RouterList.about._0_3_1} component={RouterLink}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -31,7 +32,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button href={RouterList.about._0_3_2}>View Details</Button>
+              <Button to={RouterList.about._0_3_2} component={RouterLink}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -42,7 +43,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button href={RouterList.about._0_3_3}>View Details</Button>
+              <Button to={RouterList.about._0_3_3} component={RouterLink}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -53,7 +54,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button href={RouterList.about._0_3_4}>View Details</Button>
+              <Button to={RouterList.about._0_3_4} component={RouterLink}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -64,7 +65,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button href={RouterList.about._0_3_5}>View Details</Button>
+              <Button to={RouterList.about._0_3_5} component={RouterLink}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -75,7 +76,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button href={RouterList.about._0_3_6}>View Details</Button>
+              <Button to={RouterList.about._0_3_6} component={RouterLink}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -86,7 +87,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button href={RouterList.about._0_3_7}>View Details</Button>
+              <Button to={RouterList.about._0_3_7} component={RouterLink}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -97,7 +98,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button href={RouterList.about._0_3_8}>View Details</Button>
+              <Button to={RouterList.about._0_3_8} component={RouterLink}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>
