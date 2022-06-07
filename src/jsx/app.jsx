@@ -35,7 +35,8 @@ const App = () => {
     <>
       <CssBaseline />
       <ThemeProvider theme={CoTheme}>
-        <Router>
+        {/* Remove basename is issues with URLs in production deployment  */}
+        <Router basename={process.env.PUBLIC_URL + "/"}>
           <ModuleHeader />
           <main>
             <Routes>
