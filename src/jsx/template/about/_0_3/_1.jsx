@@ -20,7 +20,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button href={RouterList.about._3_1}>View Details</Button>
+              <Button href={RouterList.about._0_3_1}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -31,7 +31,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button>View Details</Button>
+              <Button href={RouterList.about._0_3_2}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -42,7 +42,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button>View Details</Button>
+              <Button href={RouterList.about._0_3_3}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -53,7 +53,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button>View Details</Button>
+              <Button href={RouterList.about._0_3_4}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -64,7 +64,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button>View Details</Button>
+              <Button href={RouterList.about._0_3_5}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -75,7 +75,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button>View Details</Button>
+              <Button href={RouterList.about._0_3_6}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -86,7 +86,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button>View Details</Button>
+              <Button href={RouterList.about._0_3_7}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -97,7 +97,7 @@ const template = () => {
               subheader="Fremont, CA or Kolkata, India"
             />
             <CardActions disableSpacing>
-              <Button>View Details</Button>
+              <Button href={RouterList.about._0_3_8}>View Details</Button>
             </CardActions>
           </Card>
         </Grid>

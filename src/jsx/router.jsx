@@ -16,16 +16,23 @@ const RouterList = ({
   },
   about: {
     // _0: ${$PUBLIC_URL}'/about/',
-    _1: '/about/mission/',
-    _2: '/about/leadership-team/',
-    _3: '/about/careers/',
-    _3_1: '/about/careers/project-manager/'
+    _0_1: '/about/mission/',
+    _0_2: '/about/leadership-team/',
+    _0_3: '/about/careers/',
+    _0_3_1: '/about/careers/project-manager/',
+    _0_3_2: '/about/careers/biostatistician/',
+    _0_3_3: '/about/careers/sales-executive/',
+    _0_3_4: '/about/careers/software-engineer-full-stack/',
+    _0_3_5: '/about/careers/software-engineer-mobile-development/',
+    _0_3_6: '/about/careers/clinical-data-management/',
+    _0_3_7: '/about/careers/manager-quality-control/',
+    _0_3_8: '/about/careers/senior-software-engineer/'
   },
   media: {
     _0: '/media/',
-    _1: '/media/newsroom/',
-    _2: '/media/blogs/',
-    _2_1: '/media/blog/diversity-in-clinical-research'
+    _0_1: '/media/newsroom/',
+    _0_2: '/media/blogs/',
+    _0_2_1: '/media/blog/diversity-in-clinical-research'
   },
   contact: {
     _0: '/contact/',

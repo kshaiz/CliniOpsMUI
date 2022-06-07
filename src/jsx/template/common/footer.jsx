@@ -61,7 +61,7 @@ const template = () => {
                       <Box className='co-ftr__text'>Home</Box>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.about._1}>Mission</a>
+                      <a className='co-ftr__link' href={RouterList.about._0_1}>Mission</a>
                     </Grid>
                     <Grid item>
                       <a className='co-ftr__link' href={RouterList.media._1}>Newsroom</a>
