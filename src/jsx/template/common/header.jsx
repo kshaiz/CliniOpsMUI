@@ -30,6 +30,9 @@ const template = () => {
             <Grid item>
               <Button variant="text" to={RouterList.about._0_3} component={RouterLink}>Career</Button>
             </Grid>
+            <Grid item>
+              <Button variant="text" to={RouterList.media._0_1} component={RouterLink}>Newsroom</Button>
+            </Grid>
           </Grid>
         </Container>
       </Box>

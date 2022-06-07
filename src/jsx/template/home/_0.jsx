@@ -10,7 +10,8 @@ import _0 from './_0/_0';
 const template = () => {
   return (
     <>
-      <Box sx={{ py: 10, backgroundColor: purple[50] }}>
+      Home Page Placeholder
+      {/* <Box sx={{ py: 10, backgroundColor: purple[50] }}>
         <Container>
           <_0 />
         </Container>
@@ -51,7 +52,7 @@ const template = () => {
             <_5 />
           </Grid>
         </Grid>
-      </Container>
+      </Container> */}
     </>
   );
 }

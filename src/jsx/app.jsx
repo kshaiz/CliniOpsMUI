@@ -11,6 +11,8 @@ import RouterList from './router';
 import ModuleHeader from './template/common/header';
 import ModuleFooter from './template/common/footer';
 
+import ModuleHome from './template/home/_0';
+
 import ModuleProduct_0 from './template/product/_0';
 import ModuleProduct_0_1 from './template/product/_0_1';
 import ModuleProduct_0_2 from './template/product/_0_2';
@@ -33,6 +35,8 @@ import ModuleAbout_0_3_6 from './template/about/_0_3_6';
 import ModuleAbout_0_3_7 from './template/about/_0_3_7';
 import ModuleAbout_0_3_8 from './template/about/_0_3_8';
 
+import ModuleMedia_0_1 from './template/media/_0_1';
+
 const App = () => {
   return (
     <>
@@ -45,7 +49,7 @@ const App = () => {
             <ModuleHeader />
             <main>
               <Routes>
-                <Route path={RouterList.home._0} element={<ModuleProduct_0 />} />
+                <Route path={RouterList.home._0} element={<ModuleHome />} />
                 
                 <Route path={RouterList.product._0} element={<ModuleProduct_0 />} />
                 <Route path={RouterList.product._0_1} element={<ModuleProduct_0_1 />} />
@@ -69,7 +73,7 @@ const App = () => {
                 <Route path={RouterList.about._0_3_7} element={<ModuleAbout_0_3_7 />} />
                 <Route path={RouterList.about._0_3_8} element={<ModuleAbout_0_3_8 />} />
 
-                {/* <Route path={RouterList.media._1} element={<ModuleMedia_1 />} /> */}
+                <Route path={RouterList.media._0_1} element={<ModuleMedia_0_1 />} />
                 {/* <Route path={RouterList.media._2} element={<ModuleMedia_2 />} /> */}
                 {/* <Route path={RouterList.media._1} element={<ModuleMedia_2_1 />} /> */}
                 
