@@ -22,16 +22,16 @@ const template = () => {
               <Button variant="text" to={RouterList.service._0} component={RouterLink}>Services</Button>
             </Grid>
             <Grid item>
-              <Button variant="text" to={RouterList.about._0_1} component={RouterLink}>Mission</Button>
+              <Button variant="text" to={RouterList.about.mission} component={RouterLink}>Mission</Button>
             </Grid>
             <Grid item>
-              <Button variant="text" to={RouterList.about._0_2} component={RouterLink}>Leadership Team</Button>
+              <Button variant="text" to={RouterList.about.leadershipteam} component={RouterLink}>Leadership Team</Button>
             </Grid>
             <Grid item>
-              <Button variant="text" to={RouterList.about._0_3} component={RouterLink}>Career</Button>
+              <Button variant="text" to={RouterList.about.career} component={RouterLink}>Career</Button>
             </Grid>
             <Grid item>
-              <Button variant="text" to={RouterList.media._0_1} component={RouterLink}>Newsroom</Button>
+              <Button variant="text" to={RouterList.media.newsroom} component={RouterLink}>Newsroom</Button>
             </Grid>
           </Grid>
         </Container>

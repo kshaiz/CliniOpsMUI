@@ -79,7 +79,7 @@ const template = () => {
             </Typography>
           </Grid>
           <Grid item>
-            <Button variant="contained" to={RouterList.contact._0_1} component={RouterLink} sx={{ ml: -1 }}>Request Quote</Button>
+            <Button variant="contained" to={RouterList.contact.quote} component={RouterLink} sx={{ ml: -1 }}>Request Quote</Button>
           </Grid>
         </Grid>
       </Box>

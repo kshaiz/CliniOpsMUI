@@ -1,4 +1,6 @@
 import React from 'react';
+import { HashLink as RouterLink } from 'react-router-hash-link';
+
 import { Container, Grid, Box, Divider, Typography, Link } from '@mui/material';
 import { grey } from '@mui/material/colors';
 
@@ -61,13 +63,13 @@ const template = () => {
                       <Box className='co-ftr__text'>Home</Box>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.about._0_1}>Mission</a>
+                      <a className='co-ftr__link' href={RouterList.about.mission} component={RouterLink}>Mission</a>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.media._1}>Newsroom</a>
+                      <a className='co-ftr__link' href={RouterList.media._1} component={RouterLink}>Newsroom</a>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.media._2}>Blogs</a>
+                      <a className='co-ftr__link' href={RouterList.media._2} component={RouterLink}>Blogs</a>
                     </Grid>
                   </Grid>
                 </Grid>
@@ -77,13 +79,13 @@ const template = () => {
                       <Box className='co-ftr__text'>Products</Box>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.product._0_1}>CliniOps Connect</a>
+                      <a className='co-ftr__link' href={RouterList.product.connect} component={RouterLink}>CliniOps Connect</a>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.product._0_2}>CliniOps Edge</a>
+                      <a className='co-ftr__link' href={RouterList.product.edge} component={RouterLink}>CliniOps Edge</a>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.product._0_3}>CliniOps Conduct</a>
+                      <a className='co-ftr__link' href={RouterList.product.conduct} component={RouterLink}>CliniOps Conduct</a>
                     </Grid>
                   </Grid>
                 </Grid>
@@ -93,13 +95,13 @@ const template = () => {
                       <Box className='co-ftr__text'>Services</Box>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.service._0_1}>Study Setup</a>
+                      <a className='co-ftr__link' href={RouterList.service.studysetup} component={RouterLink}>Study Setup</a>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.service._0_2}>Clinical Data Management</a>
+                      <a className='co-ftr__link' href={RouterList.service.clinicaldatamanagement} component={RouterLink}>Clinical Data Management</a>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.service._0_3}>Biostatistics &amp; Programming</a>
+                      <a className='co-ftr__link' href={RouterList.service.biostatisticprogramming} component={RouterLink}>Biostatistics &amp; Programming</a>
                     </Grid>
                   </Grid>
                 </Grid>

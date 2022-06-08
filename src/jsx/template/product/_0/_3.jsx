@@ -26,7 +26,7 @@ const template = () => {
             Unified platform to streamline Clinical data management, Clinical operations, and accelerated Regulatory submission processes. It enables central and remote monitoring (rSDV). Sponsors and CROs can view the data along with powerful dashboards, reports, and study KPIs, to support decentralized, virtual, or hybrid trials.
           </Typography>
           <Box sx={{ mt: 2 }}>
-            <Button variant="text" to={RouterList.product._0_3} component={RouterLink} sx={{ ml: -1 }}>Read More</Button>
+            <Button variant="text" to={RouterList.product.conduct} component={RouterLink} sx={{ ml: -1 }}>Read More</Button>
           </Box>
         </Grid>
       </Grid>

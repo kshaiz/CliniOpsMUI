@@ -5,8 +5,8 @@ import { green } from '@mui/material/colors';
 import { JobListingPage } from '../../component/job-listing';
 
 // Page Imports
-import _0 from './_0_3/_0';
-import _1 from './_0_3/_1';
+import _0 from './career/_0';
+import _1 from './career/_1';
 
 const template = () => {
   return (
