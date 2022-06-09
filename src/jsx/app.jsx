@@ -36,6 +36,19 @@ import ModuleAbout_Career_7 from './template/about/_0_3_7';
 import ModuleAbout_Career_8 from './template/about/_0_3_8';
 
 import ModuleMedia_Newsroom from './template/media/newsroom';
+import ModuleMedia_Blog from './template/media/blog';
+import ModuleMedia_Blog_1 from './template/media/blog_1';
+import ModuleMedia_Blog_2 from './template/media/blog_2';
+import ModuleMedia_Blog_3 from './template/media/blog_3';
+import ModuleMedia_Blog_4 from './template/media/blog_4';
+import ModuleMedia_Blog_5 from './template/media/blog_5';
+
+import ModuleContact from './template/contact/_0';
+import ModuleContact_Quote from './template/contact/quote';
+import ModuleContact_Demo from './template/contact/demo';
+
+import ModulePolicy_Privacy from './template/policy/privacy';
+import ModulePolicy_Cookie from './template/policy/cookie';
 
 const App = () => {
   return (
@@ -74,12 +87,19 @@ const App = () => {
                 <Route path={RouterList.about.career_8} element={<ModuleAbout_Career_8 />} />
 
                 <Route path={RouterList.media.newsroom} element={<ModuleMedia_Newsroom />} />
-                {/* <Route path={RouterList.media._2} element={<ModuleMedia_2 />} /> */}
-                {/* <Route path={RouterList.media._1} element={<ModuleMedia_2_1 />} /> */}
+                <Route path={RouterList.media.blog} element={<ModuleMedia_Blog />} />
+                <Route path={RouterList.media.blog_1} element={<ModuleMedia_Blog_1 />} />
+                <Route path={RouterList.media.blog_2} element={<ModuleMedia_Blog_2 />} />
+                <Route path={RouterList.media.blog_3} element={<ModuleMedia_Blog_3 />} />
+                <Route path={RouterList.media.blog_4} element={<ModuleMedia_Blog_4 />} />
+                <Route path={RouterList.media.blog_5} element={<ModuleMedia_Blog_5 />} />
                 
-                {/* <Route path={RouterList.contact._0} element={<ModuleContact />} /> */}
-                {/* <Route path={RouterList.contact.quote} element={<ModuleContact_4 />} /> */}
-                {/* <Route path={RouterList.contact.demo} element={<ModuleRequestDemo />} /> */}
+                <Route path={RouterList.contact._0} element={<ModuleContact />} />
+                <Route path={RouterList.contact.quote} element={<ModuleContact_Quote />} />
+                <Route path={RouterList.contact.demo} element={<ModuleContact_Demo />} />
+                
+                <Route path={RouterList.policy.privacy} element={<ModulePolicy_Privacy />} />
+                <Route path={RouterList.policy.cookie} element={<ModulePolicy_Cookie />} />
               </Routes>
             </main>
             <ModuleFooter />

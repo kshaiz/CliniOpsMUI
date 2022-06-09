@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Grid, Card, CardMedia, Typography, Link, Box } from "@mui/material";
+import { Grid, Typography, Link, Box } from "@mui/material";
 import { blueGrey } from "@mui/material/colors";
 
 const NewsArticle = (props) => {

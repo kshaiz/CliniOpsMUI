@@ -24,3 +24,16 @@
   text-decoration: none;
   color: #4f6c7b;
 }
+
+/* Menu */
+.co-hdr-menu__root {
+  padding: 8px 16px;
+  font-weight: 400 !important;
+  display: flex;
+  align-items: center;
+  height: 72px;
+}
+
+.co-hdr-menu__root:hover {
+  background-color: rgba(0,0,0,.05);
+}

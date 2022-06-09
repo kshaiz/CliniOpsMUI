@@ -167,10 +167,10 @@ const template = () => {
                       </Typography>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href="/privacy-policy/">Privacy Policy</a>
+                      <a className='co-ftr__link' href={RouterList.policy.privacy} component={RouterLink}>Privacy Policy</a>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href="/cookie-policy/">Cookie Policy</a>
+                      <a className='co-ftr__link' href={RouterList.policy.cookie} component={RouterLink}>Cookie Policy</a>
                     </Grid>
                   </Grid>
                 </Grid>

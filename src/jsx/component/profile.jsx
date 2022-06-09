@@ -12,6 +12,7 @@ const CustomProfile = ({
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
+        // console.log(event.target);
     };
 
     return (
@@ -36,8 +37,7 @@ const CustomProfile = ({
                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                         {FullContent}
                     </Collapse>
-                    <Button expand={expanded} onClick={handleExpandClick} sx={{ mt: 1, ml: -1 }}>Show More</Button>
-                    <Button expand={expanded} onClick={handleExpandClick} sx={{ mt: 1, ml: -1 }}>External Link</Button>
+                    <Button expand={{expanded}} onClick={handleExpandClick} sx={{ mt: 1, ml: -1 }}>Show More</Button>
                 </Grid>
             </Grid>
         </>

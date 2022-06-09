@@ -30,12 +30,21 @@ const RouterList = ({
   media: {
     newsroom: '/media/newsroom/',
     blog: '/media/blogs/',
-    blog_1: '/media/blog/diversity-in-clinical-research'
+    blog_1: '/media/blogs/diversity-in-clinical-research',
+    blog_2: '/media/blogs/what-the-future-holds-for-clinical-trials-post-covid-19',
+    blog_3: '/media/blogs/initial-impact-of-covid-19-on-clinical-trials-and-technology-solutions',
+    blog_4: '/media/blogs/telemedicine-saves-stalled-trials-by-covid-19-pandemic',
+    blog_5: '/media/blogs/covid-19-pandemic-stalls-clinical-trials-worldwide'
   },
   contact: {
     _0: '/contact/',
     quote: '/contact/request-quote',
     demo: '/contact/request-demo/'
+    // mailto:info@cliniops.com
+  },
+  policy: {
+    privacy: '/policy/privacy',
+    cookie: '/policy/cookie/'
     // mailto:info@cliniops.com
   }
 });

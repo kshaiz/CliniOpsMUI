@@ -22,21 +22,21 @@ const template = () => {
         <Grid container spacing={4}>
           <NewsArticle
             img={ImgMedhealthoutlook}
-            alt="MedHealth Outlook"
+            alt="Article Header Image"
             link="https://medhealthoutlook.com/digital-health-solution-providers-list-2022/"
             title="Top 10 Digital Health Solution Providers 2022"
             date="May 11, 2022"
           />
           <NewsArticle
             img={ImgRoche}
-            alt="Roche"
+            alt="Article Header Image"
             link="https://www.roche.com/"
             title="Futurist Series talk # 1 - Pharma’s approach to Decentralized Trials"
             date="April 19, 2022"
           />
           <NewsArticle
             img={Img360Research}
-            alt="360 iResearch"
+            alt="Article Header Image"
             link="https://www.reportlinker.com/p06088806/Virtual-Clinical-Trials-Market-Research-Report-by-Study-Design-by-Implication-by-State-United-States-Forecast-to-Cumulative-Impact-of-COVID-19.html%E2%80%8B"
             title="​Virtual Clinical Trials Market Research Report, Forecast to 2027 - Cumulative Impact of COVID-19"
             date="January 2022"

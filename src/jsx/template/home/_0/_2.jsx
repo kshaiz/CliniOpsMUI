@@ -27,7 +27,7 @@ const template = () => {
             pt={4}
           >
             <Grid item>
-              <Stack direction="column" alignItems='center' spacing={1} p={3} sx={{ width: '350px', borderRadius: 2, textAlign: 'center', backgroundColor: common.white, boxShadow: '0 30px 60px -30px rgb(0 0 0 / 30%), 0 30px 60px -30px rgb(0 0 0 / 25%)' }}>
+              <Stack direction="column" alignItems='center' spacing={1} p={3} sx={{ width: '350px', height: '100%', borderRadius: 2, textAlign: 'center', backgroundColor: common.white, boxShadow: '0 30px 60px -30px rgb(0 0 0 / 30%), 0 30px 60px -30px rgb(0 0 0 / 25%)' }}>
                 <Box>
                   <img
                     src={`${ImgConnect}`}
@@ -49,7 +49,7 @@ const template = () => {
               </Stack>
             </Grid>
             <Grid item>
-              <Stack direction="column" alignItems='center' spacing={1} p={3} sx={{ width: '350px', borderRadius: 2, textAlign: 'center', backgroundColor: common.white, boxShadow: '0 30px 60px -30px rgb(0 0 0 / 30%), 0 30px 60px -30px rgb(0 0 0 / 25%)' }}>
+              <Stack direction="column" alignItems='center' spacing={1} p={3} sx={{ width: '350px', height: '100%', borderRadius: 2, textAlign: 'center', backgroundColor: common.white, boxShadow: '0 30px 60px -30px rgb(0 0 0 / 30%), 0 30px 60px -30px rgb(0 0 0 / 25%)' }}>
                 <Box>
                   <img
                     src={`${ImgEdge}`}
@@ -71,7 +71,7 @@ const template = () => {
               </Stack>
             </Grid>
             <Grid item>
-              <Stack direction="column" alignItems='center' spacing={1} p={3} sx={{ width: '350px', borderRadius: 2, textAlign: 'center', backgroundColor: common.white, boxShadow: '0 30px 60px -30px rgb(0 0 0 / 30%), 0 30px 60px -30px rgb(0 0 0 / 25%)' }}>
+              <Stack direction="column" alignItems='center' spacing={1} p={3} sx={{ width: '350px', height: '100%', borderRadius: 2, textAlign: 'center', backgroundColor: common.white, boxShadow: '0 30px 60px -30px rgb(0 0 0 / 30%), 0 30px 60px -30px rgb(0 0 0 / 25%)' }}>
                 <Box>
                   <img
                     src={`${ImgConduct}`}

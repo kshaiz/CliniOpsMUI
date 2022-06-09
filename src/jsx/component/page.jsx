@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Container, Grid } from "@mui/material";
+import { Box, Container, Divider, Grid } from "@mui/material";
 
 const PageHero = (props) => {
     const [color] = useState(props.color);
@@ -7,7 +7,7 @@ const PageHero = (props) => {
     return (
         <>
             <Box
-                sx={{ py: 10 }}
+                sx={{ pb: 10, pt: `calc(72px + 80px)` }}
                 style={{
                     backgroundColor: color[50],
                     borderBottom: '8px solid',
