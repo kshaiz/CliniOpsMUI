@@ -34,6 +34,16 @@
   height: 72px;
 }
 
+.co-hdr-menu__root.hover,
 .co-hdr-menu__root:hover {
+  background-color: rgba(0,0,0,.05);
+}
+
+.co-hdr-menu__child {
+  padding: 12px 24px;
+}
+
+.co-hdr-menu__child:hover {
+  color: #1976d2;
   background-color: rgba(0,0,0,.05);
 }
