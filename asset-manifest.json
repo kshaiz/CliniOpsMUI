@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cliniopsmui/static/css/main.788208f3.css",
-    "main.js": "/cliniopsmui/static/js/main.d3f427f7.js",
+    "main.css": "/cliniopsmui/static/css/main.078b601a.css",
+    "main.js": "/cliniopsmui/static/js/main.9f19546d.js",
     "static/media/covid19.png": "/cliniopsmui/static/media/covid19.4ea8f827f0868691637a.png",
     "static/media/Akinyele.png": "/cliniopsmui/static/media/Akinyele.fbf5acff31f46eb50ed6.png",
     "static/media/Patricia.png": "/cliniopsmui/static/media/Patricia.697c16cfd0df203e6eff.png",
@@ -191,11 +191,11 @@
     "static/media/logo-linkedin.svg": "/cliniopsmui/static/media/logo-linkedin.7187c0df348eb20b24ae413e1304a825.svg",
     "index.html": "/cliniopsmui/index.html",
     "static/media/logo-facebook.svg": "/cliniopsmui/static/media/logo-facebook.091b20583e9fb3add5a8c5f53bf8773f.svg",
-    "main.788208f3.css.map": "/cliniopsmui/static/css/main.788208f3.css.map",
-    "main.d3f427f7.js.map": "/cliniopsmui/static/js/main.d3f427f7.js.map"
+    "main.078b601a.css.map": "/cliniopsmui/static/css/main.078b601a.css.map",
+    "main.9f19546d.js.map": "/cliniopsmui/static/js/main.9f19546d.js.map"
   },
   "entrypoints": [
-    "static/css/main.788208f3.css",
-    "static/js/main.d3f427f7.js"
+    "static/css/main.078b601a.css",
+    "static/js/main.9f19546d.js"
   ]
 }
