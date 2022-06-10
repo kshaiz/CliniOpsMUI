@@ -1,6 +1,8 @@
 import React from "react";
-import { Container, Box, Grid, Typography, Stack } from '@mui/material';
+import { Container, Box, Grid, Typography } from '@mui/material';
 import { yellow } from '@mui/material/colors';
+
+import { TechnologyTile } from '../../../component/home';
 
 import ImgImprovementData from '../../../../img/home/hm-improvement-data.svg';
 import ImgImprovementRetention from '../../../../img/home/hm-improvement-retention.svg';
@@ -26,130 +28,46 @@ const template = () => {
             pt={6}
           >
             <Grid item>
-              <Stack direction="row" alignItems='center' spacing={1} sx={{ width: '350px' }}>
-                <Box>
-                  <img
-                    src={`${ImgImprovementData}`}
-                    className='co-image'
-                    alt='Improvement in Data Quality'
-                    title='Improvement in Data Quality'
-                    style={{ height: '80px', minWidth: '80px' }}
-                  />
-                </Box>
-                <Box>
-                  <Typography variant="h4">
-                    5000X
-                  </Typography>
-                  <Typography variant="body1">
-                    Improvement in Data Quality
-                  </Typography>
-                </Box>
-              </Stack>
+              <TechnologyTile
+                imgSrc={ImgImprovementData}
+                heading='5000X'
+                summary='Improvement in Data Quality'
+              />
             </Grid>
             <Grid item>
-              <Stack direction="row" alignItems='center' spacing={1} sx={{ width: '350px' }}>
-                <Box>
-                  <img
-                    src={`${ImgImprovementRetention}`}
-                    className='co-image'
-                    alt='Better patient retention'
-                    title='Better patient retention'
-                    style={{ height: '80px', minWidth: '80px' }}
-                  />
-                </Box>
-                <Box>
-                  <Typography variant="h4">
-                    3X
-                  </Typography>
-                  <Typography variant="body1">
-                    Better patient retention
-                  </Typography>
-                </Box>
-              </Stack>
+              <TechnologyTile
+                imgSrc={ImgImprovementRetention}
+                heading='3X'
+                summary='Better patient retention'
+              />
             </Grid>
             <Grid item>
-              <Stack direction="row" alignItems='center' spacing={1} sx={{ width: '350px' }}>
-                <Box>
-                  <img
-                    src={`${ImgImprovementCost}`}
-                    className='co-image'
-                    alt='Reduction in Clinical Trial Cost'
-                    title='Reduction in Clinical Trial Cost'
-                    style={{ height: '80px', minWidth: '80px' }}
-                  />
-                </Box>
-                <Box>
-                  <Typography variant="h4">
-                    50%
-                  </Typography>
-                  <Typography variant="body1">
-                    Reduction in Clinical Trial Cost
-                  </Typography>
-                </Box>
-              </Stack>
+              <TechnologyTile
+                imgSrc={ImgImprovementCost}
+                heading='50%'
+                summary='Reduction in Clinical Trial Cost'
+              />
             </Grid>
             <Grid item>
-              <Stack direction="row" alignItems='center' spacing={1} sx={{ width: '350px' }}>
-                <Box>
-                  <img
-                    src={`${ImgImprovementSetup}`}
-                    className='co-image'
-                    alt='Improvement in the clinical trial study setup'
-                    title='Improvement in the clinical trial study setup'
-                    style={{ height: '70px', minWidth: '80px' }}
-                  />
-                </Box>
-                <Box>
-                  <Typography variant="h4">
-                    10X
-                  </Typography>
-                  <Typography variant="body1">
-                    Improvement in the clinical trial study setup
-                  </Typography>
-                </Box>
-              </Stack>
+              <TechnologyTile
+                imgSrc={ImgImprovementSetup}
+                heading='10X'
+                summary='Improvement in the clinical trial study setup'
+              />
             </Grid>
             <Grid item>
-              <Stack direction="row" alignItems='center' spacing={1} sx={{ width: '350px' }}>
-                <Box>
-                  <img
-                    src={`${ImgImprovementData}`}
-                    className='co-image'
-                    alt='Improvement in data access'
-                    title='Improvement in data access'
-                    style={{ height: '80px', minWidth: '80px' }}
-                  />
-                </Box>
-                <Box>
-                  <Typography variant="h4">
-                    5X
-                  </Typography>
-                  <Typography variant="body1">
-                    Improvement in data access with real time data collection and AI analysis
-                  </Typography>
-                </Box>
-              </Stack>
+              <TechnologyTile
+                imgSrc={ImgImprovementData}
+                heading='5X'
+                summary='Improvement in data access with real time data collection and AI analysis'
+              />
             </Grid>
             <Grid item>
-              <Stack direction="row" alignItems='center' spacing={1} sx={{ width: '350px' }}>
-                <Box>
-                  <img
-                    src={`${ImgImprovementCloseout}`}
-                    className='co-image'
-                    alt='Improvement in time for study closeout'
-                    title='Improvement in time for study closeout'
-                    style={{ height: '80px', minWidth: '80px' }}
-                  />
-                </Box>
-                <Box>
-                  <Typography variant="h4">
-                    5X
-                  </Typography>
-                  <Typography variant="body1">
-                    Improvement in time for study closeout
-                  </Typography>
-                </Box>
-              </Stack>
+              <TechnologyTile
+                imgSrc={ImgImprovementCloseout}
+                heading='5X'
+                summary='Improvement in time for study closeout'
+              />
             </Grid>
           </Grid>
         </Container>

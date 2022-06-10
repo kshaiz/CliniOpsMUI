@@ -12,12 +12,12 @@ import ImgLogoUmc from '../../../../img/product/_0/umc.png';
 const template = () => {
   return (
     <>
-      <Typography variant="h2" component="h2" sx={{ textAlign: 'center' }}>
+      <Typography variant="h2" component="h2" className="co-page-heading" sx={{ textAlign: 'center' }}>
         Industry Recognitions
       </Typography>
       <Box sx={{ mt: 8 }}>
         <Grid container spacing={6} direction='row' justifyContent="space-between" alignItems="center">
-          <Grid item xs={3} sx={{ textAlign: 'center' }}>
+          <Grid item xs={6} md={3} sx={{ textAlign: 'center' }}>
             <img
               src={`${ImgLogoCdisc}`}
               alt='Clinical Data Interchange Standards Consortium (CDISC)'
@@ -30,7 +30,7 @@ const template = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={3} sx={{ textAlign: 'center' }}>
+          <Grid item xs={6} md={3} sx={{ textAlign: 'center' }}>
             <img
               src={`${ImgLogoScdm}`}
               alt='Society for Clinical Data Management (SCDM)'
@@ -43,7 +43,7 @@ const template = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={3} sx={{ textAlign: 'center' }}>
+          <Grid item xs={6} md={3} sx={{ textAlign: 'center' }}>
             <img
               src={`${ImgLogoMeddra}`}
               alt='Medical Dictionary for Regulatory Activities (MedDRA)'
@@ -56,7 +56,7 @@ const template = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={3} sx={{ textAlign: 'center' }}>
+          <Grid item xs={6} md={3} sx={{ textAlign: 'center' }}>
             <img
               src={`${ImgLogoUmc}`}
               alt='Uppsala Monitoring Center (WhoDRUG)'

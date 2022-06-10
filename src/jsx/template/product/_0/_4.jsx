@@ -55,7 +55,7 @@ const rows = [
 const template = () => {
   return (
     <>
-      <Typography variant="h2" component="h2">
+      <Typography variant="h2" component="h2" className="co-page-heading">
         CliniOps Value Proposition across stakeholders
       </Typography>
       <Typography sx={{ mt: 1 }}>

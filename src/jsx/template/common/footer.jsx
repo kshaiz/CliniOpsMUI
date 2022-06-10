@@ -20,7 +20,7 @@ const template = () => {
         <Container>
           <Grid container direction='column' spacing={4}>
             <Grid item>
-              <Grid container spacing={6} justifyContent="space-between" alignItems="center">
+              <Grid container spacing={1} justifyContent="space-between" alignItems="center">
                 <Grid item>
                   <img
                     src={`${ImgLogoCliniOps}`}
@@ -56,8 +56,8 @@ const template = () => {
               <Divider />
             </Grid>
             <Grid item>
-              <Grid container direction="row" justifyContent="space-between" alignItems="flex-start">
-                <Grid item>
+              <Grid container direction="row" spacing={4} justifyContent="space-between" alignItems="flex-start">
+                <Grid item xs={6} md>
                   <Grid container direction="column" spacing={1}>
                     <Grid item>
                       <Box className='co-ftr__text'>Home</Box>
@@ -73,7 +73,7 @@ const template = () => {
                     </Grid>
                   </Grid>
                 </Grid>
-                <Grid item>
+                <Grid item xs={6} md>
                   <Grid container direction="column" spacing={1}>
                     <Grid item>
                       <Box className='co-ftr__text'>Products</Box>
@@ -89,7 +89,7 @@ const template = () => {
                     </Grid>
                   </Grid>
                 </Grid>
-                <Grid item>
+                <Grid item xs={6} md>
                   <Grid container direction="column" spacing={1}>
                     <Grid item>
                       <Box className='co-ftr__text'>Services</Box>
@@ -105,7 +105,7 @@ const template = () => {
                     </Grid>
                   </Grid>
                 </Grid>
-                <Grid item>
+                <Grid item xs={6} md>
                   <Grid container direction="column" spacing={1}>
                     <Grid item>
                       <Box className='co-ftr__text'>Contact Us</Box>
@@ -127,9 +127,9 @@ const template = () => {
               <Divider />
             </Grid>
             <Grid item>
-              <Grid container spacing={6} justifyContent="space-between" alignItems="center">
-                <Grid item>
-                  <Grid container spacing={2} alignItems="center">
+              <Grid container spacing={1} justifyContent="space-between" alignItems="center">
+                <Grid item xs={12} md='auto'>
+                  <Grid container spacing={2} alignItems="center" justifyContent='center'>
                     <Grid item>
                       <a href='https://www.facebook.com/cliniops/' target='_blank'>
                         <img
@@ -159,8 +159,8 @@ const template = () => {
                     </Grid>
                   </Grid>
                 </Grid>
-                <Grid item>
-                  <Grid container spacing={2} alignItems="center">
+                <Grid item xs={12} md='auto'>
+                  <Grid container spacing={2} alignItems="center" justifyContent='center'>
                     <Grid item>
                       <Typography variant="body2">
                         © 2022 CliniOps, Inc.

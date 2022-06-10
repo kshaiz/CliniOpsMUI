@@ -1,7 +1,9 @@
 import React from "react";
 
-import { Container, Box, Grid, Typography, Stack, Link } from '@mui/material';
+import { Container, Box, Grid, Typography } from '@mui/material';
 import { teal, common } from '@mui/material/colors';
+
+import { AwardTile } from '../../../component/home';
 
 import ImgAward1 from '../../../../img/home/hm-award-1-col.png';
 import ImgAward2 from '../../../../img/home/hm-award-2-col.png';
@@ -25,72 +27,36 @@ const template = () => {
             pt={4}
           >
             <Grid item>
-              <Link underline="none" href="https://www.gartner.com/en/documents/3989136" target="_blank" sx={{ height: '100%' }}>
-                <Stack direction="column" alignItems='center' spacing={1} pt={1} pb={3} sx={{ width: '260px', borderRadius: 2, textAlign: 'center', height: '100%', backgroundColor: common.white, boxShadow: '0 30px 60px -30px rgb(0 0 0 / 30%), 0 30px 60px -30px rgb(0 0 0 / 25%)' }}>
-                  <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '120px' }}>
-                    <img
-                      src={`${ImgAward1}`}
-                      alt='Gartner'
-                      title='Gartner'
-                      style={{ width: '260px' }}
-                    />
-                  </Box>
-                  <Typography variant="body1" sx={{ lineHeight: '24px'}} color="common.black">
-                    Hype Cycle for Life Sciences
-                  </Typography>
-                </Stack>
-              </Link>
+              <AwardTile
+                imgSrc={ImgAward1}
+                source='Gartner'
+                summary='Hype Cycle for Life Sciences'
+                link='https://www.gartner.com/en/documents/3989136'
+              />
             </Grid>
             <Grid item>
-              <Link underline="none" href="https://www.prweb.com/releases/2017/06/prweb14414347.htm" target="_blank" sx={{ height: '100%' }}>
-                <Stack direction="column" alignItems='center' spacing={1} pt={1} pb={3} sx={{ width: '260px', borderRadius: 2, textAlign: 'center', height: '100%', backgroundColor: common.white, boxShadow: '0 30px 60px -30px rgb(0 0 0 / 30%), 0 30px 60px -30px rgb(0 0 0 / 25%)' }}>
-                  <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '120px' }}>
-                    <img
-                      src={`${ImgAward2}`}
-                      alt='Frost &amp; Sullivan'
-                      title='Frost &amp; Sullivan'
-                      style={{ width: '260px' }}
-                    />
-                  </Box>
-                  <Typography variant="body1" sx={{ lineHeight: '24px'}} color="common.black">
-                    Technology Leadership Award
-                  </Typography>
-                </Stack>
-              </Link>
+              <AwardTile
+                imgSrc={ImgAward2}
+                source='Frost &amp; Sullivan'
+                summary='Technology Leadership Award'
+                link='https://www.prweb.com/releases/2017/06/prweb14414347.htm'
+              />
             </Grid>
             <Grid item>
-              <Link underline="none" href="https://www.fda.gov/about-fda/innovation-fda/innovate-today-summit-2019" target="_blank" sx={{ height: '100%' }}>
-                <Stack direction="column" alignItems='center' spacing={1} pt={1} pb={3} sx={{ width: '260px', borderRadius: 2, textAlign: 'center', height: '100%', backgroundColor: common.white, boxShadow: '0 30px 60px -30px rgb(0 0 0 / 30%), 0 30px 60px -30px rgb(0 0 0 / 25%)' }}>
-                  <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '120px' }}>
-                    <img
-                      src={`${ImgAward3}`}
-                      alt='FDA'
-                      title='FDA'
-                      style={{ width: '150px' }}
-                    />
-                  </Box>
-                  <Typography variant="body1" sx={{ lineHeight: '24px'}} color="common.black">
-                    FDA Innovation Summit
-                  </Typography>
-                </Stack>
-              </Link>
+              <AwardTile
+                imgSrc={ImgAward3}
+                source='FDA'
+                summary='FDA Innovation Summit'
+                link='https://www.fda.gov/about-fda/innovation-fda/innovate-today-summit-2019'
+              />
             </Grid>
             <Grid item>
-              <Link underline="none" href="https://www.pharmavoice.com/news/innovations-technologies/615901/" target="_blank" sx={{ height: '100%' }}>
-                <Stack direction="column" alignItems='center' spacing={1} pt={1} pb={3} sx={{ width: '260px', borderRadius: 2, textAlign: 'center', height: '100%', backgroundColor: common.white, boxShadow: '0 30px 60px -30px rgb(0 0 0 / 30%), 0 30px 60px -30px rgb(0 0 0 / 25%)' }}>
-                  <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '120px' }}>
-                    <img
-                      src={`${ImgAward4}`}
-                      alt='Pharma Voice'
-                      title='Pharma Voice'
-                      style={{ width: '206px' }}
-                    />
-                  </Box>
-                  <Typography variant="body1" sx={{ lineHeight: '24px'}} color="common.black">
-                    Technology Innovation
-                  </Typography>
-                </Stack>
-              </Link>
+              <AwardTile
+                imgSrc={ImgAward4}
+                source='Pharma Voice'
+                summary='Technology Innovation'
+                link='https://www.pharmavoice.com/news/innovations-technologies/615901/'
+              />
             </Grid>
           </Grid>
         </Container>

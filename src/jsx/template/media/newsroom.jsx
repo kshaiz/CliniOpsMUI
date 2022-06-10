@@ -6,6 +6,7 @@ import { PageHero, PageContent } from '../../component/page';
 
 // Page Imports
 import _0 from './newsroom/_0';
+import _filter from './newsroom/_filter';
 import _2022 from './newsroom/_2022';
 import _2021 from './newsroom/_2021';
 import _2020 from './newsroom/_2020';
@@ -24,16 +25,19 @@ const template = () => {
       </PageHero>
       <PageContent>
         <Grid item>
-          <Stack direction="column" spacing={10} style={{ maxWidth: '100%' }}>
-            <_2022 />
-            <_2021 />
-            <_2020 />
-            <_2019 />
-            <_2018 />
-            <_2017 />
-            <_2016 />
-            <_2015 />
-            <_2014 />
+          <Stack spacing={4}>
+            <_filter />
+            <Stack direction="column" spacing={10} style={{ maxWidth: '100%' }}>
+              <_2022 />
+              <_2021 />
+              <_2020 />
+              <_2019 />
+              <_2018 />
+              <_2017 />
+              <_2016 />
+              <_2015 />
+              <_2014 />
+            </Stack>
           </Stack>
         </Grid>
       </PageContent>

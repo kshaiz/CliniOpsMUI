@@ -19,7 +19,7 @@ const template = () => {
           />
         </Grid>
         <Grid item xs={6}>
-          <Typography variant="h2" component="h2">
+          <Typography variant="h2" component="h2" className="co-page-heading">
             Biostatistics &amp; Statistical Programming
           </Typography>
           <Typography sx={{ mt: 1 }}>

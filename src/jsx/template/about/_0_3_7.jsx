@@ -18,7 +18,7 @@ const template = () => {
         color={green}
       >
         <Grid item>
-          <Typography variant="h3" component="h2">
+          <Typography variant="h3" component="h2" className="co-page-heading">
             Responsibilities &amp; Duties
           </Typography>
           <Typography sx={{ mt: 2 }}>
@@ -33,7 +33,7 @@ const template = () => {
           </Typography>
         </Grid>
         <Grid item>
-          <Typography variant="h3" component="h2">
+          <Typography variant="h3" component="h2" className="co-page-heading">
             Qualifications &amp; Skills
           </Typography>
           <Typography sx={{ mt: 2 }}>

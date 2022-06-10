@@ -41,7 +41,7 @@ const template = () => {
                     />
                   </Grid>
                   <Grid item>
-                    <Typography variant="h2" component="h2">
+                    <Typography variant="h2" component="h2" className='co-page-heading'>
                       Vision Statement
                     </Typography>
                   </Grid>
@@ -61,7 +61,7 @@ const template = () => {
                     />
                   </Grid>
                   <Grid item>
-                    <Typography variant="h2" component="h2">
+                    <Typography variant="h2" component="h2" className='co-page-heading'>
                       Mission Statement
                     </Typography>
                   </Grid>
@@ -87,7 +87,7 @@ const template = () => {
                     />
                   </Grid>
                   <Grid item>
-                    <Typography variant="h2" component="h2">
+                    <Typography variant="h2" component="h2" className='co-page-heading'>
                       Core Values
                     </Typography>
                   </Grid>

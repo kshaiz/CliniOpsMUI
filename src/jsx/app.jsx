@@ -56,8 +56,8 @@ const App = () => {
       <CssBaseline />
       <ThemeProvider theme={CoTheme}>
         {/* Remove basename is issues with URLs in production deployment  */}
-        <Router basename={"/cliniopsmui"}>
-        {/* <Router> */}
+        {/* <Router basename={"/cliniopsmui"}> */}
+        <Router>
           <ScrollToTop>
             <ModuleHeader />
             <main>

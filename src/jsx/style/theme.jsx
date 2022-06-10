@@ -10,6 +10,7 @@ const Theme = createTheme({
       letterSpacing: "-0.01em",
       fontWeight: 400,
       color: '#042d43', // Logo Primary
+      
     },
     h2: {
       fontSize: "35px",
@@ -50,13 +51,17 @@ const Theme = createTheme({
       fontWeight: 300
     },
     subtitle2: {
-      fontSize: "13px",
-      fontWeight: 500
+      fontSize: "20px",
+      lineHeight: "32px",
+      letterSpacing: "0.0056em",
+      fontWeight: 400
     }, 
     body1: {
-      fontSize: "16px",
+      // fontSize: "16px",
+      fontSize: "18px",
       lineHeight: "28px",
-      fontWeight: 400
+      fontWeight: 300,
+      color: '#042d43', // Logo Primary
     }, 
     body2: {
       fontSize: "14px",
@@ -69,13 +74,7 @@ const Theme = createTheme({
       letterSpacing: '-0.02em',
       fontWeight: 400
     }
-  },
-  palette: {
-    type: 'light',
-    text: {
-      // primary: '#ff6600',
-    },
-  },
+  }
 });
 
 export default Theme;

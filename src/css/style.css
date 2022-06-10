@@ -3,6 +3,7 @@
   max-height: 400px;
   max-width: 100%;
   margin: 0 auto;
+  /* box-shadow: 0 30px 60px -30px rgb(0 0 0 / 30%), 0 30px 60px -30px rgb(0 0 0 / 25%); */
 }
 
 .co-divider {
@@ -23,6 +24,16 @@
   font-weight: 500;
   text-decoration: none;
   color: #4f6c7b;
+}
+
+.co-label {
+  font-size: 14px;
+  color: #4f6c7b;
+}
+
+/* Page */
+.co-page-heading {
+  color: #03a9f4 !important;
 }
 
 /* Menu */

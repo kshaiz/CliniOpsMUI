@@ -1,7 +1,9 @@
 import React from "react";
 
-import { Container, Box, Grid, Typography, Stack } from '@mui/material';
+import { Container, Box, Grid, Typography } from '@mui/material';
 import { teal, common } from '@mui/material/colors';
+
+import { TestimonialTile } from '../../../component/home';
 
 import ImgTestimonial1 from '../../../../img/home/hm-testimonial-1.png';
 import ImgTestimonial2 from '../../../../img/home/hm-testimonial-2.png';
@@ -24,76 +26,31 @@ const template = () => {
             pt={4}
           >
             <Grid item>
-              <Stack direction="column" alignItems='center' spacing={1} p={3} sx={{ width: '350px', borderRadius: 2, textAlign: 'center', height: '100%', backgroundColor: common.white, boxShadow: '0 30px 60px -30px rgb(0 0 0 / 30%), 0 30px 60px -30px rgb(0 0 0 / 25%)' }}>
-                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '120px' }}>
-                  <img
-                    src={`${ImgTestimonial1}`}
-                    className='co-image'
-                    alt='California Pacific Medical Center'
-                    title='California Pacific Medical Center'
-                    style={{ minWidth: '80%' }}
-                  />
-                </Box>
-                <Typography variant="body1" sx={{ lineHeight: '24px', pt: 1 }}>
-                  <em>CliniOps is innovative, easy to use, and has the potential to transform how we recruit and consent subiects. I believe that it is a real innovative improvement in clinical research.</em>
-                </Typography>
-                <Box sx={{ pt: 2 }}>
-                  <Typography variant="body2">
-                    <strong>Dr. John Mendelson</strong>
-                  </Typography>
-                  <Typography variant="body2">
-                    Chair, IRB, California Pacific Medical Center
-                  </Typography>
-                </Box>
-              </Stack>
+              <TestimonialTile
+                imgSrc={ImgTestimonial1}
+                organization='California Pacific Medical Center'
+                quote='CliniOps is innovative, easy to use, and has the potential to transform how we recruit and consent subiects. I believe that it is a real innovative improvement in clinical research.'
+                name='Dr. John Mendelson'
+                position='Chair, IRB'
+              />
             </Grid>
             <Grid item>
-              <Stack direction="column" alignItems='center' spacing={1} p={3} sx={{ width: '350px', borderRadius: 2, textAlign: 'center', height: '100%', backgroundColor: common.white, boxShadow: '0 30px 60px -30px rgb(0 0 0 / 30%), 0 30px 60px -30px rgb(0 0 0 / 25%)' }}>
-                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '120px' }}>
-                  <img
-                    src={`${ImgTestimonial2}`}
-                    className='co-image'
-                    alt='Elizabeth Glaser Pediatric AIDS Foundation'
-                    title='Elizabeth Glaser Pediatric AIDS Foundation'
-                    style={{ minWidth: '80%' }}
-                  />
-                </Box>
-                <Typography variant="body1" sx={{ lineHeight: '24px', pt: 1 }}>
-                  <em>I have to say that now personally having gone through each and every form on the tablet, I really appreciate what a great system this is and how it will help us to have better data in the long run.</em>
-                </Typography>
-                <Box sx={{ pt: 2 }}>
-                  <Typography variant="body2">
-                    <strong>Dr. Laura Guay</strong>
-                  </Typography>
-                  <Typography variant="body2">
-                    Vice President for Research, Elizabeth Glaser Pediatric AIDS Foundation
-                  </Typography>
-                </Box>
-              </Stack>
+              <TestimonialTile
+                imgSrc={ImgTestimonial2}
+                organization='Elizabeth Glaser Pediatric AIDS Foundation'
+                quote='I have to say that now personally having gone through each and every form on the tablet, I really appreciate what a great system this is and how it will help us to have better data in the long run.'
+                name='Dr. Laura Guay'
+                position='Vice President for Research'
+              />
             </Grid>
             <Grid item>
-              <Stack direction="column" alignItems='center' spacing={1} p={3} sx={{ width: '350px', borderRadius: 2, textAlign: 'center', height: '100%', backgroundColor: common.white, boxShadow: '0 30px 60px -30px rgb(0 0 0 / 30%), 0 30px 60px -30px rgb(0 0 0 / 25%)' }}>
-                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '120px' }}>
-                  <img
-                    src={`${ImgTestimonial3}`}
-                    className='co-image'
-                    alt='Scanadu'
-                    title='Scanadu'
-                    style={{ minWidth: '80%' }}
-                  />
-                </Box>
-                <Typography variant="body1" sx={{ lineHeight: '24px', pt: 1 }}>
-                  <em>eSource solution is a great compliment for Clinical trials. The off-line data capture with point-of-care edit checks gives us quality data in real time. The solution provides integrated workflows, flexible configuration and a simple user interface design. CliniOps provided excellent customer support and stood by us for clinical trials supporting FDA submissions.</em>
-                </Typography>
-                <Box sx={{ pt: 2 }}>
-                  <Typography variant="body2">
-                    <strong>Daya Ranamukhaarachchi, PhD</strong>
-                  </Typography>
-                  <Typography variant="body2">
-                    VP/Regulatory Affairs, Scanadu
-                  </Typography>
-                </Box>
-              </Stack>
+              <TestimonialTile
+                imgSrc={ImgTestimonial3}
+                organization='Scanadu'
+                quote='eSource solution is a great compliment for Clinical trials. The off-line data capture with point-of-care edit checks gives us quality data in real time. The solution provides integrated workflows, flexible configuration and a simple user interface design. CliniOps provided excellent customer support and stood by us for clinical trials supporting FDA submissions.'
+                name='Daya Ranamukhaarachchi, PhD'
+                position='VP/Regulatory Affairs'
+              />
             </Grid>
           </Grid>
         </Container>

@@ -11,7 +11,7 @@ const template = () => {
     <>
       <Grid container spacing={6}>
         <Grid item xs={6}>
-          <Typography variant="h2" component="h2">
+          <Typography variant="h2" component="h2" className="co-page-heading">
             Clinical Data Management
           </Typography>
           <Typography sx={{ mt: 1 }}>

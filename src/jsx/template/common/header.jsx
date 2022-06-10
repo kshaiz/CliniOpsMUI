@@ -58,13 +58,13 @@ const template = () => {
                 />
               </Link>
             </Grid>
-            <Grid item>
+            <Grid item sx={{ display: {xs: 'none', md: 'block' } }}>
               <Divider orientation="vertical" variant="middle" sx={{ height: '36px', margin: '0 8px 0 24px' }} flexItem />
             </Grid>
-            <Grid item>
+            <Grid item sx={{ display: {xs: 'none', md: 'block' } }}>
               <Link color={blueGrey[800]} className="co-hdr-menu__root" underline="none" variant="h6" to={RouterList.product._0} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleCloseSubMenu}>Products</Link>
             </Grid>
-            <Grid item>
+            <Grid item sx={{ display: {xs: 'none', md: 'block' } }}>
               <Link color={blueGrey[800]} className="co-hdr-menu__root" underline="none" variant="h6" to={RouterList.service._0} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleCloseSubMenu}>Services</Link>
             </Grid>
             <Grid item sx={{ position: 'relative' }}>
@@ -86,7 +86,7 @@ const template = () => {
                 </Stack>
               </Popper>
             </Grid>
-            <Grid item>
+            <Grid item sx={{ display: {xs: 'none', md: 'block' } }}>
               <Link color={blueGrey[800]} className="co-hdr-menu__root" underline="none" variant="h6" href="#" onClick={handleOpenMedia} onMouseOver={handleOpenMedia} id="co-hdr-menu-media">
                 Media
                 <KeyboardArrowDownOutlinedIcon fontSize="small" sx={{ ml: .5, mr: -1 }} />
@@ -104,11 +104,11 @@ const template = () => {
                 </Stack>
               </Popper>
             </Grid>
-            <Grid item>
+            <Grid item sx={{ display: {xs: 'none', md: 'block' } }}>
               <Link color={blueGrey[800]} className="co-hdr-menu__root" underline="none" variant="h6" to={RouterList.contact._0} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleCloseSubMenu}>Contact</Link>
             </Grid>
             <Grid item xs={true} />
-            <Grid item>
+            <Grid item sx={{ mr: -1 }}>
               <Button variant="outlined" to={RouterList.contact.demo} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleCloseSubMenu}>Request Demo</Button>
             </Grid>
           </Grid>

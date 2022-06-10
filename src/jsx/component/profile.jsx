@@ -10,9 +10,9 @@ const CustomProfile = ({
 }) => {
     const [expanded, setExpanded] = React.useState(false);
 
-    const handleExpandClick = () => {
+    const handleExpandClick = (event) => {
         setExpanded(!expanded);
-        // console.log(event.target);
+        event.target.innerText = expanded ? 'Show More' : 'Show Less';
     };
 
     return (
@@ -28,7 +28,7 @@ const CustomProfile = ({
                     />
                 </Grid>
                 <Grid item xs={10} sx={{ pl: 6 }}>
-                    <Typography variant="h3" component="h2">
+                    <Typography variant="h3" component="h2" className="co-page-heading">
                         {Name}{Position}
                     </Typography>
                     <Typography sx={{ mt: 1 }}>

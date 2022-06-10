@@ -11,13 +11,13 @@ const [date] = useState(props.date);
     
     return (
         <>
-            <Grid item xs={4}>
+            <Grid item xs={3}>
                 <Box
                     sx={{
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
-                        height: '200px',
+                        height: '170px',
                         border: `1px solid ${blueGrey[100]}`,
                         borderRadius: 2
                     }}

@@ -19,7 +19,7 @@ const template = () => {
           />
         </Grid>
         <Grid item xs={6}>
-          <Typography variant="h2" component="h2">
+          <Typography variant="h2" component="h2" className="co-page-heading">
             eCOA/QoL
           </Typography>
           <Typography sx={{ mt: 1 }}>

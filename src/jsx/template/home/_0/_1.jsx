@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Box, Grid, Typography, Stack } from '@mui/material';
 import { green } from '@mui/material/colors';
 
+import { InnovationTile } from '../../../component/home';
+
 import ImgPlatform from '../../../../img/home/hm-platform.svg';
 import ImgIntegration from '../../../../img/home/hm-integration.svg';
 import ImgDataScience from '../../../../img/home/hm-data-science.svg';
@@ -17,12 +19,10 @@ const template = () => {
     <>
       <Box sx={{ py: 10, background: green[50] }}>
         <Container>
-          <Typography variant="h2" sx={{ textAlign: 'center' }}>
-            We have delivered industry leading innovations
-          </Typography>
-          <Typography variant="subtitle1" sx={{ textAlign: 'center' }}>
-            Entrust your clinical trials with the most innovative DCT platform
-          </Typography>
+          <Stack spacing={0} sx={{ textAlign: 'center' }}>
+            <Typography variant="h2">We have delivered industry leading innovations</Typography>
+            <Typography variant="subtitle2">Entrust your clinical trials with the most innovative DCT platform</Typography>
+          </Stack>
           <Grid
             container
             direction="row"
@@ -33,148 +33,58 @@ const template = () => {
             pt={4}
           >
             <Grid item>
-              <Stack direction="row" alignItems='center' spacing={1} sx={{ width: '350px' }}>
-                <Box>
-                  <img
-                    src={`${ImgPlatform}`}
-                    className='co-image'
-                    alt='Platform'
-                    title='Platform'
-                    style={{ height: '80px', minWidth: '80px' }}
-                  />
-                </Box>
-                <Typography variant="body1">
-                  Unified platform (Patients, Sites, Sponsors and CROs)
-                </Typography>
-              </Stack>
+              <InnovationTile
+                imgSrc={ImgPlatform}
+                label='Unified platform (Patients, Sites, Sponsors and CROs)'
+              />
             </Grid>
             <Grid item>
-              <Stack direction="row" alignItems='center' spacing={1} sx={{ width: '350px' }}>
-                <Box>
-                  <img
-                    src={`${ImgIntegration}`}
-                    className='co-image'
-                    alt='Integration'
-                    title='Integration'
-                    style={{ height: '80px', minWidth: '80px' }}
-                  />
-                </Box>
-                <Typography variant="body1">
-                  Medical device integration &amp; continuous data collection
-                </Typography>
-              </Stack>
+              <InnovationTile
+                imgSrc={ImgIntegration}
+                label='Medical device integration &amp; continuous data collection'
+              />
             </Grid>
             <Grid item>
-              <Stack direction="row" alignItems='center' spacing={1} sx={{ width: '350px' }}>
-                <Box>
-                  <img
-                    src={`${ImgDataScience}`}
-                    className='co-image'
-                    alt='Data Science'
-                    title='Data Science'
-                    style={{ height: '80px', minWidth: '80px' }}
-                  />
-                </Box>
-                <Typography variant="body1">
-                  Unified platform with built-in DataScience (AI/ML/NLP)
-                </Typography>
-              </Stack>
+              <InnovationTile
+                imgSrc={ImgDataScience}
+                label='Unified platform with built-in DataScience (AI/ML/NLP)'
+              />
             </Grid>
             <Grid item>
-              <Stack direction="row" alignItems='center' spacing={1} sx={{ width: '350px' }}>
-                <Box>
-                  <img
-                    src={`${ImgElectronic}`}
-                    className='co-image'
-                    alt='Electronic'
-                    title='Electronic'
-                    style={{ height: '80px', minWidth: '80px' }}
-                  />
-                </Box>
-                <Typography variant="body1">
-                  Electronic patient enrollment with e-consent
-                </Typography>
-              </Stack>
+              <InnovationTile
+                imgSrc={ImgElectronic}
+                label='Electronic patient enrollment with e-consent'
+              />
             </Grid>
             <Grid item>
-              <Stack direction="row" alignItems='center' spacing={1} sx={{ width: '350px' }}>
-                <Box>
-                  <img
-                    src={`${ImgRemote}`}
-                    className='co-image'
-                    alt='Remote'
-                    title='Remote'
-                    style={{ height: '80px', minWidth: '80px' }}
-                  />
-                </Box>
-                <Typography variant="body1">
-                  Remote Monitoring &amp; remote source data verification (rSDV)
-                </Typography>
-              </Stack>
+              <InnovationTile
+                imgSrc={ImgRemote}
+                label='Remote Monitoring &amp; remote source data verification (rSDV)'
+              />
             </Grid>
             <Grid item>
-              <Stack direction="row" alignItems='center' spacing={1} sx={{ width: '350px' }}>
-                <Box>
-                  <img
-                    src={`${ImgSmart}`}
-                    className='co-image'
-                    alt='Smart'
-                    title='Smart'
-                    style={{ height: '80px', minWidth: '80px' }}
-                  />
-                </Box>
-                <Typography variant="body1">
-                  Smart Study setup
-                </Typography>
-              </Stack>
+              <InnovationTile
+                imgSrc={ImgSmart}
+                label='Smart Study setup'
+              />
             </Grid>
             <Grid item>
-              <Stack direction="row" alignItems='center' spacing={1} sx={{ width: '350px' }}>
-                <Box>
-                  <img
-                    src={`${ImgProtocol}`}
-                    className='co-image'
-                    alt='Protocol'
-                    title='Protocol'
-                    style={{ height: '80px', minWidth: '80px' }}
-                  />
-                </Box>
-                <Typography variant="body1">
-                  Patient Engagement &amp; Protocol Adherence
-                </Typography>
-              </Stack>
+              <InnovationTile
+                imgSrc={ImgProtocol}
+                label='Patient Engagement &amp; Protocol Adherence'
+              />
             </Grid>
             <Grid item>
-              <Stack direction="row" alignItems='center' spacing={1} sx={{ width: '350px' }}>
-                <Box>
-                  <img
-                    src={`${ImgTelemedicine}`}
-                    className='co-image'
-                    alt='Telemedicine'
-                    title='Telemedicine'
-                    style={{ height: '80px', minWidth: '80px' }}
-                  />
-                </Box>
-                <Typography variant="body1">
-                  Built-in telemedicine in Clinical trials
-                </Typography>
-              </Stack>
+              <InnovationTile
+                imgSrc={ImgTelemedicine}
+                label='Built-in telemedicine in Clinical trials'
+              />
             </Grid>
             <Grid item>
-              <Stack direction="row" alignItems='center' spacing={1} sx={{ width: '350px' }}>
-                <Box>
-                  <img
-                    src={`${ImgCloud}`}
-                    className='co-image'
-                    alt='Cloud'
-                    title='Cloud'
-                    style={{ height: '80px', minWidth: '80px' }}
-                  />
-                </Box>
-                <Typography variant="body1">
-                  Cloud first architecture with AWS
-                </Typography>
-              </Stack>
+              <InnovationTile
+                imgSrc={ImgCloud}
+                label='Cloud first architecture with AWS'
+              />
             </Grid>
           </Grid>
         </Container>

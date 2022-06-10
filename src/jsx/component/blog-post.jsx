@@ -18,7 +18,7 @@ const [date] = useState(props.date);
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
-                        height: '150px',
+                        height: '220px',
                         border: `1px solid ${blueGrey[100]}`,
                         borderRadius: 2,
                         backgroundImage: `url(${img})`,

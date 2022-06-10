@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography } from '@mui/material';
+import { Container, Typography, Box } from '@mui/material';
 import { green } from '@mui/material/colors';
 
 import { PageHero } from '../../component/page';
@@ -19,11 +19,17 @@ const template = () => {
       <Container sx={{ pt: 5, pb: 10 }}>
         <_1 />
       </Container>
-      <PageHero color={green}>
-        <Typography variant="h1" component="h1">
-          Advisory
-        </Typography>
-      </PageHero>
+      <Box
+        sx={{ py: 5 }}
+        style={{
+            backgroundColor: green[50]
+        }}>
+        <Container>
+          <Typography variant="h1" component="h1">
+            Advisory
+          </Typography>
+        </Container>
+      </Box>
       <Container sx={{ pt: 5, pb: 10 }}>
         <_2 />
       </Container>
