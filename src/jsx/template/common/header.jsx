@@ -10,6 +10,19 @@ import ImgCliniOps from '../../../img/CliniOps.svg';
 import RouterList from '../../router';
 
 const template = () => {
+  const [anchorService, setAnchorService] = React.useState(null);
+  const handleOpenService = (event) => {
+    if (anchorService !== event.currentTarget) {
+      handleCloseSubMenu();
+      setAnchorService(event.currentTarget);
+      document.querySelector('#co-hdr-menu-service').classList.add('hover');
+    }
+  }
+  const handleCloseService = () => {
+    document.querySelector('#co-hdr-menu-service').classList.remove('hover');
+    setAnchorService(null);
+  }
+
   const [anchorAbout, setAnchorAbout] = React.useState(null);
   const handleOpenAbout = (event) => {
     if (anchorAbout !== event.currentTarget) {
@@ -37,6 +50,7 @@ const template = () => {
   }
 
   const handleCloseSubMenu = () => {
+    handleCloseService();
     handleCloseAbout();
     handleCloseMedia();
   }
@@ -65,7 +79,23 @@ const template = () => {
               <Link color={blueGrey[800]} className="co-hdr-menu__root" underline="none" variant="h6" to={RouterList.product._0} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleCloseSubMenu}>Products</Link>
             </Grid>
             <Grid item sx={{ display: {xs: 'none', md: 'block' } }}>
-              <Link color={blueGrey[800]} className="co-hdr-menu__root" underline="none" variant="h6" to={RouterList.service._0} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleCloseSubMenu}>Services</Link>
+            <Link color={blueGrey[800]} className="co-hdr-menu__root" underline="none" variant="h6" href="#" onClick={handleOpenService} onMouseOver={handleOpenService} id="co-hdr-menu-service">
+                Services
+                <KeyboardArrowDownOutlinedIcon fontSize="small" sx={{ ml: .5, mr: -1 }} />
+              </Link>
+              <Popper
+                placement="bottom-start"
+                anchorEl={anchorService}
+                open={Boolean(anchorService)}
+                onClose={handleCloseService}
+                onMouseLeave={handleCloseService}
+              >
+                <Stack sx={{ backgroundColor: common.white, boxShadow: `0 0 16px 0 ${blueGrey[800]}`, borderRadius: '0 0 4px 4px' }}>
+                  <Link color={blueGrey[800]} underline="none" className="co-hdr-menu__child" to={RouterList.service.studysetup} component={RouterLink} onClick={handleCloseService}>Study Setup</Link>
+                  <Link color={blueGrey[800]} underline="none" className="co-hdr-menu__child" to={RouterList.service.clinicaldatamanagement} component={RouterLink} onClick={handleCloseService}>Clinical Data Management</Link>
+                  <Link color={blueGrey[800]} underline="none" className="co-hdr-menu__child" to={RouterList.service.biostatisticprogramming} component={RouterLink} onClick={handleCloseService}>Biostatistics &amp; Statistical Programming</Link>
+                </Stack>
+              </Popper>
             </Grid>
             <Grid item sx={{ position: 'relative' }}>
               <Link color={blueGrey[800]} className="co-hdr-menu__root" underline="none" variant="h6" href="#" onClick={handleOpenAbout} onMouseOver={handleOpenAbout} id="co-hdr-menu-about">

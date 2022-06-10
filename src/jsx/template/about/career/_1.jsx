@@ -1,6 +1,7 @@
 import React from 'react';
 import { HashLink as RouterLink } from 'react-router-hash-link';
 import { Typography, Link, Grid, Card, CardHeader, CardActions, Button } from '@mui/material';
+import { blue } from '@mui/material/colors';
 
 import RouterList from '../../../router';
 
@@ -15,7 +16,7 @@ const template = () => {
       </Typography>
       <Grid container spacing={6} sx={{ mt:4 }}>
         <Grid item xs={4}>
-          <Card variant="outlined">
+          <Card variant="outlined" sx={{ border: 0, backgroundColor: blue[50], height: '100%' }}>
             <CardHeader
               title="Project Manager"
               subheader="Fremont, CA or Kolkata, India"
@@ -26,7 +27,7 @@ const template = () => {
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card variant="outlined">
+          <Card variant="outlined" sx={{ border: 0, backgroundColor: blue[50], height: '100%' }}>
             <CardHeader
               title="Biostatistician"
               subheader="Fremont, CA or Kolkata, India"
@@ -37,7 +38,7 @@ const template = () => {
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card variant="outlined">
+          <Card variant="outlined" sx={{ border: 0, backgroundColor: blue[50], height: '100%' }}>
             <CardHeader
               title="Sales Executive"
               subheader="Fremont, CA or Kolkata, India"
@@ -48,7 +49,7 @@ const template = () => {
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card variant="outlined">
+          <Card variant="outlined" sx={{ border: 0, backgroundColor: blue[50], height: '100%' }}>
             <CardHeader
               title="Software Engineer, Full Stack"
               subheader="Fremont, CA or Kolkata, India"
@@ -59,7 +60,7 @@ const template = () => {
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card variant="outlined">
+          <Card variant="outlined" sx={{ border: 0, backgroundColor: blue[50], height: '100%' }}>
             <CardHeader
               title="Software Engineer, Mobile Development"
               subheader="Fremont, CA or Kolkata, India"
@@ -70,7 +71,7 @@ const template = () => {
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card variant="outlined">
+          <Card variant="outlined" sx={{ border: 0, backgroundColor: blue[50], height: '100%' }}>
             <CardHeader
               title="Clinical Data Management"
               subheader="Fremont, CA or Kolkata, India"
@@ -81,7 +82,7 @@ const template = () => {
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card variant="outlined">
+          <Card variant="outlined" sx={{ border: 0, backgroundColor: blue[50], height: '100%' }}>
             <CardHeader
               title="Manager, Quality Control"
               subheader="Fremont, CA or Kolkata, India"
@@ -92,7 +93,7 @@ const template = () => {
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card variant="outlined">
+          <Card variant="outlined" sx={{ border: 0, backgroundColor: blue[50], height: '100%' }}>
             <CardHeader
               title="Senior Software Engineer"
               subheader="Fremont, CA or Kolkata, India"

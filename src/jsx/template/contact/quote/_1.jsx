@@ -119,7 +119,7 @@ const template = () => {
       </Stack>
       <Stack>
         <label className="co-label">Study Modules</label>
-        USE AUTOCOMPLETE MULTISELECT CHIP VARIANT. Options are:<br/>
+        USE AUTOCOMPLETE MULTISELECT CHIP VARIANT with Checkbox. Options are:<br/>
         <ul>
           <li>CliniOps ePRO</li>
           <li>CliniOps Coder</li>
@@ -133,7 +133,7 @@ const template = () => {
       </Stack>
       <Stack>
         <label className="co-label">Professional Services</label>
-        USE AUTOCOMPLETE MULTISELECT CHIP VARIANT. Options are:<br/>
+        USE AUTOCOMPLETE MULTISELECT CHIP VARIANT with Checkbox. Options are:<br/>
         <ul>
           <li>Biostatistics</li>
           <li>Data Management</li>
@@ -179,7 +179,7 @@ const template = () => {
       <Stack>
       <Stack>
         <label className="co-label">Additional Recipients*</label>
-        USE AUTOCOMPLETE MULTISELECT CHIP VARIANT with custom values
+        USE AUTOCOMPLETE MULTISELECT CHIP VARIANT with Checkbox with custom values
       </Stack>
         <label className="co-label">Phone (include Country Code)*</label>
         <TextField
