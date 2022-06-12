@@ -15,7 +15,7 @@ const template = () => {
         Our employee experience is as important to us as our customer experience. We foster an environment where people can learn, grow and thrive. You will get an opportunity to work with a strong management team with decades of experience in Technology, Business and Life Sciences, and also with our extremely dedicated, passionate and talented team. If you enjoy building great products or enjoy working with global customers, we have something for you. Please drop us a note at <Link underline="hover" href="mailto:careers@cliniops.com">careers@cliniops.com</Link>.
       </Typography>
       <Grid container spacing={6} sx={{ mt:4 }}>
-        <Grid item xs={4}>
+        <Grid item xs={6} md={4}>
           <Card variant="outlined" sx={{ border: 0, backgroundColor: blue[50], height: '100%' }}>
             <CardHeader
               title="Project Manager"
@@ -26,7 +26,7 @@ const template = () => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6} md={4}>
           <Card variant="outlined" sx={{ border: 0, backgroundColor: blue[50], height: '100%' }}>
             <CardHeader
               title="Biostatistician"
@@ -37,7 +37,7 @@ const template = () => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6} md={4}>
           <Card variant="outlined" sx={{ border: 0, backgroundColor: blue[50], height: '100%' }}>
             <CardHeader
               title="Sales Executive"
@@ -48,7 +48,7 @@ const template = () => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6} md={4}>
           <Card variant="outlined" sx={{ border: 0, backgroundColor: blue[50], height: '100%' }}>
             <CardHeader
               title="Software Engineer, Full Stack"
@@ -59,7 +59,7 @@ const template = () => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6} md={4}>
           <Card variant="outlined" sx={{ border: 0, backgroundColor: blue[50], height: '100%' }}>
             <CardHeader
               title="Software Engineer, Mobile Development"
@@ -70,7 +70,7 @@ const template = () => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6} md={4}>
           <Card variant="outlined" sx={{ border: 0, backgroundColor: blue[50], height: '100%' }}>
             <CardHeader
               title="Clinical Data Management"
@@ -81,7 +81,7 @@ const template = () => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6} md={4}>
           <Card variant="outlined" sx={{ border: 0, backgroundColor: blue[50], height: '100%' }}>
             <CardHeader
               title="Manager, Quality Control"
@@ -92,7 +92,7 @@ const template = () => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6} md={4}>
           <Card variant="outlined" sx={{ border: 0, backgroundColor: blue[50], height: '100%' }}>
             <CardHeader
               title="Senior Software Engineer"

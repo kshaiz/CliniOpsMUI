@@ -11,7 +11,7 @@ const [date] = useState(props.date);
     
     return (
         <>
-            <Grid item xs={3}>
+            <Grid item xs={6} md={3}>
                 <Box
                     sx={{
                         display: 'flex',

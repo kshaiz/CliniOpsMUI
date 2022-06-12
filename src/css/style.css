@@ -44,9 +44,18 @@
   align-items: center;
   height: 72px;
 }
+.co-hdr-menu__root--mobile {
+  padding: 8px 16px;
+  font-weight: 400 !important;
+  display: flex;
+  align-items: center;
+  /* height: 72px; */
+}
 
 .co-hdr-menu__root.hover,
-.co-hdr-menu__root:hover {
+.co-hdr-menu__root:hover,
+.co-hdr-menu__root--mobile.hover,
+.co-hdr-menu__root--mobile:hover  {
   background-color: rgba(0,0,0,.05);
 }
 

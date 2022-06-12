@@ -88,7 +88,9 @@ const JobListingPage = (props) => {
             spacing={2}
           >
             <Typography variant="h1" component="h1">{title}</Typography>
-            <Button variant="contained" size="large" onClick={handleApplyJob}>Apply for this Job</Button>
+            <Box sx={{ display: {xs: 'none', md: 'block'} }}>
+              <Button variant="contained" size="large" onClick={handleApplyJob}>Apply for this Job</Button>
+            </Box>
           </Stack>
           <Typography variant="subtitle1" sx={{ mt: 1 }}>{summary}</Typography>
           <Stack
@@ -107,6 +109,9 @@ const JobListingPage = (props) => {
               />
             ))}
           </Stack>
+          <Box mt={2} sx={{ display: {xs: 'block', md: 'none'} }}>
+            <Button variant="contained" size="large" onClick={handleApplyJob}>Apply for this Job</Button>
+          </Box>
         </Container>
       </Box>
       <Container>

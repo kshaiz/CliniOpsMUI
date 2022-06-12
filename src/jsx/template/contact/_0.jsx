@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Divider } from '@mui/material';
+import { Grid, Divider, Stack } from '@mui/material';
 import { teal } from '@mui/material/colors';
 
 import { PageHero, PageContent } from '../../component/page';
@@ -17,20 +17,20 @@ const template = () => {
         <_0 />
       </PageHero>
       <PageContent>
-        <Grid item>
-          <_1 />
-        </Grid>
-        <Grid item>
-          <Divider className="co-divider" />
-        </Grid>
-        <Grid item>
-          <_2 />
-        </Grid>
-        <Grid item>
-          <Divider className="co-divider" />
-        </Grid>
-        <Grid item>
-          <_3 />
+        <Grid item xs={12}>
+          <Grid container spacing={{xs:5, md:10}}>
+            <Grid item xs={12} md={6}>
+              <_1 />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Divider sx={{ mb: 3, mt: -2, display: {xs:'block', md:'none'} }} />
+              <Stack spacing={2}>
+                <_2 />
+                <Divider />
+                <_3 />
+              </Stack>
+            </Grid>
+          </Grid>
         </Grid>
       </PageContent>
     </>

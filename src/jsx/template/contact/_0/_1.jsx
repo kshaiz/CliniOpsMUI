@@ -12,7 +12,7 @@ const initialVal = {
 const template = () => {
   return (
     <>
-      <Stack spacing={3} sx={{ maxWidth: '600px', margin: '0 auto' }}>
+      <Stack spacing={3} sx={{ maxWidth: '100%', margin: '0 auto' }}>
         <Stack>
           <label className="co-label">Full Name</label>
           <TextField

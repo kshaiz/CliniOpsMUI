@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, Grid, Typography } from '@mui/material';
+import { Stack, Box, Typography } from '@mui/material';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
@@ -8,8 +8,9 @@ import { blueGrey } from '@mui/material/colors';
 const template = () => {
   return (
     <>
-      <Grid container direction="row" spacing={4}>
-        <Grid item xs={6}>
+      <Stack spacing={2}>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.950296041014!2d88.47822881549494!3d22.580962238353145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a020acd7b011da3%3A0x945936cc3b1d6253!2sWebel%20IT%20Park!5e0!3m2!1sen!2sus!4v1628451951316!5m2!1sen!2sus" width="100%" height="120px" style={{border:0, borderRadius: '8px'}} allowFullScreen="" loading="lazy"></iframe>
+        <Box>
           <Typography variant="h4">India Contact</Typography>
           <Stack spacing={1} sx={{ mt: 1 }}>
             <Stack direction="row" spacing={2}>
@@ -34,11 +35,8 @@ const template = () => {
               </Stack>
             </Stack>
           </Stack>
-        </Grid>
-        <Grid item xs={6}>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.950296041014!2d88.47822881549494!3d22.580962238353145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a020acd7b011da3%3A0x945936cc3b1d6253!2sWebel%20IT%20Park!5e0!3m2!1sen!2sus!4v1628451951316!5m2!1sen!2sus" width="100%" height="300px" style={{border:0, borderRadius: '8px'}} allowFullScreen="" loading="lazy"></iframe>
-        </Grid>
-      </Grid>
+        </Box>
+      </Stack>
     </>
   );
 }

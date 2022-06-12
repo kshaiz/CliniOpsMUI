@@ -20,7 +20,7 @@ const template = () => {
       <PageContent>
         <Grid item>
           <Grid container spacing={6}>
-            <Grid item xs={6}>
+            <Grid item xs={6} sx={{ display: {xs: 'none', md: 'block'} }}>
               <img
                 src={`${ImgMission}`}
                 className='co-image'
@@ -29,7 +29,7 @@ const template = () => {
                 style={{ maxHeight: '100%' }}
               />
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6} >
               <Box sx={{ mt: 4 }}>
                 <Grid container direction='row' alignItems='center'>
                   <Grid item sx={{ height: '40px', width: '40px', mr: 2 }}>
