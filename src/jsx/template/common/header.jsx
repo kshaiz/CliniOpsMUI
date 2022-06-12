@@ -79,7 +79,7 @@ const template = () => {
               <Link color={blueGrey[800]} className="co-hdr-menu__root" underline="none" variant="h6" to={RouterList.product._0} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleCloseSubMenu}>Products</Link>
             </Grid>
             <Grid item sx={{ display: {xs: 'none', md: 'block' } }}>
-            <Link color={blueGrey[800]} className="co-hdr-menu__root" underline="none" variant="h6" href="#" onClick={handleOpenService} onMouseOver={handleOpenService} id="co-hdr-menu-service">
+            <Link color={blueGrey[800]} className="co-hdr-menu__root" underline="none" variant="h6" href="#" to={RouterList.service._0} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleOpenService} id="co-hdr-menu-service">
                 Services
                 <KeyboardArrowDownOutlinedIcon fontSize="small" sx={{ ml: .5, mr: -1 }} />
               </Link>

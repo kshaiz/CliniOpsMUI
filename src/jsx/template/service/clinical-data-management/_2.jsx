@@ -1,32 +1,31 @@
 import React from 'react';
-import { Grid, Typography } from '@mui/material';
+import { Typography, Stack } from '@mui/material';
+
+import { PageSectionRightImg } from '../../../component/page';
 
 import ImgDatabaseDesign from '../../../../img/service/clinical-data-management/databaseDesign.jpeg';
 
 const template = () => {
   return (
     <>
-      <Grid container spacing={6}>
-        <Grid item xs={6}>
-          <Typography variant="h2" component="h2" className="co-page-heading">
-            Database Design
-          </Typography>
-          <Typography sx={{ mt: 1 }}>
-            Our expert database designers works closely with multidiscipline trial team to incorporate and implement protocol requirements and user specifications for database design.
-          </Typography>
-          <Typography sx={{ mt: 1 }}>
-            Our database development will include FDA compliance, database validation and documentation, version control tracking and documentation, product accountability.
-          </Typography>
-        </Grid>
-        <Grid item xs={6}>
-          <img
-            src={`${ImgDatabaseDesign}`}
-            className='co-image'
-            alt='Database Design'
-            title='Database Design'
-          />
-        </Grid>
-      </Grid>
+      <PageSectionRightImg
+        heading={
+          <Stack direction="row" spacing={1} alignItems='center' justifyContent={{xs: 'center', md: 'flex-start'}}>
+            <Typography variant="h2" component="h2" className="co-page-heading" sx={{ textAlign: {xs: 'center', md: 'left'} }}>
+              Database Design
+            </Typography>
+          </Stack>
+        }
+        imgUrl={ImgDatabaseDesign}
+        imgTitle="Database Design"
+      >
+        <Typography sx={{ mt: 1 }}>
+          Our expert database designers works closely with multidiscipline trial team to incorporate and implement protocol requirements and user specifications for database design.
+        </Typography>
+        <Typography sx={{ mt: 1 }}>
+          Our database development will include FDA compliance, database validation and documentation, version control tracking and documentation, product accountability.
+        </Typography>
+      </PageSectionRightImg>
     </>
   );
 }

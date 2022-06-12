@@ -12,7 +12,7 @@ const template = () => {
       <PageSectionRightImg
         heading={
           <Stack direction="row" spacing={1} alignItems='center' justifyContent={{xs: 'center', md: 'flex-start'}}>
-            <Typography variant="h2" component="h2" className="co-page-heading">
+            <Typography variant="h2" component="h2" className="co-page-heading" sx={{ textAlign: { xs: 'center', md: 'left'} }}>
               ePRO/eDiary
             </Typography>
           </Stack>

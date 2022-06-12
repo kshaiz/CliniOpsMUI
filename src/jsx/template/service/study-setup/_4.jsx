@@ -1,32 +1,31 @@
 import React from 'react';
-import { Grid, Typography } from '@mui/material';
+import { Grid, Box, Typography, Button, Stack } from '@mui/material';
+
+import { PageSectionRightImg } from '../../../component/page';
 
 import ImgConfig from '../../../../img/service/study-setup/config.jpeg';
 
 const template = () => {
   return (
     <>
-      <Grid container spacing={6}>
-        <Grid item xs={6}>
-          <Typography variant="h2" component="h2" className="co-page-heading">
-            Interactive Response Technology (IRT) setup &amp; Configuration
-          </Typography>
-          <Typography sx={{ mt: 1 }}>
-            Our IVRS/IWRS integrations provide real-time data tracking for randomization.
-          </Typography>
-          <Typography sx={{ mt: 1 }}>
-            It can seamlessly integrate with the eClinical landscape, is compliant with all regulatory requirements, and meets international standards.
-          </Typography>
-        </Grid>
-        <Grid item xs={6} sx={{ textAlign: 'center' }}>
-          <img
-            src={`${ImgConfig}`}
-            className='co-image'
-            alt='Interactive Response Technology (IRT) setup &amp; Configuration'
-            title='Interactive Response Technology (IRT) setup &amp; Configuration'
-          />
-        </Grid>
-      </Grid>
+      <PageSectionRightImg
+        heading={
+          <Stack direction="row" spacing={1} alignItems='center' justifyContent={{xs: 'center', md: 'flex-start'}}>
+            <Typography variant="h2" component="h2" className="co-page-heading" sx={{ textAlign: { xs: 'center', md: 'left'} }}>
+              Interactive Response Technology (IRT) setup &amp; Configuration
+            </Typography>
+          </Stack>
+        }
+        imgUrl={ImgConfig}
+        imgTitle="Interactive Response Technology (IRT) setup &amp; Configuration"
+      >
+        <Typography sx={{ mt: 1 }}>
+          Our IVRS/IWRS integrations provide real-time data tracking for randomization.
+        </Typography>
+        <Typography sx={{ mt: 1 }}>
+          It can seamlessly integrate with the eClinical landscape, is compliant with all regulatory requirements, and meets international standards.
+        </Typography>
+      </PageSectionRightImg>
     </>
   );
 }

@@ -21,7 +21,7 @@ const template = () => {
               title='CliniOps Connect'
               style={{ height: '44px' }}
             />
-            <Typography variant="h2" component="h2" className="co-page-heading">
+            <Typography variant="h2" component="h2" className="co-page-heading" sx={{ textAlign: { xs: 'center', md: 'left'} }}>
               CliniOps Connect
             </Typography>
           </Stack>

@@ -8,7 +8,7 @@ const template = () => {
     <>
       <Grid container spacing={6}>
         <Grid item xs={6}>
-          <Typography variant="h2" component="h2" className="co-page-heading">
+          <Typography variant="h2" component="h2" className="co-page-heading" sx={{ textAlign: { xs: 'center', md: 'left'} }}>
             Statistical Analysis &amp; Programming
           </Typography>
           <Typography sx={{ mt: 1 }}>
