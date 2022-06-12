@@ -55,6 +55,9 @@ const PageSectionLeftImg = (props) => {
         </Grid>
         <Grid item xs={12} md={6}>
           {heading}
+          <Box sx={{ mt: 1, textAlign: {xs: 'center', md: 'left'} }}>
+            {props.children}
+          </Box>
           <Box sx={{ display: {sx: 'block', md: 'none'}, mt: 2, textAlign: 'center' }}>
             <img
               src={imgUrl}
@@ -62,9 +65,6 @@ const PageSectionLeftImg = (props) => {
               alt={imgTitle}
               title={imgTitle}
             />
-          </Box>
-          <Box sx={{ mt: 1, textAlign: {xs: 'center', md: 'left'} }}>
-            {props.children}
           </Box>
         </Grid>
       </Grid>
@@ -82,6 +82,9 @@ const PageSectionRightImg = (props) => {
       <Grid container spacing={6}>
         <Grid item xs={12} md={6}>
           {heading}
+          <Box sx={{ mt: 1, textAlign: {xs: 'center', md: 'left'} }}>
+            {props.children}
+          </Box>
           <Box sx={{ display: {sx: 'block', md: 'none'}, mt: 2, textAlign: 'center' }}>
             <img
               src={imgUrl}
@@ -89,9 +92,6 @@ const PageSectionRightImg = (props) => {
               alt={imgTitle}
               title={imgTitle}
             />
-          </Box>
-          <Box sx={{ mt: 1, textAlign: {xs: 'center', md: 'left'} }}>
-            {props.children}
           </Box>
         </Grid>
         <Grid item xs={6} sx={{ display: { xs: 'none', md: 'block' } }}>
