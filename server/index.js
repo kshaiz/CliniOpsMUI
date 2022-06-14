@@ -20,16 +20,16 @@ const transporter = nodemailer.createTransport({
     port: 587,
     host: "smtp.office365.com",
     auth: {
-        user: 'randomadi123@gmail.com',
-        pass: '08Apples',
+        user: 'randomadi123@outlook.com',
+        pass: '1231231231',
     },
-    secure: true, // upgrades later with STARTTLS -- change this based on the PORT
+    // secure: true, // upgrades later with STARTTLS -- change this based on the PORT
 });
 
 route.post('/text', (req, res) => {
     const { to, subject, text } = req.body;
     const mailData = {
-        from: 'randomadi123@gmail.com',
+        from: 'randomadi123@outlook.com',
         to: to,
         subject: subject,
         text: text,
