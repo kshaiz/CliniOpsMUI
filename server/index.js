@@ -1,17 +1,25 @@
 const express = require("express");
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const jsontotable = require('./jsontotable');
+const cors = require('cors');
+
 const app = express();
 // Parse incoming requests data (https://github.com/expressjs/body-parser)
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cors());
+
 const route = express.Router();
 
 const port = process.env.PORT || 5000;
+const email = 'randomadi123@outlook.com';
+const passwd = '***********';
+const defaultEmail = 'aadisrikanth@gmail.com'
 
 app.use('/v1', route);
 
-app.listen(port,'0.0.0.0', () => {
+app.listen(port, '0.0.0.0', () => {
     console.log(`Server listening on port ${port}`);
 });
 
@@ -20,20 +28,19 @@ const transporter = nodemailer.createTransport({
     port: 587,
     host: "smtp.office365.com",
     auth: {
-        user: 'randomadi123@outlook.com',
-        pass: '1231231231',
+        user: email,
+        pass: passwd,
     },
-    // secure: true, // upgrades later with STARTTLS -- change this based on the PORT
 });
 
-route.post('/text', (req, res) => {
-    const { to, subject, text } = req.body;
+route.post('/submitData', (req, res) => {
+    const { to, subject, data } = req.body;
     const mailData = {
-        from: 'randomadi123@outlook.com',
-        to: to,
+        from: email,
+        to: to || defaultEmail,
         subject: subject,
-        text: text,
-        html: '<b>Hey there! </b><br> This is our first message sent with Nodemailer<br/>',
+        text: JSON.stringify(data, null, 2),
+        html: jsontotable([data]),
     };
 
     transporter.sendMail(mailData, (error, info) => {
@@ -72,7 +79,3 @@ route.post('/test', (req, res) => {
         res.status(200).send({ message: "Mail send", message_id: info.messageId });
     });
 });
-
-route.get('/test1', (req, res) => {
-    res.status(200).send({ message: "Mail send", message_id: 1 });
-})

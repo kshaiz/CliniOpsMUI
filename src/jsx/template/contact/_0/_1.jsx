@@ -1,18 +1,39 @@
-import React from 'react';
-import { Stack, TextField, Button, Box, Grid } from '@mui/material';
+import React from "react";
+import { Stack, TextField, Button, Box, Grid } from "@mui/material";
+import ConvertToForm from "./../../../../js/convertFormElementsToJSON";
+import { CONTACT_FORM_SUBMIT_URL } from "./../../../../js/consts";
+import submitData from "./../../../../js/submitData";
 
 const initialVal = {
-  fullName: '',
-  email: '',
-  organization: '',
-  subject: '',
-  message: ''
-}
+  fullName: "",
+  email: "",
+  organization: "",
+  subject: "",
+  message: "",
+};
 
 const template = () => {
+  function handleSubmit(e) {
+    e.preventDefault();
+    const formData = ConvertToForm(e.target.elements, [
+      "fullName",
+      "email",
+      "phone",
+      "organization",
+      "subject",
+      "message",
+    ]);
+    submitData({
+      formData: {
+        data: formData,
+        subject: "Contact Form",
+      },
+      url: CONTACT_FORM_SUBMIT_URL,
+    });
+  }
   return (
-    <>
-      <Stack spacing={3} sx={{ maxWidth: '100%', margin: '0 auto' }}>
+    <form onSubmit={handleSubmit}>
+      <Stack spacing={3} sx={{ maxWidth: "100%", margin: "0 auto" }}>
         <Stack>
           <label className="co-label">Full Name</label>
           <TextField
@@ -21,7 +42,8 @@ const template = () => {
             name="fullName"
             variant="outlined"
             fullWidth
-            required />
+            required
+          />
         </Stack>
         <Stack>
           <label className="co-label">Email</label>
@@ -31,7 +53,8 @@ const template = () => {
             name="email"
             variant="outlined"
             fullWidth
-            required />
+            required
+          />
         </Stack>
         <Stack>
           <label className="co-label">Phone</label>
@@ -41,7 +64,8 @@ const template = () => {
             name="phone"
             variant="outlined"
             fullWidth
-            required />
+            required
+          />
         </Stack>
         <Stack>
           <label className="co-label">Organization</label>
@@ -50,7 +74,8 @@ const template = () => {
             name="organization"
             variant="outlined"
             fullWidth
-            required />
+            required
+          />
         </Stack>
         <Stack>
           <label className="co-label">Subject</label>
@@ -59,7 +84,8 @@ const template = () => {
             name="subject"
             variant="outlined"
             fullWidth
-            required />
+            required
+          />
         </Stack>
         <Stack>
           <label className="co-label">Message</label>
@@ -70,14 +96,17 @@ const template = () => {
             fullWidth
             required
             multiline
-            maxRows={4} />
+            maxRows={4}
+          />
         </Stack>
         <Box>
-          <Button size="large" variant="contained" type="submit">Send Message</Button>
+          <Button size="large" variant="contained" type="submit">
+            Send Message
+          </Button>
         </Box>
       </Stack>
-    </>
+    </form>
   );
-}
+};
 
 export default template;
