@@ -1,10 +1,39 @@
 import React from 'react';
 import { Grid, Stack, Typography, TextField, Button, Box, Select, MenuItem, FormControl, InputLabel } from '@mui/material';
 import { blueGrey } from '@mui/material/colors';
+import ConvertToForm from "./../../../../js/convertFormElementsToJSON";
+import { QUOTE_FORM_SUBMIT_URL } from "./../../../../js/consts";
+import submitData from "./../../../../js/submitData";
 
 const template = () => {
+  function handleSubmit(e) {
+    e.preventDefault();
+    const formData = ConvertToForm(e.target.elements, [
+      "studyName",
+      "sponsorType",
+      "therapeuticArea",
+      "expectedStartDate",
+      "vendorDecisionBy",
+      "numberOfSubjects",
+      "numberOfSites",
+      "numberOfForks",
+      "numberOfVisits",
+      "otherInformation",
+      "yourOrganizationName",
+      "fullName",
+      "email",
+      "phone",
+    ]);
+    submitData({
+      formData: {
+        data: formData,
+        subject: "Request A Demo",
+      },
+      url: QUOTE_FORM_SUBMIT_URL,
+    });
+  }
   return (
-    <>
+    <form onSubmit={handleSubmit}>
     <Stack spacing={3} sx={{ maxWidth: '600px', margin: '0 auto' }}>
       <Stack>
         <label className="co-label">Study Name*</label>
@@ -12,11 +41,12 @@ const template = () => {
           size="small"
           variant="outlined"
           fullWidth
+          name='studyName'
           required />
       </Stack>
       <Stack>
         <label className="co-label">Sponsor Type</label>
-        <Select size="small">
+        <Select size="small" name='sponsorType'>
           <MenuItem value=""><em>Select Sponsor Type</em></MenuItem>
           <MenuItem value="Academic Institute">Academic Institute</MenuItem>
           <MenuItem value="Biotechnology Company">Biotechnology Company</MenuItem>
@@ -30,7 +60,7 @@ const template = () => {
       </Stack>
       <Stack>
         <label className="co-label">Therapeutic Area</label>
-        <Select size="small">
+        <Select size="small" name="therapeuticArea">
           <MenuItem value=""><em>Select Therapeutic Area</em></MenuItem>
           <MenuItem value="Cardiology/Vascular">Cardiology/Vascular</MenuItem>
           <MenuItem value="Cosmetics">Cosmetics</MenuItem>
@@ -62,6 +92,7 @@ const template = () => {
             size="small"
             variant="outlined"
             fullWidth
+            name='expectedStartDate'
             required />
         </Stack>
         <Stack>
@@ -72,6 +103,7 @@ const template = () => {
             size="small"
             variant="outlined"
             fullWidth
+            name='vendorDecisionBy'
             required />
         </Stack>
       </Stack>
@@ -82,11 +114,12 @@ const template = () => {
           size="small"
           variant="outlined"
           fullWidth
+          name='numberOfSubjects'
           required />
       </Stack>
       <Stack>
         <label className="co-label">Number of Sites</label>
-        <Select size="small" sx={{width: '150px'}}>
+        <Select size="small" sx={{width: '150px'}} name="numberOfSites">
           <MenuItem value=""><em>Select</em></MenuItem>
           <MenuItem value="1">1</MenuItem>
           <MenuItem value="2 to 5">2 to 5</MenuItem>
@@ -97,7 +130,7 @@ const template = () => {
       </Stack>
       <Stack>
         <label className="co-label">Number of Forms (CRFs)*</label>
-        <Select required size="small" sx={{width: '150px'}}>
+        <Select required size="small" sx={{width: '150px'}} name="numberOfForks">
           <MenuItem value=""><em>Select</em></MenuItem>
           <MenuItem value="1 to 10">1 to 10</MenuItem>
           <MenuItem value="11 to 20">11 to 20</MenuItem>
@@ -109,7 +142,7 @@ const template = () => {
       </Stack>
       <Stack>
         <label className="co-label">Number of Visits</label>
-        <Select size="small" sx={{width: '150px'}}>
+        <Select size="small" sx={{width: '150px'}} name="numberOfVisits">
           <MenuItem value=""><em>Select</em></MenuItem>
           <MenuItem value="1 to 5">1 to 5</MenuItem>
           <MenuItem value="6 to 10">6 to 10</MenuItem>
@@ -150,6 +183,7 @@ const template = () => {
           variant="outlined"
           multiline
           maxRows={4}
+          name="otherInformation"
           fullWidth />
       </Stack>
       <Stack>
@@ -158,6 +192,7 @@ const template = () => {
           size="small"
           variant="outlined"
           fullWidth
+          name='yourOrganizationName'
           required />
       </Stack>
       <Stack>
@@ -166,6 +201,7 @@ const template = () => {
           size="small"
           variant="outlined"
           fullWidth
+          name='fullName'
           required />
       </Stack>
       <Stack>
@@ -174,6 +210,7 @@ const template = () => {
           size="small"
           variant="outlined"
           fullWidth
+          name='email'
           required />
       </Stack>
       <Stack>
@@ -186,13 +223,14 @@ const template = () => {
           size="small"
           variant="outlined"
           fullWidth
+          name="phone"
           required />
       </Stack>
       <Box>
         <Button size="large" variant="contained" type="submit">Send Request</Button>
       </Box>
     </Stack>
-    </>
+    </form>
   );
 }
 
