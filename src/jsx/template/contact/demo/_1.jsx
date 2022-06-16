@@ -1,9 +1,30 @@
 import React from 'react';
 import { Stack, TextField, Button, Box, Grid } from '@mui/material';
+import ConvertToForm from "./../../../../js/convertFormElementsToJSON";
+import { DEMO_FORM_SUBMIT_URL } from "./../../../../js/consts";
+import submitData from "./../../../../js/submitData";
 
 const template = () => {
+  function handleSubmit(e) {
+    e.preventDefault();
+    const formData = ConvertToForm(e.target.elements, [
+      "fullName",
+      "email",
+      "phone",
+      "organization",
+      "cityCountry",
+      "message",
+    ]);
+    submitData({
+      formData: {
+        data: formData,
+        subject: "Request A Demo",
+      },
+      url: DEMO_FORM_SUBMIT_URL,
+    });
+  }
   return (
-    <>
+    <form onSubmit={handleSubmit}>
       <Stack spacing={3} sx={{ maxWidth: '600px', margin: '0 auto' }}>
         <Stack>
           <label className="co-label">Full Name</label>
@@ -67,7 +88,7 @@ const template = () => {
           <Button size="large" variant="contained" type="submit">Send Message</Button>
         </Box>
       </Stack>
-    </>
+    </form>
   );
 }
 
