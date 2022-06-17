@@ -26,7 +26,9 @@ const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
 const checkedIcon = <CheckBoxIcon fontSize="small" />;
 
 const template = () => {
-  function handleSubmit(e) {
+  const [disabled, setDisabled] = React.useState(false);
+  async function handleSubmit(e) {
+    setDisabled(true);
     e.preventDefault();
     const formData = ConvertToForm(e.target.elements, [
       "studyName",
@@ -46,13 +48,20 @@ const template = () => {
       "email",
       "phone",
     ]);
-    submitData({
+    const data = await submitData({
       formData: {
         data: formData,
         subject: "Request A Demo",
       },
       url: QUOTE_FORM_SUBMIT_URL,
     });
+    if (data?.message === "Mail send") {
+      alert("quote request submitted successfully");
+      location.reload();
+    } else {
+      alert("Form Submission Failed");
+    }
+    setDisabled(false);
   }
   return (
     <form onSubmit={handleSubmit}>

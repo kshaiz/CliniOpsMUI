@@ -18,6 +18,8 @@ const passwd = '***********';
 const defaultEmail = 'aadisrikanth@gmail.com'
 
 app.use('/v1', route);
+app.use(express.static(__dirname + '/build'));
+app.use('/cliniopsmui',express.static(__dirname + '/build'));
 
 app.listen(port, '0.0.0.0', () => {
     console.log(`Server listening on port ${port}`);
