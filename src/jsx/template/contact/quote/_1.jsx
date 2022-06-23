@@ -319,7 +319,6 @@ const template = () => {
           </Button>
         </Box>
       </Stack>
-<<<<<<< Updated upstream
     </form>
   );
 };
@@ -344,117 +343,6 @@ function CheckboxesTags({ inputOptions, name }) {
       )}
       style={{ width: 500 }}
       renderInput={(params) => (
-=======
-      <Stack>
-        <label className="co-label">Number of Subjects*</label>
-        <TextField
-          type="number"
-          size="small"
-          variant="outlined"
-          fullWidth
-          required />
-      </Stack>
-      <Stack>
-        <label className="co-label">Number of Sites</label>
-        <Select size="small" sx={{width: '150px'}}>
-          <MenuItem value=""><em>Select</em></MenuItem>
-          <MenuItem value="1">1</MenuItem>
-          <MenuItem value="2 to 5">2 to 5</MenuItem>
-          <MenuItem value="6 to 10">6 to 10</MenuItem>
-          <MenuItem value="11 to 20">11 to 20</MenuItem>
-          <MenuItem value="Greater than 20">Greater than 20</MenuItem>
-        </Select>
-      </Stack>
-      <Stack>
-        <label className="co-label">Number of Forms (CRFs)*</label>
-        <Select required size="small" sx={{width: '150px'}}>
-          <MenuItem value=""><em>Select</em></MenuItem>
-          <MenuItem value="1 to 10">1 to 10</MenuItem>
-          <MenuItem value="11 to 20">11 to 20</MenuItem>
-          <MenuItem value="21 to 30">21 to 30</MenuItem>
-          <MenuItem value="Greater than 30">Greater than 30</MenuItem>
-          <MenuItem value="Greater than 50">Greater than 50</MenuItem>
-          <MenuItem value="Greater than 100">Greater than 100</MenuItem>
-        </Select>
-      </Stack>
-      <Stack>
-        <label className="co-label">Number of Visits</label>
-        <Select size="small" sx={{width: '150px'}}>
-          <MenuItem value=""><em>Select</em></MenuItem>
-          <MenuItem value="1 to 5">1 to 5</MenuItem>
-          <MenuItem value="6 to 10">6 to 10</MenuItem>
-          <MenuItem value="11 to 20">11 to 20</MenuItem>
-          <MenuItem value="Greater than 20">Greater than 20</MenuItem>
-        </Select>
-      </Stack>
-      <Stack>
-        <label className="co-label">Study Modules</label>
-        USE AUTOCOMPLETE MULTISELECT CHIP VARIANT with Checkbox. Options are:<br/>
-        <ul>
-          <li>CliniOps ePRO</li>
-          <li>CliniOps Coder</li>
-          <li>CliniOps eSource</li>
-          <li>CliniOps EDC</li>
-          <li>CliniOps eConsent</li>
-          <li>CliniOps IRT</li>
-          <li>CliniOps CTMS</li>
-          <li>CliniOps eTMF</li>
-          <li>Telemedicine</li>
-        </ul>
-      </Stack>
-      <Stack>
-        <label className="co-label">Professional Services</label>
-        USE AUTOCOMPLETE MULTISELECT CHIP VARIANT with Checkbox. Options are:<br/>
-        <ul>
-          <li>Biostatistics</li>
-          <li>Data Management</li>
-          <li>SAS Programming</li>
-          <li>Medical Writing</li>
-          <li>Medical Coding</li>
-          <li>Onsite Training</li>
-          <li>Multilingual</li>
-        </ul>
-      </Stack>
-      <Stack>
-        <label className="co-label">Other Information</label>
-        <TextField
-          size="small"
-          variant="outlined"
-          multiline
-          maxRows={4}
-          fullWidth />
-      </Stack>
-      <Stack>
-        <label className="co-label">Your Organization Name*</label>
-        <TextField
-          size="small"
-          variant="outlined"
-          fullWidth
-          required />
-      </Stack>
-      <Stack>
-        <label className="co-label">Your Full Name*</label>
-        <TextField
-          size="small"
-          variant="outlined"
-          fullWidth
-          required />
-      </Stack>
-      <Stack>
-        <label className="co-label">Your Email*</label>
-        <TextField
-          size="small"
-          variant="outlined"
-          fullWidth
-          required />
-      </Stack>
-      <Stack>
-      <Stack>
-        <label className="co-label">Additional Recipients*</label>
-        USE AUTOCOMPLETE MULTISELECT CHIP VARIANT with Checkbox with custom values
-      </Stack>
-        <label className="co-label">Phone (include Country Code)*</label>
->>>>>>> Stashed changes
         <TextField
           {...params}
           label={name}

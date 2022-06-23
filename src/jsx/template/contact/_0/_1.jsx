@@ -43,7 +43,7 @@ const template = () => {
   return (
     <form onSubmit={handleSubmit}>
       <Stack spacing={3} sx={{ maxWidth: "100%", margin: "0 auto" }}>
-        <Stack>
+        <Stack spacing={.5}>
           <label className="co-label">Full Name</label>
           <TextField
             size="small"
@@ -54,7 +54,7 @@ const template = () => {
             required
           />
         </Stack>
-        <Stack>
+        <Stack spacing={.5}>
           <label className="co-label">Email</label>
           <TextField
             size="small"
@@ -66,7 +66,7 @@ const template = () => {
             required
           />
         </Stack>
-        <Stack>
+        <Stack spacing={.5}>
           <label className="co-label">Phone</label>
           <TextField
             size="small"
@@ -77,7 +77,7 @@ const template = () => {
             required
           />
         </Stack>
-        <Stack>
+        <Stack spacing={.5}>
           <label className="co-label">Organization</label>
           <TextField
             size="small"
@@ -87,7 +87,7 @@ const template = () => {
             required
           />
         </Stack>
-        <Stack>
+        <Stack spacing={.5}>
           <label className="co-label">Subject</label>
           <TextField
             size="small"
@@ -97,7 +97,7 @@ const template = () => {
             required
           />
         </Stack>
-        <Stack>
+        <Stack spacing={.5}>
           <label className="co-label">Message</label>
           <TextField
             size="small"

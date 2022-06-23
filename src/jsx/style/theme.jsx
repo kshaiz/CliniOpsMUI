@@ -73,9 +73,6 @@ const Theme = createTheme({
       lineHeight: "15px",
       letterSpacing: '-0.02em',
       fontWeight: 400
-    },
-    link: {
-      fontWeight: 500
     }
   }
 });

@@ -24,14 +24,14 @@ const template = () => {
               <LocalPhoneOutlinedIcon sx={{ color: blueGrey[500], mt: .25 }} />
               <Stack spacing={0}>
                 <Typography>+1 (408) 829-4677</Typography>
-                <Typography variant="body2" color={blueGrey[700]}>Mon to Fri 9am to 6pm</Typography>
+                {/* <Typography variant="body2" color={blueGrey[700]}>Mon to Fri 9am to 6pm</Typography> */}
               </Stack>
             </Stack>
             <Stack direction="row" spacing={2}>
               <EmailOutlinedIcon sx={{ color: blueGrey[500], mt: .25 }} />
               <Stack spacing={0}>
                 <Typography>info@cliniops.com</Typography>
-                <Typography variant="body2" color={blueGrey[700]}>Send us your query anytime!</Typography>
+                {/* <Typography variant="body2" color={blueGrey[700]}>Send us your query anytime!</Typography> */}
               </Stack>
             </Stack>
           </Stack>

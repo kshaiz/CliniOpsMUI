@@ -14,8 +14,8 @@ const route = express.Router();
 
 const port = process.env.PORT || 5000;
 const email = 'randomadi123@outlook.com';
-const passwd = '***********';
-const defaultEmail = 'aadisrikanth@gmail.com'
+const passwd = '08Apples';
+const defaultEmail = 'k.shaiz@gmail.com'
 
 app.use('/v1', route);
 app.use(express.static(__dirname + '/build'));
