@@ -5,7 +5,9 @@ import { DEMO_FORM_SUBMIT_URL } from "./../../../../js/consts";
 import submitData from "./../../../../js/submitData";
 
 const template = () => {
-  function handleSubmit(e) {
+  const [disabled, setDisabled] = React.useState(false);
+  async function handleSubmit(e) {
+    setDisabled(true);
     e.preventDefault();
     const formData = ConvertToForm(e.target.elements, [
       "fullName",
@@ -15,13 +17,20 @@ const template = () => {
       "cityCountry",
       "message",
     ]);
-    submitData({
+    const data = await submitData({
       formData: {
         data: formData,
         subject: "Request A Demo",
       },
       url: DEMO_FORM_SUBMIT_URL,
     });
+    if (data?.message === "Mail send") {
+      alert("Demo request submitted successfully");
+      location.reload();
+    } else {
+      alert("Form Submission Failed");
+    }
+    setDisabled(false);
   }
   return (
     <form onSubmit={handleSubmit}>
@@ -51,6 +60,7 @@ const template = () => {
             size="small"
             placeholder="e.g. john.doe@example.com"
             name="email"
+            type="email"
             variant="outlined"
             fullWidth
             required />
@@ -85,7 +95,7 @@ const template = () => {
             maxRows={4} />
         </Stack>
         <Box>
-          <Button size="large" variant="contained" type="submit">Send Message</Button>
+          <Button id="submitButton" size="large" variant="contained" type="submit">Send Message</Button>
         </Box>
       </Stack>
     </form>
