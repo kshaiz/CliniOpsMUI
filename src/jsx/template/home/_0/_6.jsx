@@ -13,9 +13,9 @@ import ImgAward4 from '../../../../img/home/hm-award-4-col.png';
 const template = () => {
   return (
     <>
-      <Box sx={{ py: 10, background: teal[50] }}>
+      <Box sx={{ py: 10 }}>
         <Container>
-          <Typography variant="h2" sx={{ textAlign: 'center' }}>
+          <Typography variant="h2" className="co-page-heading" sx={{ textAlign: 'center' }}>
             Awards and Recognition
           </Typography>
           <Grid

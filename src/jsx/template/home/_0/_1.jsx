@@ -17,10 +17,10 @@ import ImgCloud from '../../../../img/home/hm-cloud.svg';
 const template = () => {
   return (
     <>
-      <Box sx={{ py: 10, background: green[50] }}>
+      <Box sx={{ py: 10}}>
         <Container>
           <Stack spacing={0} sx={{ textAlign: 'center' }}>
-            <Typography variant="h2">We have delivered industry leading innovations</Typography>
+            <Typography variant="h2" className="co-page-heading">We have delivered industry leading innovations</Typography>
             <Typography variant="subtitle2">Entrust your clinical trials with the most innovative DCT platform</Typography>
           </Stack>
           <Grid

@@ -13,7 +13,7 @@ const template = () => {
         className="co-image"
         style={{ width: '100%', maxHeight: 'inherit' }}
       />
-      <Link href="https://www.crowdcast.io/e/half-time-special-June10th" target="_blank" underline="hover">Watch it here</Link>
+      <Link variant="link" href="https://www.crowdcast.io/e/half-time-special-June10th" target="_blank" underline="hover">Watch it here</Link>
       <Typography variant="h2" sx={{ mt: 2 }}>The Problem Today</Typography>
       <Typography variant="body1" sx={{ mt: 1 }}>CliniOps is heavily involved in addressing the issues post Covid-19 where over 70% of the studies are struggling to find new patients thanks to Covid-19 pandemic. And as of May 5, 2020, Berlin Institute of Health (BIH) (bgcarlisle.com) has reported over 2,500 clinical trials on ClinicalTrials.gov and were listed as suspended, terminated or stopped between December 1, 2019 and May 5, 2020. Further findings show that almost 44,000 patients were currently involved with those stopped or suspended trials, with a potential impact of 4,000,000 future patient enrollments. The real impact right now with COVID is that a lot of the big trial sites, and some smaller ones, are having to blend virtual with on-site.</Typography>
       <Typography variant="h2" sx={{ mt: 4 }}>CliniOps brings Smart Data Solutions to deCentralize to future proof the studies</Typography>

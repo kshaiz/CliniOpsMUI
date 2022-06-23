@@ -61,6 +61,7 @@
 
 .co-hdr-menu__child {
   padding: 12px 24px;
+  font-weight: 400 !important;
 }
 
 .co-hdr-menu__child:hover {

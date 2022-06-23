@@ -13,9 +13,9 @@ import ImgImprovementCloseout from '../../../../img/home/hm-improvement-closeout
 const template = () => {
   return (
     <>
-      <Box sx={{ py: 10, background: yellow[50] }}>
+      <Box sx={{ py: 10 }}>
         <Container>
-          <Typography variant="h2" sx={{ textAlign: 'center' }}>
+          <Typography variant="h2" className="co-page-heading" sx={{ textAlign: 'center' }}>
             Our patented technology drives superior results
           </Typography>
           <Grid
