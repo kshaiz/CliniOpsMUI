@@ -174,7 +174,7 @@ const template = () => {
                   <Link color={blueGrey[800]} className="co-hdr-menu__root--mobile" underline="none" variant="h6" to={RouterList.contact._0} component={RouterLink} onClick={handleCloseSubMenu} id="co-hdr-menu-contact">Contact</Link>
                   <Divider />
                   <Box sx={{ p: 1 }}>
-                  <Button variant="contained" style={{ background: '#03a9f4' }} to={RouterList.contact.demo} component={RouterLink} onClick={handleCloseSubMenu}>Request Demo</Button>
+                  <Button variant="contained" size="small" style={{ background: '#03a9f4' }} to={RouterList.contact.demo} component={RouterLink} onClick={handleCloseSubMenu}>Request Demo</Button>
                   </Box>
                 </Stack>
               </Popper>

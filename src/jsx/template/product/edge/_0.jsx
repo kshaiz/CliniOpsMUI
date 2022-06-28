@@ -8,16 +8,16 @@ const template = () => {
   return (
     <>
       <Grid container spacing={6}>
-        <Grid item xs={2}>
+        <Grid item xs={12} md="auto">
           <img
             src={`${ImgCliniOpsEdge}`}
             className='co-image'
             alt='CliniOps Edge'
             title='CliniOps Edge'
-            style={{ width: '100%' }}
+            style={{ width: '150px' }}
           />
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={12} md>
           <Typography variant="h1" component="h1">
             CliniOps Edge
           </Typography>

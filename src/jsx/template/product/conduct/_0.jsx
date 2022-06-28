@@ -7,16 +7,16 @@ const template = () => {
   return (
     <>
       <Grid container spacing={6}>
-        <Grid item xs={2}>
+        <Grid item xs={12} md="auto">
           <img
             src={`${ImgCliniOpsConduct}`}
             className='co-image'
             alt='CliniOps Conduct'
             title='CliniOps Conduct'
-            style={{ width: '100%' }}
+            style={{ width: '150px' }}
           />
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={12} md>
           <Typography variant="h1" component="h1">
             CliniOps Conduct
           </Typography>

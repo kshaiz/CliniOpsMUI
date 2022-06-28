@@ -40,7 +40,7 @@ const PageContent = (props) => {
 const PageSectionLeftImg = (props) => {
   const heading = useState(props.heading);
   const [imgUrl] = useState(props.imgUrl);
-  const imgTitle = useState(props.imgTitle);
+  const [imgTitle] = useState(props.imgTitle);
 
   return (
     <>

@@ -9,6 +9,10 @@ import RouterList from '../../router';
 import ImgLogoCliniOps from '../../../img/footer/logo-cliniops.svg';
 import ImgLogoGDPR from '../../../img/footer/logo-gdpr.png';
 import ImgLogoUKPrivacy from '../../../img/footer/logo-uk-privacy.png';
+import ImgLogoIso27001 from '../../../img/footer/iso27001.png';
+import ImgLogoHipaa from '../../../img/footer/hipaa.png';
+import ImgLogoFda from '../../../img/footer/fda.png';
+import ImgLogoCdisc from '../../../img/footer/cdisc.svg';
 import ImgLogoFacebook from '../../../img/footer/logo-facebook.svg';
 import ImgLogoTwitter from '../../../img/footer/logo-twitter.svg';
 import ImgLogoLinkedIn from '../../../img/footer/logo-linkedin.svg';
@@ -25,7 +29,7 @@ const template = () => {
                 <Grid item>
                   <img
                     src={`${ImgLogoCliniOps}`}
-                    alt='CliniOps Logo'
+                    alt='Logo'
                     title='CliniOps Logo'
                   />
                 </Grid>
@@ -35,8 +39,8 @@ const template = () => {
                       <a href='https://prighter.com/verify/13827389066' target='_blank'>
                         <img
                           src={`${ImgLogoGDPR}`}
-                          alt='CliniOps Logo'
-                          title='CliniOps Logo'
+                          alt='Logo'
+                          title='GDPR Logo'
                         />
                       </a>
                     </Grid>
@@ -44,10 +48,50 @@ const template = () => {
                       <a href='https://prighter.com/ukrep/verify/13827389066' target='_blank'>
                         <img
                           src={`${ImgLogoUKPrivacy}`}
-                          alt='UK Privacy Logo'
+                          alt='Logo'
                           title='UK Privacy Logo'
                         />
                       </a>
+                    </Grid>
+                    <Grid item>
+                      {/* <a href='https://prighter.com/ukrep/verify/13827389066' target='_blank'> */}
+                        <img
+                          src={`${ImgLogoHipaa}`}
+                          alt='Logo'
+                          title='HIPAA Compliant'
+                          style={{ maxHeight: "60px"}}
+                        />
+                      {/* </a> */}
+                    </Grid>
+                    <Grid item>
+                      {/* <a href='https://prighter.com/ukrep/verify/13827389066' target='_blank'> */}
+                        <img
+                          src={`${ImgLogoIso27001}`}
+                          alt='Logo'
+                          title='ISO 27001 Certified'
+                          style={{ maxWidth: "109px", maxHeight: "60px"}}
+                        />
+                      {/* </a> */}
+                    </Grid>
+                    <Grid item>
+                      {/* <a href='https://prighter.com/ukrep/verify/13827389066' target='_blank'> */}
+                        <img
+                          src={`${ImgLogoFda}`}
+                          alt='Logo'
+                          title='FDA 21 CFR Part 11'
+                          style={{ maxWidth: "109px", maxHeight: "60px"}}
+                        />
+                      {/* </a> */}
+                    </Grid>
+                    <Grid item>
+                      {/* <a href='https://prighter.com/ukrep/verify/13827389066' target='_blank'> */}
+                        <img
+                          src={`${ImgLogoCdisc}`}
+                          alt='Logo'
+                          title='CDISC'
+                          style={{ maxWidth: "109px", maxHeight: "60px"}}
+                        />
+                      {/* </a> */}
                     </Grid>
                   </Grid>
                 </Grid>

@@ -20,7 +20,7 @@ const template = () => {
         imgTitle="Other Data Management Services"
       >
         <Typography sx={{ mt: 1 }}>
-          <ul>
+          <ul style={{ listStylePosition: "inside" }}>
             <li>e-Source data capture and integration training.</li>
             <li>Development of dashboards and custom reports.</li>
             <li>24/7 helpdesk support</li>

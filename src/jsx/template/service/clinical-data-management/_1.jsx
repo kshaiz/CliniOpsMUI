@@ -21,7 +21,7 @@ const template = () => {
       >
         <Typography sx={{ mt: 1 }}>
           We develop comprehensive end to end DMP which includes:
-          <ul>
+          <ul style={{ listStylePosition: "inside" }}>
             <li>Data entry and data tracking guidelines</li>
             <li>Quality control measures</li>
             <li>SAE reconciliation guidelines</li>

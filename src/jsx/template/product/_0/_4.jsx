@@ -1,8 +1,16 @@
 import React from 'react';
-import { Typography, Table, TableBody, TableContainer, TableHead, TableRow } from '@mui/material';
+import { Typography, Table, TableBody, TableContainer, TableHead, TableRow, Paper, Stack } from '@mui/material';
 import { blueGrey } from '@mui/material/colors';
 
 import { StyledTableCell, StyledTableRow } from '../../../style/table';
+
+const styles = theme => ({
+  root: {
+    width: "100%",
+    marginTop: theme.spacing.unit * 3,
+    overflowX: "auto"
+  }
+});
 
 function createData(
   patient,
@@ -53,6 +61,7 @@ const rows = [
 ];
 
 const template = () => {
+
   return (
     <>
       <Typography variant="h2" component="h2" className="co-page-heading" sx={{ textAlign: { xs: 'center', md: 'left'} }}>
@@ -61,7 +70,9 @@ const template = () => {
       <Typography sx={{ mt: 1 }}>
         Patient safety is the integral principle of any trial, but suddenly we now have Covid-19 situation where having patients come into clinical sites for their scheduled visits poses a significant risk to their health and well being. And not just patient alone, but also the safety of the study team, including the monitors, the data managers, the CRAs, for any activity that requires a visit to the site. CliniOps decentralized solution offers the safety and comfort across all stakeholders, with increased efficiency and highest data quality.
       </Typography>
-      <TableContainer sx={{ mt: 2, borderRadius: '.25em', border: `1px solid ${blueGrey[100]}` }}>
+        <Paper mt={2} sx={{ overflowX: "auto", boxShadow: 0, border: 0 }} className={styles.root}>
+      
+      <TableContainer sx={{ borderRadius: '.25em', border: `1px solid ${blueGrey[100]}`, maxWidth: "calc(100vw - 60px)", overflow: "auto", margin: "0 auto", mt: 2 }}>
         <Table>
           <TableHead>
             <TableRow>
@@ -88,6 +99,7 @@ const template = () => {
           </TableBody>
         </Table>
       </TableContainer>
+      </Paper>
     </>
   );
 }

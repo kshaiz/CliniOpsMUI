@@ -8,7 +8,8 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     backgroundColor: blueGrey[200],
     // color: theme.palette.common.white,
     fontWeight: 700,
-    textTransform: 'uppercase'
+    textTransform: 'uppercase',
+    // fontSize: 14,
   },
   [`&.${tableCellClasses.body}`]: {
     // fontSize: 14,

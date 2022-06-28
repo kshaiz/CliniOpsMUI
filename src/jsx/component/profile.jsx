@@ -17,17 +17,17 @@ const CustomProfile = ({
 
     return (
         <>
-            <Grid container direction='row'>
-                <Grid item xs={2}>
+            <Grid container direction='row' spacing={{xs: 2, md: 6}}>
+                <Grid item xs={12} md={2}>
                     <img
                         src={ImgSrc}
                         className='co-image'
                         alt={Name}
                         title={Name}
-                        style={{ maxHeight: '100%' }}
+                        style={{ maxHeight: '152px' }}
                     />
                 </Grid>
-                <Grid item xs={10} sx={{ pl: 6 }}>
+                <Grid item xs={12} md={10}>
                     <Typography variant="h3" component="h2" className="co-page-heading">
                         {Name}{Position}
                     </Typography>
