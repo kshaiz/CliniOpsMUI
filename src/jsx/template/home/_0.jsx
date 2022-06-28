@@ -1,4 +1,5 @@
 import React from 'react';
+import { Divider } from '@mui/material';
 
 // Page Imports
 import _0 from './_0/_0';
@@ -14,10 +15,15 @@ const template = () => {
     <>
       <_0 />
       <_1 />
+      <Divider className='co-divider' style={{ maxWidth: '45%'}} />
       <_2 />
+      <Divider className='co-divider' style={{ maxWidth: '45%'}} />
       <_3 />
+      <Divider className='co-divider' style={{ maxWidth: '45%'}} />
       <_4 />
+      <Divider className='co-divider' style={{ maxWidth: '45%'}} />
       <_5 />
+      <Divider className='co-divider' style={{ maxWidth: '45%'}} />
       <_6 />
     </>
   );

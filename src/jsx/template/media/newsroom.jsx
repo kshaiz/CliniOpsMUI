@@ -1,12 +1,12 @@
 import React from 'react';
 import { Grid, Stack } from '@mui/material';
-import { orange } from '@mui/material/colors';
+import { teal } from '@mui/material/colors';
 
 import { PageHero, PageContent } from '../../component/page';
 
 // Page Imports
 import _0 from './newsroom/_0';
-import _filter from './newsroom/_filter';
+// import _filter from './newsroom/_filter';
 import _2022 from './newsroom/_2022';
 import _2021 from './newsroom/_2021';
 import _2020 from './newsroom/_2020';
@@ -20,13 +20,13 @@ import _2014 from './newsroom/_2014';
 const template = () => {
   return (
     <>
-      <PageHero color={orange}>
+      <PageHero color={teal}>
         <_0 />
       </PageHero>
       <PageContent>
         <Grid item>
           <Stack spacing={4}>
-            <_filter />
+            {/* <_filter /> */}
             <Stack direction="column" spacing={10} style={{ maxWidth: '100%' }}>
               <_2022 />
               <_2021 />

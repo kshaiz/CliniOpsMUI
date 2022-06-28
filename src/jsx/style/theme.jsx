@@ -61,11 +61,11 @@ const Theme = createTheme({
       fontSize: "18px",
       lineHeight: "28px",
       fontWeight: 300,
-      color: '#042d43', // Logo Primary
+      color: '#011824', // Logo Primary
     }, 
     body2: {
-      fontSize: "14px",
-      lineHeight: "19px",
+      fontSize: "16px",
+      lineHeight: "28px",
       fontWeight: 400
     }, 
     caption: {

@@ -21,7 +21,7 @@
 
 .co-ftr__link {
   font-size: 14px;
-  font-weight: 500;
+  /* font-weight: 500; */
   text-decoration: none;
   color: #4f6c7b;
 }
@@ -61,9 +61,13 @@
 
 .co-hdr-menu__child {
   padding: 12px 24px;
+  font-weight: 400 !important;
 }
 
 .co-hdr-menu__child:hover {
   color: #1976d2;
   background-color: rgba(0,0,0,.05);
 }
+
+/* MUI Overrides */
+/* .MuiLink-root {} */

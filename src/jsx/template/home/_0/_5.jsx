@@ -12,9 +12,9 @@ import ImgNews3 from '../../../../img/home/hm-news-3.png';
 const template = () => {
   return (
     <>
-      <Box sx={{ py: 10, background: blueGrey[50] }}>
+      <Box sx={{ py: 10 }}>
         <Container>
-          <Typography variant="h2" sx={{ textAlign: 'center' }}>
+          <Typography variant="h2" className="co-page-heading" sx={{ textAlign: 'center' }}>
             News and Updates
           </Typography>
           <Grid

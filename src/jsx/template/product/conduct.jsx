@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Divider } from '@mui/material';
-import { purple } from '@mui/material/colors';
+import { teal } from '@mui/material/colors';
 
 import { PageHero, PageContent } from '../../component/page';
 
@@ -18,7 +18,7 @@ import _8 from './conduct/_8';
 const template = () => {
   return (
     <>
-      <PageHero color={purple}>
+      <PageHero color={teal}>
         <_0 />
       </PageHero>
       <PageContent>

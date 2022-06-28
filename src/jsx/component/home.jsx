@@ -9,9 +9,9 @@ const HeroTile = (props) => {
     
   return (
     <>
-      <Stack spacing={.25} sx={{ backgroundColor: 'rgba(255,255,255, .25)', padding: '20px 0', borderRadius: 1, textAlign: 'center', width: '150px' }}>
-        <Typography color={common.white} variant="h1" sx={{ fontWeight: 500 }}>{heading}</Typography>
-        <Typography color={common.white} variant="body2" sx={{ fontWeight: 500 }}>{subheading}</Typography>
+      <Stack spacing={.25} sx={{ backgroundColor: 'rgba(4,45,67,.15)', padding: '20px 0', borderRadius: 1, textAlign: 'center', width: '150px' }}>
+        <Typography variant="h1" sx={{ fontWeight: 500, opacity: .75 }}>{heading}</Typography>
+        <Typography variant="body2" sx={{ fontWeight: 500, opacity: .75 }}>{subheading}</Typography>
       </Stack>
     </>
   )

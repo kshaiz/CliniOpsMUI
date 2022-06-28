@@ -76,7 +76,7 @@ const template = () => {
         <Container>
           <Grid container spacing={0} alignItems='center' justifyContent='stretch' direction="row" sx={{ padding: {xs: 1, md: 0} }}>
             <Grid item sx={{ ml: -1 }}>
-              <Link to={RouterList.home._0} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleCloseSubMenu}>
+              <Link variant="link" to={RouterList.home._0} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleCloseSubMenu}>
                 <Box
                   style={{
                     width: '170px',
@@ -87,9 +87,11 @@ const template = () => {
                 />
               </Link>
             </Grid>
-            <Grid item sx={{ display: {xs: 'none', md: 'block' } }}>
+            {/* <Grid item sx={{ display: {xs: 'none', md: 'block' } }}>
               <Divider orientation="vertical" variant="middle" sx={{ height: '36px', margin: '0 8px 0 24px' }} flexItem />
-            </Grid>
+            </Grid> */}
+            
+            <Grid item xs={true} />
             <Grid item sx={{ display: {xs: 'none', md: 'block' } }}>
               <Link color={blueGrey[800]} className="co-hdr-menu__root" underline="none" variant="h6" to={RouterList.product._0} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleCloseSubMenu}>Products</Link>
             </Grid>
@@ -152,9 +154,8 @@ const template = () => {
             <Grid item sx={{ display: {xs: 'none', md: 'block' } }}>
               <Link color={blueGrey[800]} className="co-hdr-menu__root" underline="none" variant="h6" to={RouterList.contact._0} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleCloseSubMenu}>Contact</Link>
             </Grid>
-            <Grid item xs={true} />
             <Grid item sx={{ mr: -1, display: {xs: 'none', md: 'block' } }}>
-              <Button variant="outlined" to={RouterList.contact.demo} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleCloseSubMenu}>Request Demo</Button>
+              <Button variant="contained" style={{ background: '#03a9f4' }} to={RouterList.contact.demo} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleCloseSubMenu}>Request Demo</Button>
             </Grid>
             <Grid item sx={{ display: {xs: 'block', md: 'none' } }}>
               <MenuOutlinedIcon fontSize="large"  onClick={handleOpenMobile} onMouseOver={handleOpenMobile} id="co-hdr-menu-mobile" />
@@ -173,7 +174,7 @@ const template = () => {
                   <Link color={blueGrey[800]} className="co-hdr-menu__root--mobile" underline="none" variant="h6" to={RouterList.contact._0} component={RouterLink} onClick={handleCloseSubMenu} id="co-hdr-menu-contact">Contact</Link>
                   <Divider />
                   <Box sx={{ p: 1 }}>
-                  <Button variant="outlined" to={RouterList.contact.demo} component={RouterLink} onClick={handleCloseSubMenu}>Request Demo</Button>
+                  <Button variant="contained" style={{ background: '#03a9f4' }} to={RouterList.contact.demo} component={RouterLink} onClick={handleCloseSubMenu}>Request Demo</Button>
                   </Box>
                 </Stack>
               </Popper>
