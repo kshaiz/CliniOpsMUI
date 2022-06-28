@@ -4,69 +4,120 @@ import { Box, Container, Grid, Typography, Chip, Stack, Button, Dialog, DialogCo
 import { LocationOnOutlined } from '@mui/icons-material';
 import { blueGrey } from "@mui/material/colors";
 
+import ConvertToForm from "./../../js/convertFormElementsToJSON";
+import { RESUME_FORM_SUBMIT_URL } from "./../../js/consts";
+import {SubmitAttachFormData} from "./../../js/submitData";
+
 const JobListingPage = (props) => {
   const [color] = useState(props.color);
   const [title] = useState(props.title);
   const [summary] = useState(props.summary);
   const [locations] = useState(props.location);
+  const [disabled, setDisabled] = React.useState(false);
 
   const [open, setOpen] = React.useState(false);
+  const formRef = React.useRef(null);
+  const formRefSubmit = React.useRef(null);
   const handleApplyJob = () => {
     setOpen(true);
   };
   const handleDialogClose = () => {
+    formRefSubmit.current.click();
+  };
+
+  const handleDialogCancel = () => {
     setOpen(false);
   };
+
+  async function handleSubmit(e) {
+    setDisabled(true);
+    e.preventDefault();
+    const formData = ConvertToForm(formRef.current.elements, [
+      "title",
+      "fullName",
+      "email",
+      "coverLetter",
+      // "resume",
+    ]);
+
+    const dataArray = new FormData();
+
+    Object.keys(formData).forEach(item => {
+      dataArray.append(item, formData[item]);
+    })
+
+    dataArray.append('resume', formRef.current.elements.resume.files[0]);
+    dataArray.append('subject', "Resume");
+    
+    const data = await SubmitAttachFormData({
+      formData: dataArray,
+      url: RESUME_FORM_SUBMIT_URL,
+    });
+    if (data?.message === "Mail send") {
+      alert("Your Information Submitted Successfully");
+      location.reload();
+    } else {
+      alert("Form Submission Failed");
+    }
+    setDisabled(false);
+    setOpen(false);
+  }
   
   return (
     <>
       <Dialog open={open} onClose={handleDialogClose} maxWidth="700px">
         <DialogTitle>Build Your Career With CliniOps</DialogTitle>
         <DialogContent dividers={true}>
-          <Stack spacing={3} sx={{ minWidth: '400px', maxWidth: '600px', margin: '0 auto' }}>
-            <Stack>
-              <label className="co-label">Position Title</label>
-              <Typography>{title}</Typography>
+          <form ref={formRef} onSubmit={handleSubmit}>
+            <Stack spacing={3} sx={{ minWidth: '400px', maxWidth: '600px', margin: '0 auto' }}>
+              <Stack>
+                <label className="co-label">Position Title</label>
+                <Typography>{title}</Typography>
+                <input type="hidden" name="title" value={title}/>
+              </Stack>
+              <Stack>
+                <label className="co-label">Full Name</label>
+                <TextField
+                  placeholder="e.g. John Doe"
+                  variant="outlined"
+                  fullWidth
+                  required
+                  name="fullName"
+                />
+              </Stack>
+              <Stack>
+                <label className="co-label">Email</label>
+                <TextField
+                  type="email"
+                  placeholder="e.g. john.doe@example.com"
+                  variant="outlined"
+                  fullWidth
+                  required
+                  name="email"
+                />
+              </Stack>
+              <Stack>
+                <label className="co-label">Cover Letter</label>
+                <TextField
+                  variant="outlined"
+                  fullWidth
+                  required
+                  multiline
+                  maxRows={4}
+                  name="coverLetter"
+                />
+              </Stack>
+              <Stack>
+                <label className="co-label">Resume</label>
+                <input type="file" name="resume"/>
+              </Stack>
             </Stack>
-            <Stack>
-              <label className="co-label">Full Name</label>
-              <TextField
-                placeholder="e.g. John Doe"
-                variant="outlined"
-                fullWidth
-                required
-              />
-            </Stack>
-            <Stack>
-              <label className="co-label">Email</label>
-              <TextField
-                type="email"
-                placeholder="e.g. john.doe@example.com"
-                variant="outlined"
-                fullWidth
-                required
-              />
-            </Stack>
-            <Stack>
-              <label className="co-label">Cover Letter</label>
-              <TextField
-                variant="outlined"
-                fullWidth
-                required
-                multiline
-                maxRows={4}
-              />
-            </Stack>
-            <Stack>
-              <label className="co-label">Resume</label>
-              <input type="file" />
-            </Stack>
-
-          </Stack>
+              <input type="submit" style={{display: 'none'}} ref={formRefSubmit}/>
+          </form>
         </DialogContent>
         <DialogActions>
-          <Button variant="contained" onClick={handleDialogClose}>Submit</Button>
-          <Button onClick={handleDialogClose}>Cancel</Button>
+          <Button variant="contained" disabled={disabled} onClick={handleDialogClose}>Submit</Button>
+          <Button onClick={handleDialogCancel} disabled={disabled}>Cancel</Button>
         </DialogActions>
       </Dialog>
       

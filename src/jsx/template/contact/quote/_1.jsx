@@ -47,6 +47,7 @@ const template = () => {
       "fullName",
       "email",
       "phone",
+      "additionalRecipients",
     ]);
     const data = await submitData({
       formData: {
@@ -300,9 +301,15 @@ const template = () => {
         </Stack>
         <Stack>
           <Stack>
-            <label className="co-label">Additional Recipients*</label>
-            USE AUTOCOMPLETE MULTISELECT CHIP VARIANT with Checkbox with custom
-            values
+            <label className="co-label">
+              Additional Recipients(comma sperated email addresses)
+            </label>
+            <TextField
+              variant="outlined"
+              name="additionalRecipients"
+              multiline
+              rows={4}
+            />
           </Stack>
           <label className="co-label">Phone (include Country Code)*</label>
           <TextField
@@ -324,34 +331,34 @@ const template = () => {
 };
 
 function CheckboxesTags({ inputOptions, name }) {
+  const [value, setValue] = React.useState([]);
   return (
-    <Autocomplete
-      multiple
-      options={inputOptions}
-      disableCloseOnSelect
-      getOptionLabel={(option) => option}
-      renderOption={(props, option, { selected }) => (
-        <li {...props}>
-          <Checkbox
-            icon={icon}
-            checkedIcon={checkedIcon}
-            style={{ marginRight: 8 }}
-            checked={selected}
-          />
-          {option}
-        </li>
-      )}
-      style={{ width: 500 }}
-      renderInput={(params) => (
-        <TextField
-          {...params}
-          label={name}
-          placeholder={name}
-          name={name}
-        />
-      )}
-      // onChange={onChange}
-    />
+    <>
+      <Autocomplete
+        multiple
+        options={inputOptions}
+        disableCloseOnSelect
+        getOptionLabel={(option) => option}
+        renderOption={(props, option, { selected }) => (
+          <li {...props}>
+            <Checkbox
+              icon={icon}
+              checkedIcon={checkedIcon}
+              style={{ marginRight: 8 }}
+              checked={selected}
+            />
+            {option}
+          </li>
+        )}
+        style={{ width: 500 }}
+        renderInput={(params) => <TextField {...params} />}
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
+      <input type={"hidden"} name={name} value={value?.join?.(', ')}/>
+    </>
   );
 }
 

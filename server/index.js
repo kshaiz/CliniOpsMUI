@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const jsontotable = require('./jsontotable');
 const cors = require('cors');
+const multer  = require('multer');
+const upload = multer();
 
 const app = express();
 // Parse incoming requests data (https://github.com/expressjs/body-parser)
@@ -14,8 +16,10 @@ const route = express.Router();
 
 const port = process.env.PORT || 5000;
 const email = 'randomadi123@outlook.com';
-const passwd = '***********';
-const defaultEmail = 'aadisrikanth@gmail.com'
+const passwd = '****';
+const defaultEmail = 'k.shaiz@gmail.com';
+const smtp = 'smtp.office365.com';
+const smtpPort = 587;
 
 app.use('/v1', route);
 app.use(express.static(__dirname + '/build'));
@@ -27,8 +31,8 @@ app.listen(port, '0.0.0.0', () => {
 
 
 const transporter = nodemailer.createTransport({
-    port: 587,
-    host: "smtp.office365.com",
+    port: smtpPort,
+    host: smtp,
     auth: {
         user: email,
         pass: passwd,
@@ -54,24 +58,22 @@ route.post('/submitData', (req, res) => {
 });
 
 
-route.post('/test', (req, res) => {
-    const { to, subject, text } = req.body;
+route.post('/applyCareer',upload.single('resume'), (req, res) => {
+    console.table(req.body);
+    console.log(req.file);
+    const { title } = req.body;
     const mailData = {
-        from: 'youremail@gmail.com',
-        to: to,
-        subject: subject,
-        text: text,
-        html: '<b>Hey there! </b><br> This is our first message sent with Nodemailer<br/>',
-        // attachments: [
-        //     {   // file on disk as an attachment
-        //         filename: 'nodemailer.png',
-        //         path: 'nodemailer.png'
-        //     },
-        //     {   // file on disk as an attachment
-        //         filename: 'text_file.txt',
-        //         path: 'text_file.txt'
-        //     }
-        // ]
+        from: email,
+        to: defaultEmail,
+        subject: `Job Application for ${title}`,
+        text: JSON.stringify(req.body, null, 2),
+        html: jsontotable([req.body]),
+        attachments: [
+            {
+                filename: req.file.originalname,
+                content: req.file.buffer
+            },
+        ]
     };
 
     transporter.sendMail(mailData, (error, info) => {
