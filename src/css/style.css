@@ -49,6 +49,8 @@
   font-weight: 400 !important;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  min-width: 180px;
   /* height: 72px; */
 }
 

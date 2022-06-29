@@ -106,7 +106,7 @@ const template = () => {
             fullWidth
             required
             multiline
-            maxRows={4}
+            rows={4}
           />
         </Stack>
         <Box>

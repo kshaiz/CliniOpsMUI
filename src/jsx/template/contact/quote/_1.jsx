@@ -305,6 +305,7 @@ const template = () => {
               Additional Recipients(comma sperated email addresses)
             </label>
             <TextField
+              size="small"
               variant="outlined"
               name="additionalRecipients"
               multiline

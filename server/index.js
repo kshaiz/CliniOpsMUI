@@ -15,9 +15,9 @@ app.use(cors());
 const route = express.Router();
 
 const port = process.env.PORT || 5000;
-const email = 'randomadi123@outlook.com';
-const passwd = '****';
-const defaultEmail = 'k.shaiz@gmail.com';
+const email = 'k.shaiz@outlook.com';
+const passwd = 'Dcba$321';
+const defaultEmail = 'k.shaiz@outlook.com';
 const smtp = 'smtp.office365.com';
 const smtpPort = 587;
 

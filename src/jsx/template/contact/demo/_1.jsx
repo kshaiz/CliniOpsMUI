@@ -87,12 +87,13 @@ const template = () => {
         <Stack>
           <label className="co-label">Message</label>
           <TextField
+            size="small"
             name="message"
             variant="outlined"
             fullWidth
             required
             multiline
-            maxRows={4} />
+            rows={4} />
         </Stack>
         <Box>
           <Button id="submitButton" size="large" variant="contained" type="submit">Send Message</Button>
