@@ -24,7 +24,7 @@ const template = () => {
             </Grid>
             <Grid item xs={12} md={6}>
               <Divider sx={{ mb: 3, mt: -2, display: {xs:'block', md:'none'} }} />
-              <Stack spacing={2}>
+              <Stack spacing={4}>
                 <_2 />
                 <Divider />
                 <_3 />

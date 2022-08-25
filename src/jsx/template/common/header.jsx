@@ -2,6 +2,7 @@ import React from 'react';
 import { HashLink as RouterLink } from 'react-router-hash-link';
 
 import { Box, Container, Grid, Divider, Link, Button, Popper, Stack, Collapse } from '@mui/material';
+import { ClickAwayListener } from '@mui/base';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import { blueGrey, common } from '@mui/material/colors';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
@@ -11,6 +12,19 @@ import ImgCliniOps from '../../../img/CliniOps.svg';
 import RouterList from '../../router';
 
 const template = () => {
+  const [anchorProduct, setAnchorProduct] = React.useState(null);
+  const handleOpenProduct = (event) => {
+    if (anchorProduct !== event.currentTarget) {
+      handleCloseSubMenu();
+      setAnchorProduct(event.currentTarget);
+      document.querySelector('#co-hdr-menu-product').classList.add('hover');
+    }
+  }
+  const handleCloseProduct = () => {
+    document.querySelector('#co-hdr-menu-product').classList.remove('hover');
+    setAnchorProduct(null);
+  }
+  
   const [anchorService, setAnchorService] = React.useState(null);
   const handleOpenService = (event) => {
     if (anchorService !== event.currentTarget) {
@@ -33,6 +47,7 @@ const template = () => {
     }
   }
   const handleCloseAbout = () => {
+    handleCloseMobile();
     document.querySelector('#co-hdr-menu-about').classList.remove('hover');
     setAnchorAbout(null);
   }
@@ -46,6 +61,7 @@ const template = () => {
     }
   }
   const handleCloseMedia = () => {
+    handleCloseMobile();
     document.querySelector('#co-hdr-menu-media').classList.remove('hover');
     setAnchorMedia(null);
   }
@@ -64,6 +80,7 @@ const template = () => {
   }
 
   const handleCloseSubMenu = () => {
+    handleCloseProduct();
     handleCloseService();
     handleCloseAbout();
     handleCloseMedia();
@@ -105,7 +122,23 @@ const template = () => {
             </Grid>
             <Grid item xs={true} />
             <Grid item sx={{ display: { xs: 'none', md: 'block' } }}>
-              <Link color={blueGrey[800]} className="co-hdr-menu__root" underline="none" variant="h6" to={RouterList.product._0} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleCloseSubMenu}>Products</Link>
+              <Link color={blueGrey[800]} className="co-hdr-menu__root" underline="none" variant="h6" to={RouterList.product._0} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleOpenProduct} id="co-hdr-menu-product">
+                Products
+              <KeyboardArrowDownOutlinedIcon fontSize="small" sx={{ ml: .5, mr: -1 }} />
+                </Link>
+              <Popper
+                placement="bottom-start"
+                anchorEl={anchorProduct}
+                open={Boolean(anchorProduct)}
+                onClose={handleCloseProduct}
+                onMouseLeave={handleCloseProduct}
+              >
+                <Stack sx={{ backgroundColor: common.white, boxShadow: `0 0 16px 0 ${blueGrey[800]}`, borderRadius: '0 0 4px 4px' }}>
+                  <Link color={blueGrey[800]} underline="none" className="co-hdr-menu__child" to={RouterList.product.connect} component={RouterLink} onClick={handleCloseProduct}>CliniOps Connect</Link>
+                  <Link color={blueGrey[800]} underline="none" className="co-hdr-menu__child" to={RouterList.product.edge} component={RouterLink} onClick={handleCloseProduct}>CliniOps Edge</Link>
+                  <Link color={blueGrey[800]} underline="none" className="co-hdr-menu__child" to={RouterList.product.conduct} component={RouterLink} onClick={handleCloseProduct}>CliniOps Conduct</Link>
+                </Stack>
+              </Popper>
             </Grid>
             <Grid item sx={{ display: { xs: 'none', md: 'block' } }}>
               <Link color={blueGrey[800]} className="co-hdr-menu__root" underline="none" variant="h6" to={RouterList.service._0} component={RouterLink} onClick={handleCloseSubMenu} onMouseOver={handleOpenService} id="co-hdr-menu-service">
@@ -159,6 +192,7 @@ const template = () => {
               >
                 <Stack sx={{ backgroundColor: common.white, boxShadow: `0 0 16px 0 ${blueGrey[800]}`, borderRadius: '0 0 4px 4px' }}>
                   <Link color={blueGrey[800]} underline="none" className="co-hdr-menu__child" to={RouterList.media.newsroom} component={RouterLink} onClick={handleCloseMedia}>Newsroom</Link>
+                  <Link color={blueGrey[800]} underline="none" className="co-hdr-menu__child" to={RouterList.media.customerstory} component={RouterLink} onClick={handleCloseMedia}>Customer Stories</Link>
                   <Link color={blueGrey[800]} underline="none" className="co-hdr-menu__child" to={RouterList.media.blog} component={RouterLink} onClick={handleCloseMedia}>Blogs</Link>
                 </Stack>
               </Popper>
@@ -171,6 +205,7 @@ const template = () => {
             </Grid>
             <Grid item sx={{ display: { xs: 'block', md: 'none' } }}>
               <MenuOutlinedIcon fontSize="large" onClick={handleOpenMobile} onMouseOver={handleOpenMobile} id="co-hdr-menu-mobile" />
+              <ClickAwayListener onClickAway={handleCloseMobile}>
               <Popper
                 placement="bottom-start"
                 anchorEl={anchorMobile}
@@ -193,6 +228,7 @@ const template = () => {
                   <Collapse in={expandedMedia} timeout="auto" unmountOnExit>
                     <Stack>
                       <Link color={blueGrey[800]} underline="none" className="co-hdr-menu__child" to={RouterList.media.newsroom} component={RouterLink} onClick={handleCloseMedia}>Newsroom</Link>
+                      <Link color={blueGrey[800]} underline="none" className="co-hdr-menu__child" to={RouterList.media.customerstory} component={RouterLink} onClick={handleCloseMedia}>Customer Stories</Link>
                       <Link color={blueGrey[800]} underline="none" className="co-hdr-menu__child" to={RouterList.media.blog} component={RouterLink} onClick={handleCloseMedia}>Blogs</Link>
                     </Stack>
                   </Collapse>
@@ -203,6 +239,7 @@ const template = () => {
                   </Box>
                 </Stack>
               </Popper>
+              </ClickAwayListener>
             </Grid>
           </Grid>
         </Container>

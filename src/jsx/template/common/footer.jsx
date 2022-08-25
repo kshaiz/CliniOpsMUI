@@ -111,10 +111,10 @@ const template = () => {
                       <a className='co-ftr__link' href={RouterList.about.mission} component={RouterLink}>Mission</a>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.media._1} component={RouterLink}>Newsroom</a>
+                      <a className='co-ftr__link' href={RouterList.media.newsroom} component={RouterLink}>Newsroom</a>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href={RouterList.media._2} component={RouterLink}>Blogs</a>
+                      <a className='co-ftr__link' href={RouterList.media.blog} component={RouterLink}>Blogs</a>
                     </Grid>
                   </Grid>
                 </Grid>
@@ -162,7 +162,7 @@ const template = () => {
                       <a className='co-ftr__link' href="tel:+1-408-829-4677">+1-408-829-4677</a>
                     </Grid>
                     <Grid item>
-                      <a className='co-ftr__link' href="www.cliniops.com">www.cliniops.com</a>
+                      <a className='co-ftr__link' href="https://www.cliniops.com">www.cliniops.com</a>
                     </Grid>
                   </Grid>
                 </Grid>

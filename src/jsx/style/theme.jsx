@@ -74,7 +74,7 @@ const Theme = createTheme({
       letterSpacing: '-0.02em',
       fontWeight: 400
     },
-  }
+  },
 });
 
 export default Theme;

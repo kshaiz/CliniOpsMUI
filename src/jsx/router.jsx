@@ -29,6 +29,7 @@ const RouterList = ({
   },
   media: {
     newsroom: '/media/newsroom/',
+    customerstory: '/media/customer-stories/',
     blog: '/media/blogs/',
     blog_1: '/media/blogs/diversity-in-clinical-research',
     blog_2: '/media/blogs/what-the-future-holds-for-clinical-trials-post-covid-19',

@@ -72,4 +72,6 @@
 }
 
 /* MUI Overrides */
-/* .MuiLink-root {} */
+.MuiLink-root {
+  font-weight: 500;
+}

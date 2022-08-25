@@ -36,6 +36,7 @@ import ModuleAbout_Career_7 from './template/about/_0_3_7';
 import ModuleAbout_Career_8 from './template/about/_0_3_8';
 
 import ModuleMedia_Newsroom from './template/media/newsroom';
+import ModuleMedia_Customer_Story from './template/media/customer-story';
 import ModuleMedia_Blog from './template/media/blog';
 import ModuleMedia_Blog_1 from './template/media/blog_1';
 import ModuleMedia_Blog_2 from './template/media/blog_2';
@@ -85,6 +86,7 @@ const App = () => {
                 <Route path={RouterList.about.career_8} element={<ModuleAbout_Career_8 />} />
 
                 <Route path={RouterList.media.newsroom} element={<ModuleMedia_Newsroom />} />
+                <Route path={RouterList.media.customerstory} element={<ModuleMedia_Customer_Story />} />
                 <Route path={RouterList.media.blog} element={<ModuleMedia_Blog />} />
                 <Route path={RouterList.media.blog_1} element={<ModuleMedia_Blog_1 />} />
                 <Route path={RouterList.media.blog_2} element={<ModuleMedia_Blog_2 />} />

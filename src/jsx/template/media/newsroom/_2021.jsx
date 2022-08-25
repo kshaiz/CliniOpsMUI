@@ -17,6 +17,8 @@ import ImgPlos from '../../../../img/media/newsroom/_2021/Media-2021-plos.jpg';
 import ImgPopulationCouncil from '../../../../img/media/newsroom/_2021/Media-2021-lesotho.jpg';
 import ImgWashingtonUniversity from '../../../../img/media/newsroom/_2021/Media-2021-jan.jpg';
 import ImgInnovatorMD from '../../../../img/media/newsroom/_2021/Media-2020-21.png';
+import ImgDec12021 from '../../../../img/media/newsroom/_2021/20211201.png';
+
 
 const template = () => {
   return (
@@ -34,6 +36,13 @@ const template = () => {
             link="https://www.apac-insider.com/apac-insider-magazine-announces-the-winners-of-the-2021-business-awards/"
             title="​Best Data Science Company - APAC Business Awards 2021"
             date="December 14, 2021"
+          />
+          <NewsArticle
+            img={ImgDec12021}
+            alt="Article Header Image"
+            link="https://profiles.forbes.com/members/tech/profile/Yerramalli-Subramaniam-CTO-cliniops-com/abd469ec-af5a-4b34-9dae-ab94d9533d28"
+            title="Yerramalli Subramaniam, CTO, CliniOps, joins the Forbes Technology Council"
+            date="December 1, 2021"
           />
           <NewsArticle
             img={ImgUnited}
