@@ -17,6 +17,8 @@ import ImgJune102022 from '../../../../img/media/newsroom/_2022/20220610.png';
 import ImgJune142022 from '../../../../img/media/newsroom/_2022/20220614.png';
 import ImgJune232022 from '../../../../img/media/newsroom/_2022/20220623.jpg';
 import Img20220904 from '../../../../img/media/newsroom/_2022/20220904.png';
+import Img20220830 from '../../../../img/media/newsroom/_2022/20220830.png';
+
 
 
 const template = () => {
@@ -35,6 +37,13 @@ const template = () => {
             link="https://www.ersnet.org/congress-and-events/congress/"
             title="European Respiratory Society, International Congress, 2022"
             date="September 4, 2022"
+          />
+          <NewsArticle
+            img={Img20220830}
+            alt="Article Header Image"
+            link="https://www.fastcompany.com/90780899/are-hybrid-clinical-trials-a-pit-stop-as-the-pendulum-swings-to-decentralization"
+            title="Are hybrid clinical trials a pit stop as the pendulum swings to decentralization?"
+            date="August 30, 2022"
           />
           <NewsArticle
             img={ImgJune232022}

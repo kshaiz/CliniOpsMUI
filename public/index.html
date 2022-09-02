@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="CliniOps"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="CliniOps" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,18 +22,26 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    />
-    <title>CliniOps</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <title>CliniOps</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+</head>
+
+<body>
+  <script type="text/javascript">
+    var dpwdrsid = 'NFBHg2bMwd';
+    var dpwdrsextid = '63053641';
+    var __ibaseUrl = (("https:" == document.location.protocol) ? "https://data.processwebsitedata.com" : "http://data.processwebsitedata.com");
+    (function () {
+      var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true;
+      va.src = __ibaseUrl + '/cscripts/' + dpwdrsid + '-' + dpwdrsextid + '.js';
+      var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv);
+    })();
+  </script>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -45,23 +51,24 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-    <script>
-        window.cookieconsent.initialise({
-            "palette": {
-                "popup": {
-                    "background": "#3c404d",
-                    "text": "#d6d6d6"
-                },
-                "button": {
-                    "background": "#8bed4f"
-                }
-            },
-            "showLink": false,
-            "content": {
-                "message": `This site uses cookies to ensure you get the best browsing experience. If you choose to continue using the site, it will be interpreted as consent. We encourage you to become familiar with our <a href="/privacyPolicy" target="_blank">Privacy Policy</a> | <a href="/cookiePolicy" target="_blank">Cookie Policy</a>.`
-            }
-        });
-    </script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#3c404d",
+          "text": "#d6d6d6"
+        },
+        "button": {
+          "background": "#8bed4f"
+        }
+      },
+      "showLink": false,
+      "content": {
+        "message": `This site uses cookies to ensure you get the best browsing experience. If you choose to continue using the site, it will be interpreted as consent. We encourage you to become familiar with our <a href="/privacyPolicy" target="_blank">Privacy Policy</a> | <a href="/cookiePolicy" target="_blank">Cookie Policy</a>.`
+      }
+    });
+  </script>
+</body>
+
 </html>
