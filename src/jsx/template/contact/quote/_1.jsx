@@ -13,6 +13,10 @@ import {
   InputLabel,
   Autocomplete,
 } from "@mui/material";
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
 
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
@@ -26,6 +30,25 @@ const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
 const checkedIcon = <CheckBoxIcon fontSize="small" />;
 
 const template = () => {
+  const [openSnackbar, setOpenSnackBar] = React.useState(false);
+
+  const handleSnackbarClose = (reason) => {
+    setOpenSnackBar(false);
+  };
+
+  const actionSnackbar = (
+    <>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleSnackbarClose}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </>
+  );
+
   const [disabled, setDisabled] = React.useState(false);
   async function handleSubmit(e) {
     setDisabled(true);
@@ -57,14 +80,29 @@ const template = () => {
       url: QUOTE_FORM_SUBMIT_URL,
     });
     if (data?.message === "Mail send") {
-      alert("quote request submitted successfully");
+      setOpenSnackBar(true);
       location.reload();
     } else {
-      alert("Form Submission Failed");
+      alert("Form submission failed");
     }
     setDisabled(false);
   }
   return (
+    <>
+    <Snackbar
+        anchorOrigin={{ horizontal: "center", vertical: "top" }}
+        open={openSnackbar}
+        autoHideDuration={6000}
+        onClose={handleSnackbarClose}
+        message="Quote request submitted"
+        action={actionSnackbar}
+        sx={{ mt: "70px" }}
+      >
+        <Alert onClose={handleSnackbarClose} severity="success" variant="filled">
+          Quote request submitted
+        </Alert>
+      </Snackbar>
+      
     <form onSubmit={handleSubmit}>
       <Stack spacing={3} sx={{ maxWidth: "600px", margin: "0 auto" }}>
         <Stack>
@@ -299,7 +337,6 @@ const template = () => {
             required
           />
         </Stack>
-        <Stack>
           <Stack>
             <label className="co-label">
               Additional Recipients(comma sperated email addresses)
@@ -312,6 +349,7 @@ const template = () => {
               rows={4}
             />
           </Stack>
+        <Stack>
           <label className="co-label">Phone (include Country Code)*</label>
           <TextField
             size="small"
@@ -328,6 +366,7 @@ const template = () => {
         </Box>
       </Stack>
     </form>
+    </>
   );
 };
 
@@ -336,6 +375,7 @@ function CheckboxesTags({ inputOptions, name }) {
   return (
     <>
       <Autocomplete
+        size="small"
         multiple
         options={inputOptions}
         disableCloseOnSelect

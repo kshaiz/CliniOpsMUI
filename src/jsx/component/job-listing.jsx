@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 
 import { Box, Container, Grid, Typography, Chip, Stack, Button, Dialog, DialogContent, DialogActions, DialogTitle, TextField } from "@mui/material";
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
 import { LocationOnOutlined } from '@mui/icons-material';
 import { blueGrey } from "@mui/material/colors";
 
 import ConvertToForm from "./../../js/convertFormElementsToJSON";
 import { RESUME_FORM_SUBMIT_URL } from "./../../js/consts";
-import {SubmitAttachFormData} from "./../../js/submitData";
+import { SubmitAttachFormData } from "./../../js/submitData";
 
 const JobListingPage = (props) => {
   const [color] = useState(props.color);
@@ -18,6 +22,26 @@ const JobListingPage = (props) => {
   const [open, setOpen] = React.useState(false);
   const formRef = React.useRef(null);
   const formRefSubmit = React.useRef(null);
+
+  const [openSnackbar, setOpenSnackBar] = React.useState(false);
+
+  const handleSnackbarClose = (reason) => {
+    setOpenSnackBar(false);
+  };
+
+  const actionSnackbar = (
+    <>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleSnackbarClose}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </>
+  );
+
   const handleApplyJob = () => {
     setOpen(true);
   };
@@ -48,21 +72,20 @@ const JobListingPage = (props) => {
 
     dataArray.append('resume', formRef.current.elements.resume.files[0]);
     dataArray.append('subject', "Resume");
-    
+
     const data = await SubmitAttachFormData({
       formData: dataArray,
       url: RESUME_FORM_SUBMIT_URL,
     });
     if (data?.message === "Mail send") {
-      alert("Your Information Submitted Successfully");
-      location.reload();
+      setOpenSnackBar(true);
     } else {
-      alert("Form Submission Failed");
+      alert("Form submission failed");
     }
     setDisabled(false);
     setOpen(false);
   }
-  
+
   return (
     <>
       <Dialog open={open} onClose={handleDialogClose} maxWidth="700px">
@@ -73,7 +96,7 @@ const JobListingPage = (props) => {
               <Stack>
                 <label className="co-label">Position Title</label>
                 <Typography>{title}</Typography>
-                <input type="hidden" name="title" value={title}/>
+                <input type="hidden" name="title" value={title} />
               </Stack>
               <Stack>
                 <label className="co-label">Full Name</label>
@@ -83,6 +106,7 @@ const JobListingPage = (props) => {
                   fullWidth
                   required
                   name="fullName"
+                  size="small"
                 />
               </Stack>
               <Stack>
@@ -94,6 +118,7 @@ const JobListingPage = (props) => {
                   fullWidth
                   required
                   name="email"
+                  size="small"
                 />
               </Stack>
               <Stack>
@@ -105,14 +130,15 @@ const JobListingPage = (props) => {
                   multiline
                   maxRows={4}
                   name="coverLetter"
+                  size="small"
                 />
               </Stack>
               <Stack>
                 <label className="co-label">Resume</label>
-                <input type="file" name="resume"/>
+                <input type="file" name="resume" />
               </Stack>
             </Stack>
-              <input type="submit" style={{display: 'none'}} ref={formRefSubmit}/>
+            <input type="submit" style={{ display: 'none' }} ref={formRefSubmit} />
           </form>
         </DialogContent>
         <DialogActions>
@@ -120,7 +146,20 @@ const JobListingPage = (props) => {
           <Button onClick={handleDialogCancel} disabled={disabled}>Cancel</Button>
         </DialogActions>
       </Dialog>
-      
+      <Snackbar
+        anchorOrigin={{ horizontal: "center", vertical: "top" }}
+        open={openSnackbar}
+        autoHideDuration={6000}
+        onClose={handleSnackbarClose}
+        message="Your application has been submitted"
+        action={actionSnackbar}
+        sx={{ mt: "70px" }}
+      >
+        <Alert onClose={handleSnackbarClose} severity="success" variant="filled">
+          Your application has been submitted
+        </Alert>
+      </Snackbar>
+
       <Box
         sx={{ pb: 10, pt: `calc(72px + 80px)` }}
         style={{
@@ -139,7 +178,7 @@ const JobListingPage = (props) => {
             spacing={2}
           >
             <Typography variant="h1" component="h1">{title}</Typography>
-            <Box sx={{ display: {xs: 'none', md: 'block'} }}>
+            <Box sx={{ display: { xs: 'none', md: 'block' } }}>
               <Button variant="contained" size="large" onClick={handleApplyJob}>Apply for this Job</Button>
             </Box>
           </Stack>
@@ -160,7 +199,7 @@ const JobListingPage = (props) => {
               />
             ))}
           </Stack>
-          <Box mt={2} sx={{ display: {xs: 'block', md: 'none'} }}>
+          <Box mt={2} sx={{ display: { xs: 'block', md: 'none' } }}>
             <Button variant="contained" size="large" onClick={handleApplyJob}>Apply for this Job</Button>
           </Box>
         </Container>
@@ -175,4 +214,4 @@ const JobListingPage = (props) => {
   )
 };
 
-export { JobListingPage};
+export { JobListingPage };

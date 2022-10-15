@@ -1,5 +1,9 @@
 import React from "react";
 import { Stack, TextField, Button, Box, Grid } from "@mui/material";
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
 import ConvertToForm from "./../../../../js/convertFormElementsToJSON";
 import { CONTACT_FORM_SUBMIT_URL } from "./../../../../js/consts";
 import submitData from "./../../../../js/submitData";
@@ -13,6 +17,25 @@ const initialVal = {
 };
 
 const template = () => {
+  const [openSnackbar, setOpenSnackBar] = React.useState(false);
+
+  const handleSnackbarClose = (reason) => {
+    setOpenSnackBar(false);
+  };
+
+  const actionSnackbar = (
+    <>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleSnackbarClose}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </>
+  );
+  
   const [disabled, setDisabled] = React.useState(false);
   async function handleSubmit(e) {
     setDisabled(true);
@@ -41,6 +64,20 @@ const template = () => {
     setDisabled(false);
   }
   return (
+    <>
+    <Snackbar
+        anchorOrigin={{ horizontal: "center", vertical: "top" }}
+        open={openSnackbar}
+        autoHideDuration={6000}
+        onClose={handleSnackbarClose}
+        message="Thanks for contacting us! We will be in touch with you shortly."
+        action={actionSnackbar}
+        sx={{ mt: "70px" }}
+      >
+        <Alert onClose={handleSnackbarClose} severity="success" variant="filled">
+        Thanks for contacting us! We will be in touch with you shortly.
+        </Alert>
+      </Snackbar>
     <form onSubmit={handleSubmit}>
       <Stack spacing={3} sx={{ maxWidth: "100%", margin: "0 auto" }}>
         <Stack spacing={.5}>
@@ -116,6 +153,7 @@ const template = () => {
         </Box>
       </Stack>
     </form>
+    </>
   );
 };
 
