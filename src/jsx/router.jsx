@@ -30,6 +30,7 @@ const RouterList = ({
   media: {
     newsroom: '/media/newsroom/',
     customerstory: '/media/customer-stories/',
+    customerstory_1: '/media/customer-stories/configurable-platform-speeds-development-of-complex-workflows-in-ground-breaking-clinical-study',
     blog: '/media/blogs/',
     blog_1: '/media/blogs/diversity-in-clinical-research',
     blog_2: '/media/blogs/what-the-future-holds-for-clinical-trials-post-covid-19',
@@ -41,12 +42,10 @@ const RouterList = ({
     _0: '/contact/',
     quote: '/contact/request-quote',
     demo: '/contact/request-demo/'
-    // mailto:info@cliniops.com
   },
   policy: {
     privacy: '/policy/privacy',
     cookie: '/policy/cookie/'
-    // mailto:info@cliniops.com
   }
 });
 

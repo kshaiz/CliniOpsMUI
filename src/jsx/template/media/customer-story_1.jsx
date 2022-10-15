@@ -4,9 +4,10 @@ import { teal } from '@mui/material/colors';
 
 import { PageHero, PageContent } from '../../component/page';
 
+
 // Page Imports
-import _0 from './customer-story/_0';
-import _1 from './customer-story/_1';
+import _0 from './customer-story_1/_0';
+import _1 from './customer-story_1/_1';
 
 const template = () => {
   return (
