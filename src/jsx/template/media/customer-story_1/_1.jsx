@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Box, Stack } from '@mui/material';
+import { Typography, Box, Stack, Link } from '@mui/material';
 
 import { blueGrey } from '@mui/material/colors';
 import ImgRob from '../../../../img/media/customer-story/_1/rob_krummen.jpg';
@@ -45,6 +45,8 @@ const template = () => {
         </Stack>
       </blockquote>
       <Typography paragraph>Vektor Medical's vMap® received US FDA 510(k) clearance in November 2021 and is the first and only non-invasive mapping tool that uses 12-lead ECG data to help physicians rapidly locate potential cardiac arrhythmia sources.</Typography>
+      <Typography paragraph>The results of the clinical study, "<Link href="https://www.ahajournals.org/doi/abs/10.1161/CIRCEP.122.010857" target="_blank" underline="hover">Forward-Solution Noninvasive Computational Arrhythmia Mapping: The VMAP Study</Link>", and CliniOps involvement therein were published in the journal Circulation: Arrhythmia and Electrophysiology in September 7, 2022.
+      </Typography>
     </>
   );
 }
