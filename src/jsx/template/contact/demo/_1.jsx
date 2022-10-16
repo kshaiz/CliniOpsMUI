@@ -10,6 +10,8 @@ import submitData from "./../../../../js/submitData";
 
 const template = () => {
   const [openSnackbar, setOpenSnackBar] = React.useState(false);
+  const [message, setMessage] = React.useState("");
+  const [severity, setSeverity] = React.useState("");
 
   const handleSnackbarClose = (reason) => {
     setOpenSnackBar(false);
@@ -47,10 +49,13 @@ const template = () => {
       url: DEMO_FORM_SUBMIT_URL,
     });
     if (data?.message === "Mail send") {
-      alert("Demo request submitted successfully");
-      location.reload();
+      setOpenSnackBar(true);
+      setMessage("Your application has been submitted.");
+      setSeverity("success");
     } else {
-      alert("Form Submission Failed");
+      setOpenSnackBar(true);
+      setMessage("Form submission failed");
+      setSeverity("error");
     }
     setDisabled(false);
   }
@@ -61,12 +66,12 @@ const template = () => {
         open={openSnackbar}
         autoHideDuration={6000}
         onClose={handleSnackbarClose}
-        message="Your application has been submitted"
+        message={message}
         action={actionSnackbar}
-        sx={{ mt: "70px" }}
+        sx={{ mt: "70px", boxShadow: 8 }}
       >
-        <Alert onClose={handleSnackbarClose} severity="success" variant="filled">
-          Your application has been submitted
+        <Alert onClose={handleSnackbarClose} severity={severity} variant="filled">
+          {message}
         </Alert>
       </Snackbar>
     <form onSubmit={handleSubmit}>

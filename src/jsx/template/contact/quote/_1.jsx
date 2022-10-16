@@ -31,6 +31,8 @@ const checkedIcon = <CheckBoxIcon fontSize="small" />;
 
 const template = () => {
   const [openSnackbar, setOpenSnackBar] = React.useState(false);
+  const [message, setMessage] = React.useState("");
+  const [severity, setSeverity] = React.useState("");
 
   const handleSnackbarClose = (reason) => {
     setOpenSnackBar(false);
@@ -75,33 +77,36 @@ const template = () => {
     const data = await submitData({
       formData: {
         data: formData,
-        subject: "Request A Demo",
+        subject: "Request a Quote",
       },
       url: QUOTE_FORM_SUBMIT_URL,
     });
     if (data?.message === "Mail send") {
       setOpenSnackBar(true);
-      location.reload();
+      setMessage("Quote request submitted");
+      setSeverity("success");
     } else {
-      alert("Form submission failed");
+      setOpenSnackBar(true);
+      setMessage("Form submission failed");
+      setSeverity("error");
     }
     setDisabled(false);
   }
   return (
     <>
     <Snackbar
-        anchorOrigin={{ horizontal: "center", vertical: "top" }}
-        open={openSnackbar}
-        autoHideDuration={6000}
-        onClose={handleSnackbarClose}
-        message="Quote request submitted"
-        action={actionSnackbar}
-        sx={{ mt: "70px" }}
-      >
-        <Alert onClose={handleSnackbarClose} severity="success" variant="filled">
-          Quote request submitted
-        </Alert>
-      </Snackbar>
+      anchorOrigin={{ horizontal: "center", vertical: "top" }}
+      open={openSnackbar}
+      autoHideDuration={6000}
+      onClose={handleSnackbarClose}
+      message={message}
+      action={actionSnackbar}
+      sx={{ mt: "70px", boxShadow: 8 }}
+    >
+      <Alert onClose={handleSnackbarClose} severity={severity} variant="filled">
+      {message}
+      </Alert>
+    </Snackbar>
       
     <form onSubmit={handleSubmit}>
       <Stack spacing={3} sx={{ maxWidth: "600px", margin: "0 auto" }}>

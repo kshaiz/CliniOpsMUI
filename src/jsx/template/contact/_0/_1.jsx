@@ -18,6 +18,8 @@ const initialVal = {
 
 const template = () => {
   const [openSnackbar, setOpenSnackBar] = React.useState(false);
+  const [message, setMessage] = React.useState("");
+  const [severity, setSeverity] = React.useState("");
 
   const handleSnackbarClose = (reason) => {
     setOpenSnackBar(false);
@@ -56,10 +58,13 @@ const template = () => {
       url: CONTACT_FORM_SUBMIT_URL,
     });
     if (data?.message === "Mail send") {
-      alert("Your Information Submitted Successfully");
-      location.reload();
+      setOpenSnackBar(true);
+      setMessage("Thanks for contacting us! We will be in touch with you shortly.");
+      setSeverity("success");
     } else {
-      alert("Form Submission Failed");
+      setOpenSnackBar(true);
+      setMessage("Form submission failed");
+      setSeverity("error");
     }
     setDisabled(false);
   }
@@ -70,12 +75,12 @@ const template = () => {
         open={openSnackbar}
         autoHideDuration={6000}
         onClose={handleSnackbarClose}
-        message="Thanks for contacting us! We will be in touch with you shortly."
+        message={message}
         action={actionSnackbar}
-        sx={{ mt: "70px" }}
+        sx={{ mt: "70px", boxShadow: 8 }}
       >
-        <Alert onClose={handleSnackbarClose} severity="success" variant="filled">
-        Thanks for contacting us! We will be in touch with you shortly.
+        <Alert onClose={handleSnackbarClose} severity={severity} variant="filled">
+        {message}
         </Alert>
       </Snackbar>
     <form onSubmit={handleSubmit}>
