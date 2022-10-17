@@ -1,8 +1,9 @@
 import React from 'react';
-import { Typography, Box, Stack, Link } from '@mui/material';
+import { Typography, Box, Stack, Link, Alert } from '@mui/material';
 
 import { blueGrey } from '@mui/material/colors';
 import ImgRob from '../../../../img/media/customer-story/_1/rob_krummen.jpg';
+import ImgAHA from '../../../../img/media/customer-story/_1/AHA_Full.svg';
 
 const template = () => {
   return (
@@ -11,7 +12,7 @@ const template = () => {
       <Typography paragraph>The company explored multiple options available in the market to support their unique requirements. However, they were unable to find one that could efficiently flex and customize their database to seamlessly handle the level of complex workflow for the study. Unfortunately, with most database-providers, development and testing of custom codes to meet Vektor's needs was going to be expensive and time-consuming.</Typography>
       <Typography paragraph>Unable to find an off-the-shelf product, Vektor approached CliniOps, to help develop the study database including crafting the solution for this critical step in their workflow management. This required randomizing and assigning the vMap data process to its own site known as the “Ground Truth”. Separate sites were used for capturing data from the study cases. These were blinded from the Ground Truth and a separate team was utilized to reconcile the Ground Truth data and the vMap data. This entire process involved complex workflows, notifications, and custom randomization to ensure seamless collaboration across stakeholders. Because CliniOps' platform is highly configurable, CliniOps was able to make changes to the database without writing new code. The customized platform was ready to use in a matter of weeks. It was also significantly cost effective.</Typography>
       <blockquote style={{ borderLeft: `4px solid ${blueGrey[100]}`, marginLeft: -1 }}>
-        <Stack spacing={4} sx={{ pl: 4 }} direction="row">
+        <Stack spacing={4} sx={{ pl: 4 }} direction={{xs: "column", md: "row"}}>
           <Box
             sx={{
               display: 'flex',
@@ -45,8 +46,29 @@ const template = () => {
         </Stack>
       </blockquote>
       <Typography paragraph>Vektor Medical's vMap® received US FDA 510(k) clearance in November 2021 and is the first and only non-invasive mapping tool that uses 12-lead ECG data to help physicians rapidly locate potential cardiac arrhythmia sources.</Typography>
-      <Typography paragraph>The results of the clinical study, "<Link href="https://www.ahajournals.org/doi/abs/10.1161/CIRCEP.122.010857" target="_blank" underline="hover">Forward-Solution Noninvasive Computational Arrhythmia Mapping: The VMAP Study</Link>", and CliniOps involvement therein were published in the journal Circulation: Arrhythmia and Electrophysiology in September 7, 2022.
-      </Typography>
+      <Alert icon={false} severity="info" sx={{ marginTop: 4}}>
+      <Stack spacing={4} direction={{xs: "column", md: "row"}}>
+          <Box
+            xs="auto"
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              minWidth: '114px',
+              width: '114px',
+              height: '80px',
+              borderRadius: 2,
+              backgroundImage: `url(${ImgAHA})`,
+              backgroundSize: 'contain',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'top center'
+            }}
+          />
+          <Typography paragraph>The results of the clinical study, "<Link href="https://www.ahajournals.org/doi/abs/10.1161/CIRCEP.122.010857" target="_blank" underline="hover">Forward-Solution Noninvasive Computational Arrhythmia Mapping: The VMAP Study</Link>", and CliniOps involvement therein were published in the journal Circulation: Arrhythmia and Electrophysiology in September 7, 2022.</Typography>
+        </Stack>
+      </Alert>
+
+      
     </>
   );
 }
